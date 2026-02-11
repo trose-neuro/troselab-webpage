@@ -1,5 +1,5 @@
 ---
-header: images/background.jpg
+header: images/banner/twitter1500x500.jpg
 ---
 
 <!-- # Rose Group -->
@@ -51,7 +51,7 @@ Work combines two-photon imaging, targeted perturbation, and deep receptive-fiel
 
 {% endcapture %}
 
-{% include feature.html image="images/photo.jpg" link="research" title="Research" text=text %}
+{% include feature.html image="images/banner/photo.jpg" link="research" title="Research" text=text %}
 
 {% capture text %}
 

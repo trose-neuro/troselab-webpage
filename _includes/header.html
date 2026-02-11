@@ -5,6 +5,10 @@
 {% endif %}
 {% assign image = image | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
+{% if page.url == "/" %}
+  {% assign banner_images = "images/banner/twitter1500x500.jpg|images/banner/background.jpg|images/banner/photo.jpg|images/banner/g2.jpg|images/banner/multilevel spines.jpg|images/banner/tdtomatoGGsliceEPI.jpg|images/banner/binocular axons VCElement 1@4x-100.jpg|images/banner/hippocampus ca1.jpg|images/banner/Chiams LGN.jpg" | split: "|" %}
+  {% assign image = banner_images | first %}
+{% endif %}
 
 {% assign svg = "images/logo.svg" | file_exists %}
 {% assign png = "images/logo.png" | file_exists %}
@@ -14,6 +18,9 @@
 <header
   class="background"
   style="--image: url('{{ image | relative_url | uri_escape }}')"
+  {% if banner_images %}
+    data-banner-images='[{% for banner in banner_images %}"{{ banner | relative_url | uri_escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}]'
+  {% endif %}
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}

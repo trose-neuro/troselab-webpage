@@ -1,6 +1,6 @@
 ---
 title: Research
-header: images/photo.jpg
+header: images/banner/photo.jpg
 nav:
   order: 1
   tooltip: Current research themes

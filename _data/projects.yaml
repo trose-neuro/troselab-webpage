@@ -92,7 +92,7 @@
 
 - title: Miniature Two-Photon Platform
   subtitle: Infrastructure
-  image: images/photo.jpg
+  image: images/banner/photo.jpg
   link: research
   description: |
     Custom head-mounted and bench-top systems for longitudinal, high-throughput recordings in freely moving and head-fixed animals.
@@ -103,7 +103,7 @@
 
 - title: ADAMACS Data Infrastructure
   subtitle: Collaborative Data Platform
-  image: images/background.jpg
+  image: images/banner/background.jpg
   link: https://github.com/SFB1089/adamacs
   description: |
     Data management, processing, and database infrastructure for collaborative neurophysiology and open workflow reuse.
