@@ -6,10 +6,10 @@ header: images/members/DSC_0137.jpg
 
 Circuit mechanisms of behavior in a changing world
 
-{% include button.html type="website" text="Current Site" link="https://www.troselab.de" %}
-{% include button.html type="github" text="GitHub" link="trose-neuro" %}
-{% include button.html type="email" text="Contact" link="tobias.rose@ukbonn.de" %}
-{% include button.html type="website" text="CV Rose" link="cv" %}
+{% include button.html link="research" text="Explore Research Program" icon="fa-solid fa-arrow-right" flip=true %}
+{% include button.html type="email" text="Contact the Lab" link="mailto:tobias.rose@ukbonn.de" %}
+{% include button.html type="website" text="CV Rose" link="cv" style="bare" %}
+{% include button.html type="github" text="Code and Data" link="trose-neuro" style="bare" %}
 
 {% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 900px)" %}
 
@@ -33,7 +33,7 @@ Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from mi
 "
 %}
 
-## Current Program
+## Current Work
 
 - Representational drift and stabilization in thalamocortical circuits
 - Spatial and contextual memory coding in retrosplenial cortex
