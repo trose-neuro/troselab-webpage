@@ -4,14 +4,14 @@ header: images/members/DSC_0137.jpg
 
 # Rose Group
 
-Circuit mechanisms of behavior in a changing world
+<!-- Circuit mechanisms of behavior in a changing world
 
 {% include button.html link="research" text="Explore Research Program" icon="fa-solid fa-arrow-right" flip=true %}
 {% include button.html type="email" text="Contact the Lab" link="mailto:tobias.rose@ukbonn.de" %}
 {% include button.html type="website" text="CV Rose" link="cv" style="bare" %}
-{% include button.html type="github" text="Code and Data" link="trose-neuro" style="bare" %}
+{% include button.html type="github" text="Code and Data" link="trose-neuro" style="bare" %} -->
 
-{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 900px)" %}
+{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 800px)" %}
 
 {% include section.html %}
 
@@ -35,10 +35,10 @@ Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from mi
 
 ## Current Work
 
-- Representational drift and stabilization in thalamocortical circuits
-- Spatial and contextual memory coding in retrosplenial cortex
+- Representational drift and stabilization in cortical and subcortical circuits in passive vision and active behavior
+- Spatial and contextual coding in retrosplenial cortex
 - Active visual orienting and peri-saccadic processing in natural vision
-- Latent learning and unsupervised cue association in cortical networks
+- Latent visual learning in cortical networks
 
 {% include section.html %}
 
