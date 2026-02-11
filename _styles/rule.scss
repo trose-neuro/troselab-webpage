@@ -2,8 +2,8 @@
 ---
 
 hr {
-  margin: 40px 0;
-  background: var(--light-gray);
+  margin: clamp(20px, 4vw, 40px) 0;
+  background: var(--border);
   border: none;
   height: 1px;
 }

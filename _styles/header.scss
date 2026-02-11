@@ -2,24 +2,33 @@
 ---
 
 $logo-big: 80px;
-$logo: 40px;
-$big-padding: 100px;
-$collapse: 700px;
+$logo: 44px;
+$big-padding: clamp(56px, 11vw, 130px);
+$collapse: 900px;
 $sticky: true;
 
 header {
+  width: min(calc(100% - 24px), var(--page));
+  margin: 14px auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--rounded-lg);
+  background: var(--surface-frost);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
+  transition: border-color var(--transition), box-shadow var(--transition),
+    background var(--transition);
 
   @if $sticky {
     position: sticky !important;
-    top: 0;
-    z-index: 10 !important;
+    top: 12px;
+    z-index: 50 !important;
   }
 }
 
@@ -32,7 +41,7 @@ header a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
@@ -40,6 +49,7 @@ header a {
 
 .logo {
   height: $logo;
+  filter: drop-shadow(0 3px 8px var(--overlay));
 }
 
 .logo > * {
@@ -52,19 +62,21 @@ header a {
   justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 7px;
   min-width: 0;
   font-family: var(--title);
   text-align: left;
 }
 
 .title {
-  font-size: var(--large);
+  font-size: 1.2rem;
+  font-weight: var(--bold);
+  letter-spacing: -0.01em;
 }
 
 .subtitle {
-  opacity: 0.65;
-  font-weight: var(--thin);
+  color: var(--gray);
+  font-weight: var(--regular);
 }
 
 .nav-toggle {
@@ -73,9 +85,13 @@ header a {
   width: 30px;
   height: 30px;
   margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--rounded-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow);
   color: var(--text);
   appearance: none;
-  transition: background var(--transition);
+  transition: background var(--transition), border-color var(--transition);
 }
 
 .nav-toggle:after {
@@ -99,17 +115,23 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   font-family: var(--heading);
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 nav > a {
-  padding: 5px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: var(--dark-gray);
+  transition: background var(--transition), color var(--transition);
 }
 
 nav > a:hover {
-  color: var(--primary);
+  color: var(--text);
+  background: var(--secondary);
 }
 
 header:not([data-big]) {
@@ -127,7 +149,15 @@ header:not([data-big]) {
     nav {
       align-items: flex-end;
       flex-direction: column;
+      gap: 4px;
       width: 100%;
+      padding-top: 4px;
+    }
+
+    nav > a {
+      width: 100%;
+      border-radius: var(--rounded-sm);
+      text-align: right;
     }
   }
 }
@@ -136,15 +166,22 @@ header[data-big] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: $big-padding 20px;
+  gap: 28px;
+  margin-top: 22px;
+  padding: $big-padding clamp(16px, 4vw, 36px);
+  text-align: center;
+  box-shadow: var(--shadow-strong);
 
   @if $sticky {
-    top: unset;
+    position: relative !important;
+    top: unset !important;
   }
 
   .home {
     flex-direction: column;
+    justify-content: center;
     flex-grow: 0;
+    gap: 16px;
   }
 
   .logo {
@@ -155,14 +192,19 @@ header[data-big] {
   .title-text {
     flex-direction: column;
     align-items: center;
+    gap: 8px;
     text-align: center;
   }
 
   .title {
-    font-size: var(--xxl);
+    font-size: clamp(2rem, 5.2vw, 3.25rem);
   }
 
   .subtitle {
-    font-size: var(--large);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+  }
+
+  nav {
+    justify-content: center;
   }
 }

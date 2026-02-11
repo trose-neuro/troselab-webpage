@@ -2,13 +2,20 @@
 ---
 
 footer {
+  width: min(calc(100% - 24px), var(--page));
+  margin: 14px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-  line-height: var(--spacing);
+  gap: 18px;
+  padding: clamp(26px, 5vw, 44px);
+  border: 1px solid var(--border);
+  border-radius: var(--rounded-lg);
+  background: var(--surface);
+  color: var(--dark-gray);
+  text-align: center;
+  line-height: 1.6;
   box-shadow: var(--shadow);
 }
 
@@ -21,5 +28,16 @@ footer a:hover {
 }
 
 footer .icon {
-  font-size: var(--xl);
+  font-size: 1.05rem;
+}
+
+footer > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+footer > div:last-of-type {
+  font-size: 0.94rem;
 }

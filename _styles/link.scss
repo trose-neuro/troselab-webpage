@@ -3,14 +3,19 @@
 
 a {
   color: var(--primary);
+  text-decoration-thickness: 0.08em;
+  text-decoration-color: var(--primary-soft);
+  text-underline-offset: 0.2em;
   transition: color var(--transition);
   overflow-wrap: break-word;
 }
 
 a:hover {
   color: var(--text);
+  text-decoration-color: currentColor;
 }
 
 a:not([href]) {
   color: var(--text);
+  text-decoration: none;
 }

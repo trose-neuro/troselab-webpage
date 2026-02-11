@@ -8,44 +8,64 @@
 .portrait {
   position: relative;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  margin: 20px;
-  width: 175px;
+  gap: 6px;
+  margin: 12px;
+  width: 205px;
   max-width: calc(100% - 20px - 20px);
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--rounded-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
   text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.portrait:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-strong);
+  border-color: var(--primary-soft);
 }
 
 .portrait[data-style="small"] {
-  width: 100px;
+  width: 138px;
+  padding: 10px;
 }
 
 .portrait[data-style="tiny"] {
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: row;
-  gap: 15px;
+  gap: 12px;
   width: unset;
+  padding: 10px;
   text-align: left;
 }
 
 .portrait .icon {
   position: absolute;
-  left: 0;
-  top: 0;
+  right: 10px;
+  top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(20px + 10%);
+  width: 30px;
   aspect-ratio: 1 / 1;
   border-radius: 999px;
-  background: var(--background);
+  background: var(--surface);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  transform: translate(14%, 14%);
+  color: var(--primary);
+  transform: none;
 }
 
 .portrait[data-style="small"] .icon {
-  left: -2px;
-  top: -2px;
+  right: 8px;
+  top: 8px;
 }
 
 .portrait[data-style="tiny"] .icon {
@@ -54,21 +74,33 @@
 
 .portrait-image {
   width: 100%;
-  margin-bottom: 20px;
-  aspect-ratio: 1 / 1;
+  margin-bottom: 8px;
+  aspect-ratio: 4 / 5;
   border-radius: var(--rounded);
   object-fit: cover;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-strong);
 }
 
 .portrait[data-style="tiny"] .portrait-image {
-  width: 50px;
+  width: 54px;
+  aspect-ratio: 1 / 1;
   margin: 0;
+  box-shadow: var(--shadow);
 }
 
 .portrait-name {
   font-family: var(--heading);
-  font-weight: var(--semi-bold);
+  font-size: 1.08rem;
+  font-weight: var(--bold);
+  color: var(--text);
+  line-height: 1.25;
+}
+
+.portrait-description,
+.portrait-affiliation {
+  color: var(--gray);
+  font-size: 0.94rem;
+  line-height: 1.4;
 }
 
 .portrait[data-style="tiny"] {
@@ -79,7 +111,16 @@
 }
 
 .portrait[data-no-image="true"] {
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  text-align: center;
+
   .icon {
     display: none;
+  }
+
+  .portrait-name {
+    font-size: 1rem;
   }
 }

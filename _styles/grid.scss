@@ -7,11 +7,11 @@ $one: 500px;
 .grid {
   display: grid;
   --repeat: 3;
-  grid-template-columns: repeat(var(--repeat), 1fr);
+  grid-template-columns: repeat(var(--repeat), minmax(0, 1fr));
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
-  margin: 40px 0;
+  gap: clamp(16px, 3vw, 30px);
+  margin: clamp(18px, 4vw, 40px) 0;
 }
 
 .grid > * {

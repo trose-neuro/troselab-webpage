@@ -2,7 +2,9 @@
 ---
 
 p {
-  margin: 20px 0;
-  text-align: justify;
+  margin: 1rem 0;
+  color: var(--dark-gray);
+  text-align: left;
+  text-wrap: pretty;
   line-height: var(--spacing);
 }

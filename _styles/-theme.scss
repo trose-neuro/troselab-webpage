@@ -1,54 +1,64 @@
 ---
 ---
 
-// colors
 [data-dark="false"] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
-  --text: #000000;
-  --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --primary: #0f766e;
+  --secondary: #d1fae5;
+  --text: #0f172a;
+  --background: #f4f7fb;
+  --background-alt: #edf2f8;
+  --light-gray: #d6dee9;
+  --gray: #64748b;
+  --dark-gray: #334155;
+  --overlay: #0f172a14;
+  --surface: #ffffff;
+  --surface-alt: #f8fbff;
+  --surface-frost: #ffffffe3;
+  --surface-veil: #ffffffda;
+  --border: #d5dfeb;
+  --focus: #0f766e40;
+  --primary-soft: #0f766e66;
 }
+
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1c1c1c;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
-  --overlay: #ffffff10;
+  --primary: #34d399;
+  --secondary: #18352f;
+  --text: #e6edf6;
+  --background: #0f1722;
+  --background-alt: #121b28;
+  --light-gray: #2b3a4d;
+  --gray: #8ba1bd;
+  --dark-gray: #c2cfde;
+  --overlay: #00000050;
+  --surface: #162132;
+  --surface-alt: #1b2a3f;
+  --surface-frost: #162132e6;
+  --surface-veil: #0f1722d4;
+  --border: #2b3f58;
+  --focus: #34d3994d;
+  --primary-soft: #34d39966;
 }
 
 :root {
-  // font families
-  --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
-  --code: "Roboto Mono", monospace;
-
-  // font sizes
-  --large: 1.2rem;
-  --xl: 1.4rem;
-  --xxl: 1.6rem;
-
-  // font weights
+  --title: "Plus Jakarta Sans", sans-serif;
+  --heading: "Plus Jakarta Sans", sans-serif;
+  --body: "Source Sans 3", sans-serif;
+  --code: "JetBrains Mono", monospace;
+  --large: 1.25rem;
+  --xl: 1.55rem;
+  --xxl: 2.2rem;
   --thin: 200;
   --regular: 400;
-  --semi-bold: 500;
-  --bold: 600;
-
-  // text line spacing
-  --spacing: 2;
-  --compact: 1.5;
-
-  // effects
-  --rounded: 3px;
-  --shadow: 0 0 10px 0 var(--overlay);
-  --transition: 0.2s ease;
+  --semi-bold: 600;
+  --bold: 700;
+  --spacing: 1.75;
+  --compact: 1.45;
+  --rounded-sm: 10px;
+  --rounded: 14px;
+  --rounded-lg: 22px;
+  --shadow: 0 8px 24px 0 var(--overlay);
+  --shadow-strong: 0 22px 48px -18px var(--overlay);
+  --transition: 180ms ease;
+  --page: 1120px;
+  --section-pad: clamp(28px, 4.5vw, 64px);
 }

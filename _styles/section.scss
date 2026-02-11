@@ -1,12 +1,13 @@
 ---
 ---
 
-$page: 1000px;
-$padding: 40px;
+$padding: var(--section-pad);
 
 section {
-  padding: $padding max($padding, calc((100% - $page) / 2));
+  position: relative;
+  padding: $padding max(20px, calc((100% - var(--page)) / 2));
   transition: background var(--transition), color var(--transition);
+  animation: section-fade-in 520ms ease both;
 }
 
 section[data-size="wide"] {
@@ -26,8 +27,24 @@ section[data-size="full"] img {
   border-radius: 0;
 }
 
+section > :first-child {
+  margin-top: 0 !important;
+}
+
+section > :last-child {
+  margin-bottom: 0 !important;
+}
+
 main > section:last-of-type {
   flex-grow: 1;
+}
+
+main > section {
+  border-top: 1px solid var(--border);
+}
+
+main > section:first-of-type {
+  border-top: none;
 }
 
 main > section:nth-of-type(odd) {
@@ -36,4 +53,16 @@ main > section:nth-of-type(odd) {
 
 main > section:nth-of-type(even) {
   background: var(--background-alt);
+}
+
+@keyframes section-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
