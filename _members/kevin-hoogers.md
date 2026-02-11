@@ -1,7 +1,8 @@
 ---
 name: Kevin Hoogers
 image: images/logo.jpg
-role: alumni
+role: alum
+group: alumni
 affiliation: Rose Group
 ---
 Alumni.

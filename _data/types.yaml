@@ -6,6 +6,10 @@ principal-investigator:
   icon: fa-solid fa-microscope
   description: Principal Investigator
 
+pi:
+  icon: fa-solid fa-microscope
+  description: Principal Investigator
+
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
@@ -21,6 +25,14 @@ undergrad:
 programmer:
   icon: fa-solid fa-code
   description: Programmer
+
+technician:
+  icon: fa-solid fa-flask
+  description: Technical Staff
+
+alum:
+  icon: fa-solid fa-user-graduate
+  description: Alumni
 
 mascot:
   icon: fa-solid fa-dog
