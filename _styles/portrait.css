@@ -53,7 +53,7 @@
   width: 100%;
   margin-bottom: 20px;
   aspect-ratio: 1/1;
-  border-radius: 999px;
+  border-radius: var(--rounded);
   object-fit: cover;
   box-shadow: var(--shadow);
 }
@@ -70,6 +70,10 @@
 
 .portrait[data-style=tiny] .portrait-description,
 .portrait[data-style=tiny] .portrait-affiliation {
+  display: none;
+}
+
+.portrait[data-no-image=true] .icon {
   display: none;
 }
 
