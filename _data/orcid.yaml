@@ -1,3 +1,3 @@
 # Optional ORCID import list for citation updates.
 # Keep empty unless automatic import is desired.
-[]
+- orcid: 0000-0002-7156-4714
