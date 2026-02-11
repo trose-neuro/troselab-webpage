@@ -9,6 +9,17 @@
   {% assign banner_images = "images/banner/twitter1500x500.jpg|images/banner/background.jpg|images/banner/photo.jpg|images/banner/g2.jpg|images/banner/multilevel spines.jpg|images/banner/tdtomatoGGsliceEPI.jpg|images/banner/binocular axons VCElement 1@4x-100.jpg|images/banner/hippocampus ca1.jpg|images/banner/Chiams LGN.jpg" | split: "|" %}
   {% assign image = banner_images | first %}
 {% endif %}
+{% assign image_optimized_1500 = image
+  | regex_replace: "^images/", "images/optimized/"
+  | regex_replace: "\\.[^.]+$", "-1500.webp"
+  | file_exists
+%}
+{% assign image_optimized_1280 = image
+  | regex_replace: "^images/", "images/optimized/"
+  | regex_replace: "\\.[^.]+$", "-1280.webp"
+  | file_exists
+%}
+{% assign image = image_optimized_1500 | default: image_optimized_1280 | default: image %}
 
 {% assign svg = "images/logo.svg" | file_exists %}
 {% assign png = "images/logo.png" | file_exists %}
@@ -19,7 +30,22 @@
   class="background"
   style="--image: url('{{ image | relative_url | uri_escape }}')"
   {% if banner_images %}
-    data-banner-images='[{% for banner in banner_images %}"{{ banner | relative_url | uri_escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}]'
+    data-banner-images='[
+      {%- for banner in banner_images -%}
+        {%- assign banner_optimized_1500 = banner
+          | regex_replace: "^images/", "images/optimized/"
+          | regex_replace: "\\.[^.]+$", "-1500.webp"
+          | file_exists
+        -%}
+        {%- assign banner_optimized_1280 = banner
+          | regex_replace: "^images/", "images/optimized/"
+          | regex_replace: "\\.[^.]+$", "-1280.webp"
+          | file_exists
+        -%}
+        {%- assign banner_selected = banner_optimized_1500 | default: banner_optimized_1280 | default: banner -%}
+        "{{ banner_selected | relative_url | uri_escape }}"{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ]'
   {% endif %}
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"

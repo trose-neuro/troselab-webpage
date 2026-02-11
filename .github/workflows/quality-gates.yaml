@@ -1,0 +1,81 @@
+name: quality-gates
+run-name: quality gates
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality-gates:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout pull request branch contents
+        if: github.event.pull_request != null
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Checkout current branch contents
+        if: github.event.pull_request == null
+        uses: actions/checkout@v4
+
+      - name: Install Ruby packages
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Build site for checks
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build
+
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress "_site/**/*.html"
+          fail: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: tools/quality/package-lock.json
+
+      - name: Install quality dependencies
+        run: npm ci --prefix tools/quality
+
+      - name: Install Playwright Chromium
+        run: npx --prefix tools/quality playwright install --with-deps chromium
+
+      - name: Start local static server
+        run: |
+          python3 -m http.server --directory _site 4173 >/tmp/quality-http.log 2>&1 &
+          echo $! > /tmp/quality-http.pid
+
+      - name: Accessibility and contrast check
+        run: node tools/quality/check_accessibility.mjs http://127.0.0.1:4173
+
+      - name: Dark/light screenshot diff
+        run: node tools/quality/screenshot_diff.mjs http://127.0.0.1:4173 artifacts/quality-screenshots
+
+      - name: Upload screenshot diff artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-screenshots
+          path: artifacts/quality-screenshots
+
+      - name: Stop local static server
+        if: always()
+        run: |
+          if [ -f /tmp/quality-http.pid ]; then
+            kill "$(cat /tmp/quality-http.pid)" || true
+          fi

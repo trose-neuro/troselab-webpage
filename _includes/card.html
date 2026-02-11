@@ -1,5 +1,9 @@
 {{ " " }}
 <div class="card" data-style="{{ include.style }}">
+  {% assign card_sizes = "(max-width: 640px) calc(100vw - 40px), 350px" %}
+  {% if include.style == "small" %}
+    {% assign card_sizes = "(max-width: 640px) calc(100vw - 40px), 260px" %}
+  {% endif %}
   <a
     {% if include.link %}
       href="{{ include.link | relative_url | uri_escape }}"
@@ -7,12 +11,12 @@
     aria-label="{{ include.title | default: "card link" | regex_strip }}"
     class="card-image"
   >
-    <img
-      src="{{ include.image | relative_url | uri_escape }}"
-      alt="{{ include.title | default: "card image" | regex_strip }}"
-      loading="lazy"
-      {% include fallback.html %}
-    >
+    {%
+      include responsive-image.html
+      image=include.image
+      alt=include.title
+      sizes=card_sizes
+    %}
   </a>
 
   <div class="card-text">
@@ -38,6 +42,14 @@
       <p>
         {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
       </p>
+    {% endif %}
+
+    {% if include.buttons and include.buttons.size > 0 %}
+      <div class="card-links">
+        {% for button in include.buttons %}
+          {% include button.html type=button.type text=button.text link=button.link style=button.style %}
+        {% endfor %}
+      </div>
     {% endif %}
 
     {% if include.tags or include.repo %}

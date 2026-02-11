@@ -1,0 +1,53 @@
+name: optimize-images
+run-name: optimize images
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - images/banner/**
+      - images/miini2prose.JPG
+      - tools/optimize_images.py
+      - tools/requirements.txt
+      - .github/workflows/optimize-images.yaml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout branch contents
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: tools/requirements.txt
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade --requirement tools/requirements.txt
+
+      - name: Optimize images
+        run: python tools/optimize_images.py
+
+      - name: Check if optimized files changed
+        id: changed
+        uses: tj-actions/verify-changed-files@v18
+        with:
+          files: |
+            images/optimized/**
+
+      - name: Commit optimized images
+        if: steps.changed.outputs.files_changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Optimize site images"

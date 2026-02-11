@@ -48,3 +48,59 @@ How it works:
 - `.github/workflows/on-schedule.yaml` runs daily.
 - `.github/workflows/update-citations.yaml` regenerates `_data/citations.yaml` and commits changes automatically.
 - The publications page reads from that generated citations file.
+- Rendering hides duplicate preprint/final pairs when both share the same normalized title, keeping the best final journal entry.
+
+## Image Optimization Pipeline
+
+Large banner and project images are optimized into responsive JPG/WebP variants.
+
+Run locally:
+```bash
+python3 -m pip install --upgrade --requirement tools/requirements.txt
+python3 tools/optimize_images.py
+```
+
+Generated outputs:
+- `images/optimized/banner/*`
+- `images/optimized/miini2prose-*`
+
+Automation:
+- `.github/workflows/optimize-images.yaml` runs on pushes that change source images or optimization tooling and commits updated optimized files.
+
+## One-Command News Posts
+
+Create a dated news post template with one command:
+
+```bash
+./tools/new_news_post.py "Your news title"
+```
+
+This creates `_posts/YYYY-MM-DD-your-news-title.md` with front matter and starter content.
+
+Optional flags:
+- `--tags "news,publication"`
+- `--author "Your Name"`
+- `--date YYYY-MM-DD`
+- `--slug custom-slug`
+
+## PR Quality Gates
+
+Pull requests now run automated quality checks:
+- link check on generated `_site` HTML
+- accessibility/contrast checks (Axe, including color-contrast)
+- dark/light screenshot diff with artifact upload
+
+Workflow files:
+- `.github/workflows/quality-gates.yaml`
+- `.github/workflows/on-pull-request.yaml`
+
+## Featured News On Homepage
+
+Homepage now includes an optional Featured News block showing latest posts.
+
+Toggle in `_config.yaml`:
+```yaml
+featured_news:
+  enabled: true
+  limit: 3
+```

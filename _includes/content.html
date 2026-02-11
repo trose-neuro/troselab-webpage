@@ -18,6 +18,17 @@
     | regex_scan: "<background>(.*?)</background>"
     | default: nil
   %}
+  {% assign image_optimized_1500 = image
+    | regex_replace: "^images/", "images/optimized/"
+    | regex_replace: "\\.[^.]+$", "-1500.webp"
+    | file_exists
+  %}
+  {% assign image_optimized_1280 = image
+    | regex_replace: "^images/", "images/optimized/"
+    | regex_replace: "\\.[^.]+$", "-1280.webp"
+    | file_exists
+  %}
+  {% assign image = image_optimized_1500 | default: image_optimized_1280 | default: image %}
   {% assign size = section
     | regex_scan: "<size>(.*?)</size>"
     | default: "page"

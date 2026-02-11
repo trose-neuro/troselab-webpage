@@ -67,6 +67,92 @@ module Jekyll
       }
     end
 
+    def normalize_citation_title(title)
+      title
+        .to_s
+        .downcase
+        .gsub(/[^a-z0-9]+/, " ")
+        .gsub(/\s+/, " ")
+        .strip
+    end
+
+    def preprint_like_citation(citation)
+      keywords = [
+        "openrxiv",
+        "biorxiv",
+        "medrxiv",
+        "arxiv",
+        "research square",
+        "preprint",
+      ]
+      haystack = [
+        citation["publisher"],
+        citation["id"],
+        citation["type"],
+        citation["link"],
+      ]
+        .map(&:to_s)
+        .join(" ")
+        .downcase
+
+      return keywords.any?{ |keyword| haystack.include? keyword }
+    end
+
+    def citation_score(citation)
+      score = 0
+      id = citation["id"].to_s.downcase
+      publisher = citation["publisher"].to_s.downcase
+      date_digits = citation["date"].to_s.gsub(/[^0-9]/, "")
+
+      score += 100 if id.start_with?("doi:")
+      score += 40 unless preprint_like_citation(citation)
+      score += 15 unless publisher.empty?
+      score += date_digits[0, 8].to_i
+
+      return score
+    end
+
+    # Hide duplicate preprint/final pairs by title while keeping the best final version.
+    # Keep all entries when there is no clear preprint+final pairing.
+    def dedupe_citations(data)
+      if not data.is_a?(Array)
+        return data
+      end
+
+      groups = Hash.new{ |hash, key| hash[key] = [] }
+      data.each_with_index do |item, index|
+        next if not item.is_a?(Hash)
+        next if item["keep_duplicate"] == true
+
+        title = normalize_citation_title(item["title"])
+        next if title.empty?
+
+        groups[title].append([item, index])
+      end
+
+      drop_indexes = {}
+
+      groups.each_value do |entries|
+        next if entries.length < 2
+
+        preprints, finals = entries.partition{ |entry| preprint_like_citation(entry[0]) }
+        next if preprints.empty? or finals.empty?
+
+        best_final = finals.max_by{ |entry| citation_score(entry[0]) }
+        best_index = best_final[1]
+
+        preprints.each do |entry|
+          drop_indexes[entry[1]] = true if entry[1] != best_index
+        end
+      end
+
+      filtered = []
+      data.each_with_index do |item, index|
+        filtered.append(item) unless drop_indexes[index]
+      end
+      return filtered
+    end
+
     # from css text, find font family definitions and construct google font url
     def google_fonts(css)
       names = regex_scan(css, '--\S*:\s*"(.*)",?.*;', false, true).sort.uniq

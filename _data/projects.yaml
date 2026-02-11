@@ -107,7 +107,16 @@
   link: https://github.com/trose-neuro/adamacs_documentation
   description: |
     Data management, processing, and database infrastructure for collaborative neurophysiology and open workflow reuse.
-    Core repositories: [adamacs_ingest](https://github.com/trose-neuro/adamacs_ingest) and [adamacs_analysis](https://github.com/trose-neuro/adamacs_analysis).
+  buttons:
+    - type: docs
+      text: Documentation
+      link: https://github.com/trose-neuro/adamacs_documentation
+    - type: source
+      text: adamacs_ingest
+      link: https://github.com/trose-neuro/adamacs_ingest
+    - type: source
+      text: adamacs_analysis
+      link: https://github.com/trose-neuro/adamacs_analysis
   tags:
     - data management
     - open science

@@ -12,6 +12,10 @@ links:
   github: trose-neuro
   bluesky: trose-neuro.bsky.social
 
+featured_news:
+  enabled: true
+  limit: 3
+
 ### jekyll settings
 
 # front matter defaults

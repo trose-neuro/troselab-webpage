@@ -1,5 +1,16 @@
 {% assign image = page.footer | default: site.footer %}
 {% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
+{% assign image_optimized_1500 = image
+  | regex_replace: "^images/", "images/optimized/"
+  | regex_replace: "\\.[^.]+$", "-1500.webp"
+  | file_exists
+%}
+{% assign image_optimized_1280 = image
+  | regex_replace: "^images/", "images/optimized/"
+  | regex_replace: "\\.[^.]+$", "-1280.webp"
+  | file_exists
+%}
+{% assign image = image_optimized_1500 | default: image_optimized_1280 | default: image %}
 
 <footer
   class="background"

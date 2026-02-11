@@ -1,0 +1,66 @@
+{% assign image = include.image %}
+{% assign optimized_stem = image
+  | regex_replace: "^images/", "images/optimized/"
+  | regex_replace: "\\.[^.]+$", ""
+%}
+{% assign widths = "480|960|1280|1500|1600|2200" | split: "|" %}
+
+{% assign fallback_1600 = optimized_stem | append: "-1600.jpg" | file_exists %}
+{% assign fallback_1500 = optimized_stem | append: "-1500.jpg" | file_exists %}
+{% assign fallback_1280 = optimized_stem | append: "-1280.jpg" | file_exists %}
+{% assign fallback_960 = optimized_stem | append: "-960.jpg" | file_exists %}
+{% assign fallback_480 = optimized_stem | append: "-480.jpg" | file_exists %}
+{% assign fallback = fallback_1600
+  | default: fallback_1500
+  | default: fallback_1280
+  | default: fallback_960
+  | default: fallback_480
+  | default: image
+%}
+
+{% assign has_webp = false %}
+{% capture webp_srcset %}
+  {% for width in widths %}
+    {% assign webp_candidate = optimized_stem | append: "-" | append: width | append: ".webp" | file_exists %}
+    {% if webp_candidate %}
+      {% if has_webp %}, {% endif %}
+      {{ webp_candidate | relative_url | uri_escape }} {{ width }}w
+      {% assign has_webp = true %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign webp_srcset = webp_srcset | strip %}
+
+{% assign has_jpg = false %}
+{% capture jpg_srcset %}
+  {% for width in widths %}
+    {% assign jpg_candidate = optimized_stem | append: "-" | append: width | append: ".jpg" | file_exists %}
+    {% if jpg_candidate %}
+      {% if has_jpg %}, {% endif %}
+      {{ jpg_candidate | relative_url | uri_escape }} {{ width }}w
+      {% assign has_jpg = true %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign jpg_srcset = jpg_srcset | strip %}
+
+<picture>
+  {% if has_webp %}
+    <source type="image/webp" srcset="{{ webp_srcset }}" {% if include.sizes %}sizes="{{ include.sizes }}"{% endif %}>
+  {% endif %}
+  {% if has_jpg %}
+    <source type="image/jpeg" srcset="{{ jpg_srcset }}" {% if include.sizes %}sizes="{{ include.sizes }}"{% endif %}>
+  {% endif %}
+  <img
+    src="{{ fallback | relative_url | uri_escape }}"
+    {% if include.class %}
+      class="{{ include.class }}"
+    {% endif %}
+    {% if include.style %}
+      style="{{ include.style }}"
+    {% endif %}
+    alt="{{ include.alt | default: "image" | regex_strip }}"
+    loading="{{ include.loading | default: "lazy" }}"
+    {% include fallback.html %}
+  >
+</picture>

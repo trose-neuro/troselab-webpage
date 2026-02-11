@@ -18,6 +18,8 @@ header: images/banner/twitter1500x500.jpg
 Stability is a central challenge for the brain. Neural circuits must adapt while preserving reliable perception, memory, and action.
 We study the circuit mechanisms that stabilize computation during passive experience and active behavior.
 
+{% include featured-news.html %}
+
 {% include cols.html
 problem="
 ### Problem

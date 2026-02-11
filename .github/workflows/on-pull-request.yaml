@@ -18,6 +18,10 @@ jobs:
     uses: ./.github/workflows/update-citations.yaml
     secrets: inherit
 
+  quality-gates:
+    needs: update-citations
+    uses: ./.github/workflows/quality-gates.yaml
+
   build-preview:
     needs: update-citations
     uses: ./.github/workflows/build-preview.yaml

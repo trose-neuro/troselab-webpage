@@ -1,0 +1,27 @@
+{% assign enabled = site.featured_news.enabled | is_nil: false %}
+{% if enabled and site.posts.size > 0 %}
+  {% assign limit = site.featured_news.limit | default: 3 %}
+
+  <div class="featured-news">
+    <div class="featured-news-header">
+      <p class="featured-news-title">Featured News</p>
+      <a class="featured-news-link-all" href="{{ "blog" | relative_url }}">All News</a>
+    </div>
+
+    <div class="featured-news-items">
+      {% for post in site.posts limit: limit %}
+        <article class="featured-news-item">
+          <a href="{{ post.url | relative_url }}" class="featured-news-link">
+            {{ post.title }}
+          </a>
+          <time
+            class="featured-news-date"
+            datetime="{{ post.date | date_to_xmlschema }}"
+          >
+            {{ post.date | date: "%d %b %Y" }}
+          </time>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
