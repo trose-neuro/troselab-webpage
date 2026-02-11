@@ -1,7 +1,7 @@
 ---
 ---
 
-# Rose Group
+# Rose Group - new webpage test
 
 We study **circuit mechanisms of behavior** with a focus on visual perception, learning, and memory.
 Our work addresses how neural representations remain stable enough for reliable behavior while circuits remain plastic.
