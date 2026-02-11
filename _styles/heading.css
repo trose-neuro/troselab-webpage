@@ -4,47 +4,54 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 40px 0 20px 0;
+  margin: 2rem 0 1rem 0;
   font-family: var(--heading);
-  font-weight: var(--semi-bold);
+  font-weight: var(--bold);
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-wrap: balance;
 }
 
 h1 {
-  margin: 40px 0;
-  font-size: 1.6rem;
-  font-weight: var(--regular);
-  text-transform: uppercase;
+  margin: 0.8rem 0 1.6rem;
+  font-size: clamp(2rem, 4.8vw, 3rem);
+  font-weight: var(--bold);
+  text-transform: none;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.6rem;
-  padding-bottom: 5px;
-  border-bottom: solid 1px var(--light-gray);
-  font-weight: var(--regular);
+  position: relative;
+  margin-top: 2.6rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px var(--border);
+  font-weight: var(--semi-bold);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 h5 {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 :where(h1, h2, h3, h4, h5, h6) > .icon {
-  margin-right: 1em;
-  color: var(--light-gray);
+  margin-right: 0.5em;
+  color: var(--primary);
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=heading.css.map */

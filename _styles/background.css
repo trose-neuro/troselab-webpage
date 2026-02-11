@@ -1,8 +1,10 @@
 .background {
   position: relative;
-  background: var(--background);
+  overflow: hidden;
+  background: var(--surface);
   color: var(--text);
-  z-index: 1;
+  isolation: isolate;
+  z-index: 0;
 }
 
 .background:before {
@@ -13,7 +15,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  opacity: 0.25;
+  filter: saturate(0.9);
+  opacity: 0.16;
+  z-index: -2;
+}
+
+.background:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--surface-veil), transparent 72%);
   z-index: -1;
 }
 

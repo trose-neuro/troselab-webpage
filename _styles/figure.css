@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  margin: 40px 0;
+  margin: clamp(18px, 4vw, 40px) 0;
 }
 
 .figure-image {
@@ -12,12 +12,17 @@
 }
 
 .figure-image img {
+  display: block;
   border-radius: var(--rounded);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-strong);
 }
 
 .figure-caption {
+  max-width: 78ch;
+  color: var(--gray);
+  font-size: 0.95rem;
   font-style: italic;
   text-align: center;
 }

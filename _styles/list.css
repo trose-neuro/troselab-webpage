@@ -1,18 +1,19 @@
 ul,
 ol {
-  margin: 20px 0;
-  padding-left: 40px;
+  margin: 1rem 0;
+  padding-left: 1.4rem;
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: disc;
 }
 
 li {
-  margin: 5px 0;
-  padding-left: 10px;
-  text-align: justify;
-  line-height: var(--spacing);
+  margin: 0.45rem 0;
+  padding-left: 0.35rem;
+  color: var(--dark-gray);
+  text-align: left;
+  line-height: 1.65;
 }
 li ul,
 li ol {

@@ -4,17 +4,25 @@
 
 .post-excerpt {
   display: flex;
-  margin: 20px 0;
-  border-radius: var(--rounded);
-  background: var(--background);
+  margin: 16px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--rounded-lg);
+  background: var(--surface);
   overflow: hidden;
   box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.post-excerpt:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
 }
 
 .post-excerpt-image {
   position: relative;
   width: 200px;
   flex-shrink: 0;
+  background: var(--surface-alt);
 }
 
 .post-excerpt-image img {
@@ -28,8 +36,8 @@
 .post-excerpt-text {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px 30px;
+  gap: 16px;
+  padding: 18px 22px 20px;
   text-align: left;
 }
 
@@ -39,7 +47,10 @@
 
 .post-excerpt-text > a:first-child {
   width: 100%;
-  font-weight: var(--semi-bold);
+  font-family: var(--heading);
+  font-size: 1.2rem;
+  font-weight: var(--bold);
+  text-decoration: none;
 }
 
 .post-excerpt-text > div {

@@ -1,16 +1,23 @@
 input[type=text] {
   width: 100%;
-  height: 40px;
+  height: 44px;
   margin: 0;
-  padding: 5px 10px;
-  border: solid 1px var(--light-gray);
-  border-radius: var(--rounded);
-  background: var(--background);
+  padding: 0.55rem 0.75rem;
+  border: solid 1px var(--border);
+  border-radius: var(--rounded-sm);
+  background: var(--surface);
   color: var(--text);
   font-family: inherit;
   font-size: inherit;
   appearance: none;
   box-shadow: var(--shadow);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+input[type=text]:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--focus);
 }
 
 /*# sourceMappingURL=textbox.css.map */

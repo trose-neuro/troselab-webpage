@@ -10,36 +10,46 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   max-width: calc(100% - 5px - 5px);
-  margin: 5px;
-  padding: 8px 15px;
-  border: none;
-  border-radius: var(--rounded);
+  margin: 4px;
+  padding: 0.58rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
   background: var(--primary);
-  color: var(--background);
+  color: var(--surface);
   text-align: center;
   font: inherit;
   font-family: var(--heading);
   font-weight: var(--semi-bold);
+  letter-spacing: 0.01em;
   text-decoration: none;
   vertical-align: middle;
   appearance: none;
-  transition: background var(--transition), color var(--transition);
+  box-shadow: var(--shadow);
+  transition: background var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
 .button:hover {
   background: var(--text);
-  color: var(--background);
+  color: var(--surface);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-strong);
 }
 
 .button[data-style=bare] {
   padding: 5px;
   background: none;
+  border-color: transparent;
+  box-shadow: none;
   color: var(--primary);
+  border-radius: var(--rounded-sm);
 }
 .button[data-style=bare]:hover {
   color: var(--text);
+  background: var(--secondary);
+  transform: none;
+  box-shadow: none;
 }
 
 .button[data-flip] {

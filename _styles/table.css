@@ -1,17 +1,24 @@
 table {
-  margin: 40px auto;
+  margin: clamp(18px, 4vw, 40px) auto;
+  width: 100%;
   border-collapse: collapse;
+  border-radius: var(--rounded);
+  overflow: hidden;
   overflow-wrap: anywhere;
+  box-shadow: var(--shadow);
 }
 
 th {
-  font-weight: var(--semi-bold);
+  background: var(--surface-alt);
+  font-family: var(--heading);
+  font-weight: var(--bold);
 }
 
 th,
 td {
-  padding: 10px 15px;
-  border: solid 1px var(--light-gray);
+  padding: 0.65rem 0.8rem;
+  border: solid 1px var(--border);
+  text-align: left;
 }
 
 /*# sourceMappingURL=table.css.map */
