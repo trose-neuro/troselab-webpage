@@ -1,0 +1,4 @@
+# Optional Google Scholar import list for citation updates.
+# Requires GOOGLE_SCHOLAR_API_KEY in GitHub Actions secrets.
+
+- gsid: 7qngqfIAAAAJ
