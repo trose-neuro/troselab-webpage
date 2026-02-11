@@ -15,7 +15,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  opacity: 0.1;
+  opacity: 0.16;
   z-index: -2;
 }
 
@@ -24,8 +24,16 @@
   position: absolute;
   inset: 0;
   background: var(--surface-veil);
-  opacity: 0.92;
+  opacity: 0.84;
   z-index: -1;
+}
+
+header.background:before {
+  opacity: 0.5;
+}
+
+header.background:after {
+  opacity: 0.62;
 }
 
 /*# sourceMappingURL=background.css.map */
