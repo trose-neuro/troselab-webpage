@@ -1,94 +1,47 @@
 ---
 ---
 
-# Lab Website Template
+# Rose Group
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
+We study **circuit mechanisms of behavior** with a focus on visual perception, learning, and memory.
+Our work addresses how neural representations remain stable enough for reliable behavior while circuits remain plastic.
 
-{%
-  include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
-%}
-{%
-  include button.html
-  type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
-%}
+{% include button.html type="website" text="Current Site" link="https://www.troselab.de" %}
+{% include button.html type="github" text="GitHub" link="https://github.com/trose-neuro" %}
+{% include button.html type="email" text="Contact" link="mailto:tobias.rose@ukbonn.de" %}
 
 {% include section.html %}
 
-## Highlights
+## Research Focus
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our group investigates the stability-plasticity conundrum across the visual system, retrosplenial cortex, and hippocampal formation.
+We combine longitudinal synapse- and circuit-level optophysiology with behavior in ecologically relevant settings.
 
-{%
-  include button.html
-  link="research"
-  text="See our publications"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
+{% include button.html link="research" text="Read research themes" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="research"
-  title="Our Research"
-  text=text
-%}
+{% include feature.html image="images/photo.jpg" link="research" title="Current Research" text=text %}
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+See selected papers and links to journal pages.
+A complete publication list remains available on the legacy site and can be imported here in the next step.
 
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
+{% include button.html link="publications" text="Browse publications" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
-  text=text
-%}
+{% include feature.html image="images/background.jpg" link="publications" title="Publications" flip=true style="bare" text=text %}
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Meet current members and alumni.
 
-{%
-  include button.html
-  link="team"
-  text="Meet our team"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
+{% include button.html link="team" text="Meet the team" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="team"
-  title="Our Team"
-  text=text
-%}
+{% include feature.html image="images/logo.jpg" link="team" title="Team" text=text %}

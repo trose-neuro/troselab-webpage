@@ -1,47 +1,49 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: ADAMACS Documentation
+  subtitle: Central pipeline and operations docs
+  group: featured
+  image: images/background.jpg
+  link: https://adamacs-documentation.readthedocs.io
+  description: ReadTheDocs manual for ingest, analysis, infrastructure, and troubleshooting.
+  tags:
+    - documentation
+
+- title: ADAMACS Ingest
+  subtitle: Ingest-first pipeline repository
   group: featured
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-
-- title: Cool Package
-  subtitle: a subtitle
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-    - publication
-
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  link: https://github.com/SFB1089/adamacs_ingest
+  description: Session registration, GUI workflow, and task insertion for the ADAMACS pipeline.
   tags:
     - software
 
-- title: Cool Web Server
-  subtitle: a subtitle
+- title: ADAMACS Analysis
+  subtitle: Student-facing analysis repository
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  link: https://github.com/SFB1089/adamacs_analysis
+  description: Querying workflows, analysis utilities, and schema-oriented notebooks.
   tags:
     - software
+
+- title: ADAMACS Legacy Monorepo
+  subtitle: Historical source context
+  image: images/logo.jpg
+  link: https://github.com/SFB1089/adamacs
+  description: Legacy repository with historical setup context and migration references.
+  tags:
+    - software
+
+- title: DataJoint
+  subtitle: Relational workflow engine
+  image: images/logo.jpg
+  link: https://www.datajoint.com/
+  description: Data pipeline framework used throughout group infrastructure and analysis workflows.
+  tags:
+    - data
+
+- title: Troselab Main Website
+  subtitle: Current public lab website
+  image: images/background.jpg
+  link: https://www.troselab.de
+  description: Legacy WordPress-based lab website currently being modernized.
+  tags:
+    - website

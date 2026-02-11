@@ -1,17 +1,15 @@
 ---
-title: Projects
+title: Resources
 nav:
-  order: 2
-  tooltip: Software, datasets, and more
+  order: 4
+  tooltip: Code, data workflows, and infrastructure
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %}Resources
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Code repositories and infrastructure resources used by the group.
 
-{% include tags.html tags="publication, resource, website" %}
-
+{% include tags.html tags="software, data, documentation" %}
 {% include search-info.html %}
 
 {% include section.html %}

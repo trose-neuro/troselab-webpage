@@ -1,32 +1,58 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17228741.svg)](https://doi.org/10.5281/zenodo.17228741)
+# troselab-webpage
 
-<h1 align="center">Lab Website Template</h1>
-<p align="center">
-<img height="200" src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/images/share.jpg?raw=true" alt="Lab Website Template">
-</p>
+Draft replacement for the legacy WordPress-based Troselab website.
 
-Lab Website Template (LWT) is an easy-to-use, flexible website template for labs.
-Spend less time worrying about managing a website and citations, and more time running your lab.
+This repository is scaffolded from [greenelab/lab-website-template](https://github.com/greenelab/lab-website-template) and adapted with current content from:
+- [www.troselab.de](https://www.troselab.de)
+- [rose-group.ieecr-bonn.de/current_research/current-research](http://rose-group.ieecr-bonn.de/current_research/current-research/)
+- [rose-group.ieecr-bonn.de/member](http://rose-group.ieecr-bonn.de/member/)
+- [rose-group.ieecr-bonn.de/publication](http://rose-group.ieecr-bonn.de/publication/)
 
-👇👇 **Get Started** 👇👇
+## Why this stack
 
-[**Documentation**](https://greene-lab.gitbook.io/lab-website-template-docs)
+- Purpose-built for research labs
+- Markdown-first content editing
+- Git-based review + versioning
+- Easy static deployment (GitHub Pages, Netlify, self-hosted Nginx)
+- Good publication/content primitives
 
-## Key Features
+See:
+- `TEMPLATE_COMPARISON.md`
+- `MIGRATION_FROM_WORDPRESS.md`
 
-- 🤖 Based on Git, GitHub, and Jekyll.
-- 📜 Automatically generated citations from simple identifiers (DOI, PubMed, ORCID, and many more) using Manubot. E.g. `doi:1234/5678` -> `title`, `authors`, `publisher`, `date`, etc.
-- 🧱 A comprehensive and flexible suite of pre-made components (building blocks) for structuring and styling your website:
-  - Formatted tables, code blocks, figures, and other basic elements.
-  - Citations with thumbnails and other rich details.
-  - List large sets of data with flexible filters and components.
-  - ...many more
-- 👁️ Automatic pull request previews.
-- ⚙️ Easy and automated configuration.
-- 👥 Team member pages with bios, roles, and social media links.
-- 🖋️ Blog posts with tags and rich content.
-- 📱 Works and looks good on desktop and mobile.
-- 🤝 Great documentation and support (if we do say so ourselves).
-- ... and much more!
+## Quick start
 
-![GitHub last commit](https://img.shields.io/github/last-commit/greenelab/lab-website-template)
+Prerequisite:
+- Ruby `>= 3.0` (Gemfile.lock currently expects Bundler `2.5.6`)
+
+```bash
+bundle install
+bundle exec jekyll serve --livereload
+```
+
+Open:
+- http://localhost:4000
+
+## Current structure
+
+- `index.md` homepage
+- `research/` research themes
+- `publications/` selected publications
+- `team/` members and alumni
+- `projects/` resources
+- `blog/` news
+- `contact/` contact details
+- `_members/` member profiles
+- `_data/projects.yaml` resource cards
+
+## Deployment options
+
+- GitHub Pages (simplest managed hosting)
+- Netlify (preview builds and easy domain wiring)
+- Self-hosted static (Nginx/Caddy + rsync/CI deploy)
+
+Recommended production flow:
+1. Keep editing here in Git.
+2. Build static output with CI.
+3. Serve built files from your own server.
+4. Point `www.troselab.de` DNS to the new target after validation.
