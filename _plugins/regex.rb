@@ -4,6 +4,7 @@ module Jekyll
   module RegexFilters
     # search string for regex capture group, return first or all matches
     def regex_scan(string, search, multi = false, all = false)
+      return "" if string.nil?
       regex = multi ? /#{search}/m : /#{search}/
       matches = string.scan(regex).flatten
       if matches.length
@@ -15,11 +16,13 @@ module Jekyll
 
     # find regex capture group in string and replace 
     def regex_replace(string, search, replace)
+      return "" if string.nil?
       return string.gsub(/#{search}/m, replace)
     end
 
     # strip all non-letter and non-number characters from string
     def regex_strip(string)
+      return "" if string.nil?
       return string.gsub(/[^\p{L}\p{N}.,;:-]/u, " ").gsub(/\s+/, " ").strip
     end
   end
