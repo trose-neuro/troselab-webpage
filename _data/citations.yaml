@@ -1,3 +1,438 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-[]
+- id: doi:10.1146/annurev-vision-101322-012348
+  title: 'The Role of Layer 6 Corticothalamic Circuits in Vision: Plasticity, Sensory
+    Processing, and Behavior'
+  authors:
+  - Steffen Katzner
+  - Tobias Rose
+  - Tatjana Tchumatchenko
+  - Laura Busse
+  publisher: Annual Review of Vision Science
+  date: '2025-09-17'
+  link: https://doi.org/hbn7q5
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41467-024-53326-x
+  title: Sensory experience steers representational drift in mouse visual cortex
+  authors:
+  - Joel Bauer
+  - Uwe Lewin
+  - Elizabeth Herbert
+  - Julijana Gjorgjieva
+  - Carl E. Schoonover
+  - Andrew J. P. Fink
+  - Tobias Rose
+  - Tobias Bonhoeffer
+  - "Mark H\xFCbener"
+  publisher: Nature Communications
+  date: '2024-10-23'
+  link: https://doi.org/hbn7q6
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.neuron.2024.09.016
+  title: Feedback needs experience
+  authors:
+  - Leon Kremers
+  - Tobias Rose
+  publisher: Neuron
+  date: '2024-10-01'
+  link: https://doi.org/hbn7q7
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2023.09.22.558966
+  title: Sensory experience steers representational drift in mouse visual cortex
+  authors:
+  - Joel Bauer
+  - Uwe Lewin
+  - Elizabeth Herbert
+  - Julijana Gjorgjieva
+  - Carl Schoonover
+  - Andrew Fink
+  - Tobias Rose
+  - Tobias Bonhoeffer
+  - "Mark H\xFCbener"
+  publisher: openRxiv
+  date: '2023-09-22'
+  link: https://doi.org/hbn7q8
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1113/JP282755
+  title: How to incorporate biological insights into network models and why it matters
+  authors:
+  - "Laura Bern\xE1ez Tim\xF3n"
+  - Pierre Ekelmans
+  - Nataliya Kraynyukova
+  - Tobias Rose
+  - Laura Busse
+  - Tatjana Tchumatchenko
+  publisher: The Journal of Physiology
+  date: '2022-09-25'
+  link: https://doi.org/hbn7q9
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/cercor/bhac303
+  title: Functional and structural features of L2/3 pyramidal cells continuously covary
+    with pial depth in mouse visual cortex
+  authors:
+  - Simon Weiler
+  - Drago Guggiana Nilo
+  - Tobias Bonhoeffer
+  - "Mark H\xFCbener"
+  - Tobias Rose
+  - Volker Scheuss
+  publisher: Cerebral Cortex
+  date: '2022-08-26'
+  link: https://doi.org/hbn7rb
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.10.13.464276
+  title: Functional and structural features of L2/3 pyramidal cells continuously covary
+    with pial depth in mouse visual cortex
+  authors:
+  - Simon Weiler
+  - Drago Guggiana Nilo
+  - Tobias Bonhoeffer
+  - "Mark H\xFCbener"
+  - Tobias Rose
+  - Volker Scheuss
+  publisher: openRxiv
+  date: '2021-10-15'
+  link: https://doi.org/hbn7rc
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2021.09.20.461016
+  title: Functional network topography of the medial entorhinal cortex
+  authors:
+  - Horst A. Obenhaus
+  - Weijian Zong
+  - R. Irene Jacobsen
+  - Tobias Rose
+  - Flavio Donato
+  - Liangyi Chen
+  - Heping Cheng
+  - Tobias Bonhoeffer
+  - May-Britt Moser
+  - Edvard I. Moser
+  publisher: openRxiv
+  date: '2021-09-21'
+  link: https://doi.org/gsxvtz
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.neuron.2021.05.036
+  title: Limited functional convergence of eye-specific inputs in the retinogeniculate
+    pathway of the mouse
+  authors:
+  - Joel Bauer
+  - Simon Weiler
+  - Martin H.P. Fernholz
+  - David Laubender
+  - Volker Scheuss
+  - "Mark H\xFCbener"
+  - Tobias Bonhoeffer
+  - Tobias Rose
+  publisher: Neuron
+  date: '2021-08-01'
+  link: https://doi.org/gnf3bz
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.10.14.339747
+  title: Selective connectivity limits functional binocularity in the retinogeniculate
+    pathway of the mouse
+  authors:
+  - Joel Bauer
+  - Simon Weiler
+  - Martin Fernholz
+  - David Laubender
+  - Volker Scheuss
+  - "Mark H\xFCbener"
+  - Tobias Bonhoeffer
+  - Tobias Rose
+  publisher: openRxiv
+  date: '2020-10-14'
+  link: https://doi.org/hbn7rd
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.06.03.127191
+  title: Relationship between input connectivity, morphology and orientation tuning
+    of layer 2/3 pyramidal cells in mouse visual cortex
+  authors:
+  - Simon Weiler
+  - Drago Guggiana Nilo
+  - Tobias Bonhoeffer
+  - "Mark H\xFCbener"
+  - Tobias Rose
+  - Volker Scheuss
+  publisher: openRxiv
+  date: '2020-06-04'
+  link: https://doi.org/hbn7rf
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/nprot.2018.026
+  title: High-yield in vitro recordings from neurons functionally characterized in
+    vivo
+  authors:
+  - Simon Weiler
+  - Joel Bauer
+  - "Mark H\xFCbener"
+  - Tobias Bonhoeffer
+  - Tobias Rose
+  - Volker Scheuss
+  publisher: Nature Protocols
+  date: '2018-05-10'
+  link: https://doi.org/gdnszc
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.conb.2018.04.016
+  title: Experience-dependent plasticity in the lateral geniculate nucleus
+  authors:
+  - Tobias Rose
+  - Tobias Bonhoeffer
+  publisher: Current Opinion in Neurobiology
+  date: '2018-12-01'
+  link: https://doi.org/gfrvwg
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41593-017-0021-0
+  title: Lateral geniculate neurons projecting to primary visual cortex show ocular
+    dominance plasticity in adult mice
+  authors:
+  - Juliane Jaepel
+  - "Mark H\xFCbener"
+  - Tobias Bonhoeffer
+  - Tobias Rose
+  publisher: Nature Neuroscience
+  date: '2017-11-13'
+  link: https://doi.org/gcnkgg
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/nature23098
+  title: Synapses get together for vision
+  authors:
+  - Tobias Rose
+  - "Mark H\xFCbener"
+  publisher: Nature
+  date: '2017-07-01'
+  link: https://doi.org/gcvjzk
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1098/rstb.2016.0161
+  title: Variance and invariance of neuronal long-term representations
+  authors:
+  - Claudia Clopath
+  - Tobias Bonhoeffer
+  - "Mark H\xFCbener"
+  - Tobias Rose
+  publisher: 'Philosophical Transactions of the Royal Society B: Biological Sciences'
+  date: '2017-03-05'
+  link: https://doi.org/gq8g83
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1098/rstb.2016.0158
+  title: 'Integrating Hebbian and homeostatic plasticity: the current state of the
+    field and future research directions'
+  authors:
+  - Tara Keck
+  - Taro Toyoizumi
+  - Lu Chen
+  - Brent Doiron
+  - Daniel E. Feldman
+  - Kevin Fox
+  - Wulfram Gerstner
+  - Philip G. Haydon
+  - "Mark H\xFCbener"
+  - Hey-Kyoung Lee
+  - John E. Lisman
+  - Tobias Rose
+  - Frank Sengpiel
+  - David Stellwagen
+  - Michael P. Stryker
+  - Gina G. Turrigiano
+  - Mark C. van Rossum
+  publisher: 'Philosophical Transactions of the Royal Society B: Biological Sciences'
+  date: '2017-03-05'
+  link: https://doi.org/gf5m8k
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/097923
+  title: Lateral geniculate neurons show robust ocular dominance plasticity
+  authors:
+  - "Juliane J\xE4pel"
+  - "Mark H\xFCbener"
+  - Tobias Bonhoeffer
+  - Tobias Rose
+  publisher: openRxiv
+  date: '2017-01-03'
+  link: https://doi.org/gkvwdv
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1126/science.aad3358
+  title: Cell-specific restoration of stimulus preference after monocular deprivation
+    in the visual cortex
+  authors:
+  - Tobias Rose
+  - Juliane Jaepel
+  - "Mark H\xFCbener"
+  - Tobias Bonhoeffer
+  publisher: Science
+  date: '2016-06-10'
+  link: https://doi.org/f8q2m7
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/nprot.2014.195
+  title: Using pancreas tissue slices for in situ studies of islet of Langerhans and
+    acinar cell biology
+  authors:
+  - Anja Marciniak
+  - Christian M Cohrs
+  - Vasiliki Tsata
+  - Julie A Chouinard
+  - Claudia Selck
+  - Julia Stertmann
+  - Saskia Reichelt
+  - Tobias Rose
+  - Florian Ehehalt
+  - "J\xFCrgen Weitz"
+  - Michele Solimena
+  - Marjan Slak Rupnik
+  - Stephan Speier
+  publisher: Nature Protocols
+  date: '2014-11-13'
+  link: https://doi.org/gddsd2
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3389/fnmol.2014.00088
+  title: Putting a finishing touch on GECIs
+  authors:
+  - Tobias Rose
+  - Pieter M. Goltstein
+  - Ruben Portugues
+  - Oliver Griesbeck
+  publisher: Frontiers in Molecular Neuroscience
+  date: '2014-11-18'
+  link: https://doi.org/ghbdt3
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.neuron.2013.01.021
+  title: Developmental Refinement of Vesicle Cycling at Schaffer Collateral Synapses
+  authors:
+  - Tobias Rose
+  - Philipp Schoenenberger
+  - Karel Jezek
+  - "Thomas\_G. Oertner"
+  publisher: Neuron
+  date: '2013-03-01'
+  link: https://doi.org/f4rtt5
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1073/pnas.1000909107
+  title: "NMDA receptor-dependent GABA\n            <sub>B</sub>\n            receptor\
+    \ internalization via CaMKII phosphorylation of serine 867 in GABA\n         \
+    \   <sub>B1</sub>"
+  authors:
+  - Nicole Guetg
+  - Said Abdel Aziz
+  - Niklaus Holbro
+  - Rostislav Turecek
+  - Tobias Rose
+  - Riad Seddik
+  - Martin Gassmann
+  - Suzette Moes
+  - Paul Jenoe
+  - Thomas G. Oertner
+  - Emilio Casanova
+  - Bernhard Bettler
+  publisher: Proceedings of the National Academy of Sciences
+  date: '2010-07-19'
+  link: https://doi.org/bdj496
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/s11068-008-9025-8
+  title: Optimizing the spatial resolution of Channelrhodopsin-2 activation
+  authors:
+  - Philipp Schoenenberger
+  - "\xC5sa Grunditz"
+  - Tobias Rose
+  - Thomas G. Oertner
+  publisher: Brain Cell Biology
+  date: '2008-07-25'
+  link: https://doi.org/bbwbbj
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1085/jgp.200609604
+  title: "Ca2+\u2013Secretion Coupling Is Impaired in Diabetic Goto Kakizaki rats"
+  authors:
+  - Tobias Rose
+  - Suad Efendic
+  - Marjan Rupnik
+  publisher: The Journal of General Physiology
+  date: '2007-05-29'
+  link: https://doi.org/cjwk53
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/s10158-006-0030-2
+  title: Activity-dependent suppression of spontaneous spike generation in the Retzius
+    neurons of the leech Hirudo medicinalis L.
+  authors:
+  - Tobias Rose
+  - Heribert Gras
+  - "Michael H\xF6rner"
+  publisher: Invertebrate Neuroscience
+  date: '2006-10-31'
+  link: https://doi.org/cmjfpm
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.mce.2004.11.002
+  title: KATP-channels in beta-cells in tissue slices are directly modulated by millimolar
+    ATP
+  authors:
+  - S. Speier
+  - S.-B. Yang
+  - K. Sroka
+  - T. Rose
+  - M. Rupnik
+  publisher: Molecular and Cellular Endocrinology
+  date: '2005-01-01'
+  link: https://doi.org/dqtbk4
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1113/jphysiol.2005.090381
+  title: "cAMP increases Ca<sup>2+</sup>\u2010dependent exocytosis through both PKA\
+    \ and Epac2 in mouse melanotrophs from pituitary tissue slices"
+  authors:
+  - Simon Sedej
+  - Tobias Rose
+  - Marjan Rupnik
+  publisher: The Journal of Physiology
+  date: '2005-09-01'
+  link: https://doi.org/d8gfcv
+  orcid: 0000-0002-7156-4714
+  plugin: orcid.py
+  file: orcid.yaml
