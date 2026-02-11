@@ -29,11 +29,11 @@
 }
 
 header.background:before {
-  opacity: 0.5;
+  opacity: 0.36;
 }
 
 header.background:after {
-  opacity: 0.62;
+  opacity: 0.74;
 }
 
 /*# sourceMappingURL=background.css.map */
