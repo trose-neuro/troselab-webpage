@@ -16,6 +16,10 @@ $one: 500px;
 .cols > * {
   min-width: 0;
   min-height: 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--rounded);
+  background: var(--surface);
 }
 
 .cols > div > :first-child {

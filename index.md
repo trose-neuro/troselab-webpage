@@ -1,10 +1,10 @@
 ---
-header: images/share.jpg
+header: images/members/DSC_0137.jpg
 ---
 
 # Rose Group
 
-Circuit Mechanisms of Behavior
+Circuit mechanisms of behavior in a changing world
 
 {% include button.html type="website" text="Current Site" link="https://www.troselab.de" %}
 {% include button.html type="github" text="GitHub" link="trose-neuro" %}
@@ -15,25 +15,37 @@ Circuit Mechanisms of Behavior
 
 {% include section.html %}
 
-Stability is a central challenge for the brain.
-The brain must adapt to a changing world while preserving reliable perception, memory, and action.
-We study the circuit mechanisms that stabilize computation and memory during passive experience and active behavior.
+Stability is a central challenge for the brain. Neural circuits must adapt while preserving reliable perception, memory, and action.
+We study the circuit mechanisms that stabilize computation during passive experience and active behavior.
 
-Our work spans the mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from synapses to circuits and from milliseconds to months.
-We combine closed-loop behavior, longitudinal optophysiology, and computational modeling.
+{% include cols.html
+problem="
+### Problem
+How does reliable processing arise in dynamic neuronal circuits and changing sensory environments?
+"
+approach="
+### Approach
+Closed-loop behavior, longitudinal optophysiology, and computational modeling across synapses, cells, and circuits.
+"
+scope="
+### Scope
+Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from milliseconds to months.
+"
+%}
 
 ## Current Program
 
-- Long-term representational stability in visual thalamocortical circuits
-- Stabilization of spatial and contextual representations in retrosplenial cortex during learning and memory
+- Representational drift and stabilization in thalamocortical circuits
+- Spatial and contextual memory coding in retrosplenial cortex
 - Active visual orienting and peri-saccadic processing in natural vision
+- Latent learning and unsupervised cue association in cortical networks
 
 {% include section.html %}
 
 {% capture text %}
 
-Seven current projects test how stable coding emerges in dynamic circuits.
-The program combines longitudinal optophysiology, closed-loop behavior, deep modeling, and targeted perturbation.
+Seven active projects test how stable coding emerges in dynamic circuits.
+Work combines two-photon imaging, targeted perturbation, and deep receptive-field modeling.
 
 {% include button.html link="research" text="Read the full research roadmap" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
@@ -44,29 +56,29 @@ The program combines longitudinal optophysiology, closed-loop behavior, deep mod
 {% capture text %}
 
 All listed projects are current.
-They cover representational drift, memory stabilization, active vision, uncertainty-dependent drift, affordance coding, and latent learning, with shared platform development.
+They cover representational drift, memory stabilization, active vision, uncertainty-dependent drift, affordance coding, and latent learning.
 
 {% include button.html link="projects" text="Browse project portfolio" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{% include feature.html image="images/background.jpg" link="projects" title="Projects" flip=true style="bare" text=text %}
+{% include feature.html image="images/members/DSC_0189.jpg" link="projects" title="Projects" flip=true style="bare" text=text %}
 
 {% capture text %}
 
-Selected contributions on representational drift, thalamocortical plasticity, and cortical coding.
-Publication updates are linked to journal pages and the legacy archive.
+Selected papers on representational drift, thalamocortical plasticity, and circuit mechanisms of behavior.
+Entries link directly to journals and the legacy publication archive.
 
 {% include button.html link="publications" text="Browse publications" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{% include feature.html image="images/logo.jpg" link="publications" title="Publications" text=text %}
+{% include feature.html image="images/members/DSC_0149.jpg" link="publications" title="Publications" text=text %}
 
 {% capture text %}
 
 Meet current members, alumni, and lab leadership.
-The group currently operates with an international team focused on closed-loop systems neuroscience and technology development.
+The team is international, interdisciplinary, and focused on experimental and computational systems neuroscience.
 
 {% include button.html link="team" text="Meet the team" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
