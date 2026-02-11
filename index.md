@@ -86,6 +86,4 @@ The team is international, interdisciplinary, and focused on experimental and co
 
 {% endcapture %}
 
-{% include feature.html image="images/members/DSC_0185.jpg" link="team" title="Team" flip=true style="bare" text=text %}
-
-{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 800px)" %}
+{% include feature.html image="images/members/DSC_0137.jpg" link="team" title="Team" flip=true style="bare" text=text %}

@@ -15,6 +15,8 @@ We emphasize independent project ownership, open-science workflows, and hands-on
 
 {% include section.html %}
 
+{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 1100px)" %}
+
 ## Group Lead
 
 {% include list.html data="members" component="portrait" filter="role == 'pi'" %}
