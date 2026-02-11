@@ -12,7 +12,8 @@ def main(entry):
     # get api key (serp api key to access google scholar)
     api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "").strip()
     if not api_key:
-        raise Exception('No "GOOGLE_SCHOLAR_API_KEY" env var')
+        log('Skipping Google Scholar import: no "GOOGLE_SCHOLAR_API_KEY" env var', level="WARNING")
+        return []
 
     # serp api properties
     params = {
@@ -24,7 +25,8 @@ def main(entry):
     # get id from entry
     _id = get_safe(entry, "gsid", "")
     if not _id:
-        raise Exception('No "gsid" key')
+        log('Skipping Google Scholar entry: missing "gsid" key', level="WARNING")
+        return []
 
     # query api
     @log_cache
@@ -33,7 +35,11 @@ def main(entry):
         params["author_id"] = _id
         return get_safe(GoogleSearch(params).get_dict(), "articles", [])
 
-    response = query(_id)
+    try:
+        response = query(_id)
+    except Exception as e:
+        log(f'Google Scholar query failed for "{_id}": {e}', level="WARNING")
+        return []
 
     # list of sources to return
     sources = []
