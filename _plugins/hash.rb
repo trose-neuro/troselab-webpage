@@ -11,7 +11,13 @@ module Jekyll
         # substitute main string into default string and set main item
         if value.is_a?(String) and value.include?"$VALUE"
           if hash[key].is_a?(String)
-            hash[key] = value.sub"$VALUE", hash[key]
+            # If caller already supplied an absolute/schemed value (e.g. https://..., mailto:...),
+            # keep it as-is to avoid malformed links like https://github.com/https://github.com/user.
+            if hash[key].match?(/\A[a-zA-Z][a-zA-Z0-9+\-.]*:/)
+              hash[key] = hash[key]
+            else
+              hash[key] = value.sub"$VALUE", hash[key]
+            end
           end
         # set main item to default item if not defined
         else
