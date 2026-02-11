@@ -8,6 +8,12 @@ This repository is scaffolded from [greenelab/lab-website-template](https://gith
 - [rose-group.ieecr-bonn.de/member](http://rose-group.ieecr-bonn.de/member/)
 - [rose-group.ieecr-bonn.de/publication](http://rose-group.ieecr-bonn.de/publication/)
 
+## Upstream lineage
+
+- Template upstream: [greenelab/lab-website-template](https://github.com/greenelab/lab-website-template)
+- This repo tracks that source as git remote `template-upstream`.
+- Main publish target for this project: [trose-neuro/troselab-webpage](https://github.com/trose-neuro/troselab-webpage)
+
 ## Why this stack
 
 - Purpose-built for research labs
