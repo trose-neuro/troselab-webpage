@@ -2,7 +2,7 @@
 header: images/members/DSC_0137.jpg
 ---
 
-# Rose Group
+<!-- # Rose Group -->
 
 <!-- Circuit mechanisms of behavior in a changing world
 
