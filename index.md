@@ -15,8 +15,12 @@ Circuit Mechanisms of Behavior
 
 {% include section.html %}
 
-Stability is a central challenge for the brain: neural circuits must remain adaptable enough to learn from experience while preserving reliable perception, memory, and behavior.
-In the Rose Group, we study the circuit mechanisms that stabilize computation and memory across dynamic sensory environments and behavioral states.
+Stability is a central challenge for the brain.
+The brain must adapt to a changing world while preserving reliable perception, memory, and action.
+We study the circuit mechanisms that stabilize computation and memory during passive experience and active behavior.
+
+Our work spans the mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from synapses to circuits and from milliseconds to months.
+We combine closed-loop behavior, longitudinal optophysiology, and computational modeling.
 
 ## Current Program
 
@@ -28,8 +32,8 @@ In the Rose Group, we study the circuit mechanisms that stabilize computation an
 
 {% capture text %}
 
-Seven current projects targeting representational drift, natural vision, learning, and latent learning.
-The program combines longitudinal optophysiology, closed-loop behavior, deep modeling, and circuit-level perturbation.
+Seven current projects test how stable coding emerges in dynamic circuits.
+The program combines longitudinal optophysiology, closed-loop behavior, deep modeling, and targeted perturbation.
 
 {% include button.html link="research" text="Read the full research roadmap" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
@@ -39,8 +43,8 @@ The program combines longitudinal optophysiology, closed-loop behavior, deep mod
 
 {% capture text %}
 
-Current projects are organized across representational stability, memory, natural vision, and latent learning, with explicit timelines, milestones, and technology development tracks.
-This includes work on feedback stabilization, RSC memory circuits, active orienting, uncertainty-dependent drift, affordance coding, and latent learning.
+All listed projects are current.
+They cover representational drift, memory stabilization, active vision, uncertainty-dependent drift, affordance coding, and latent learning, with shared platform development.
 
 {% include button.html link="projects" text="Browse project portfolio" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 

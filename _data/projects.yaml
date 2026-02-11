@@ -4,8 +4,7 @@
   image: images/members/leon-kremers_landscape.jpg
   link: research
   description: |
-    Chronic two-photon imaging and deep nonlinear receptive-field models to test how higher-order feedback stabilizes representations across dLGN, V1, and LM.
-    Milestone target from dossier: mid-2025.
+    Chronic two-photon imaging and deep receptive-field models test how higher-order feedback stabilizes representations across dLGN, V1, and LM.
   tags:
     - representational drift
     - feedback
@@ -17,8 +16,7 @@
   image: images/members/jisoo-jung_landscape.jpg
   link: research
   description: |
-    Tests whether cortical feedback stabilizes long-term thalamic responses despite structural convergence in retinothalamic input.
-    Connected to DFG SPP 2411 support.
+    Tests whether cortical feedback stabilizes long-term dLGN responses despite structural convergence in retinothalamic input.
   tags:
     - thalamus
     - plasticity
@@ -30,8 +28,7 @@
   image: images/members/natalia-krasilshchikova_landscape.jpg
   link: research
   description: |
-    Closed-loop learning and memory paradigms with miniature two-photon imaging to study stabilization of spatial and contextual signals in retrosplenial cortex.
-    Funded in the SFB1089 context (D09).
+    Closed-loop learning and memory paradigms with miniature two-photon imaging test how spatial and contextual signals stabilize in retrosplenial cortex.
   tags:
     - retrosplenial cortex
     - learning
@@ -43,7 +40,7 @@
   image: images/members/shanqian-ma_landscape.jpg
   link: research
   description: |
-    Freely moving visual orienting assays with head-mounted imaging, gaze tracking, and pose/scene reconstruction to study peri-saccadic processing.
+    Freely moving visual orienting assays with head-mounted imaging, gaze tracking, and scene reconstruction test peri-saccadic processing.
   tags:
     - natural vision
     - orienting
@@ -54,7 +51,7 @@
   image: images/members/tobias-rose_landscape.jpg
   link: research
   description: |
-    Compares representational stability in visual cortex and hippocampus using sparse manipulation of plasticity-related genes during active and passive virtual reality.
+    Compares representational stability in visual cortex and hippocampus after sparse manipulation of plasticity-related genes during active and passive virtual reality.
   tags:
     - V1
     - CA1
@@ -65,7 +62,7 @@
   image: images/members/yoshiki-hatashita_landscape.jpg
   link: research
   description: |
-    Tests how uncertainty-dependent behavioral states and cholinergic neuromodulation regulate representational drift across scales, including spatial transcriptomics.
+    Tests how uncertainty-dependent states and cholinergic neuromodulation regulate representational drift across scales, including spatial transcriptomics.
   tags:
     - uncertainty
     - neuromodulation
@@ -76,7 +73,7 @@
   image: images/members/laura-kueck_landscape.jpg
   link: research
   description: |
-    Quantifies how RSC and V1 encode landmark utility dimensions (stability, value, salience) in gaze-contingent closed-loop navigation tasks.
+    Quantifies how RSC and V1 encode landmark utility (stability, value, salience) in gaze-contingent closed-loop navigation.
   tags:
     - affordance
     - landmarks
@@ -87,7 +84,7 @@
   image: images/members/aelton-araujo_landscape.jpg
   link: research
   description: |
-    Multisensory preconditioning in virtual reality to resolve circuit mechanisms of unsupervised cue association and transfer in cortical memory systems.
+    Multisensory preconditioning in virtual reality resolves circuit mechanisms of unsupervised cue association and transfer in cortical memory systems.
   tags:
     - latent learning
     - preconditioning
@@ -109,7 +106,7 @@
   image: images/background.jpg
   link: https://github.com/SFB1089/adamacs
   description: |
-    Data management, processing, and database infrastructure developed for collaborative neurophysiology and open workflow reuse.
+    Data management, processing, and database infrastructure for collaborative neurophysiology and open workflow reuse.
   tags:
     - data management
     - open science
@@ -120,7 +117,7 @@
   image: images/logo.jpg
   link: https://ibehave.nrw
   description: |
-    Cross-institutional research network with shared technology platforms (CADRE, iBOTS, eLAB) and whole-brain recording initiatives.
+    Cross-institutional network with shared technology platforms (CADRE, iBOTS, eLAB) and whole-brain recording initiatives.
   tags:
     - network
     - collaboration
