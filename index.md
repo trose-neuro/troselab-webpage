@@ -10,6 +10,8 @@ Our work addresses how neural representations remain stable enough for reliable 
 {% include button.html type="github" text="GitHub" link="trose-neuro" %}
 {% include button.html type="email" text="Contact" link="tobias.rose@ukbonn.de" %}
 
+{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" %}
+
 {% include section.html %}
 
 ## Research Focus
