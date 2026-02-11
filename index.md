@@ -1,14 +1,14 @@
 ---
 ---
 
-# Rose Group - new webpage test
+# Rose Group
 
 We study **circuit mechanisms of behavior** with a focus on visual perception, learning, and memory.
 Our work addresses how neural representations remain stable enough for reliable behavior while circuits remain plastic.
 
 {% include button.html type="website" text="Current Site" link="https://www.troselab.de" %}
-{% include button.html type="github" text="GitHub" link="https://github.com/trose-neuro" %}
-{% include button.html type="email" text="Contact" link="mailto:tobias.rose@ukbonn.de" %}
+{% include button.html type="github" text="GitHub" link="trose-neuro" %}
+{% include button.html type="email" text="Contact" link="tobias.rose@ukbonn.de" %}
 
 {% include section.html %}
 
