@@ -16,7 +16,7 @@
   border-radius: var(--rounded);
   overflow: hidden;
   border: 1px solid var(--border);
-  box-shadow: var(--shadow-strong);
+  box-shadow: none;
 }
 
 .figure-caption {

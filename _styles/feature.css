@@ -2,22 +2,22 @@
   display: grid;
   grid-template-columns: minmax(260px, 42%) 1fr;
   align-items: stretch;
-  gap: clamp(18px, 4vw, 44px);
-  margin: clamp(18px, 4vw, 40px) 0;
-  padding: clamp(16px, 3vw, 28px);
+  gap: clamp(16px, 3vw, 28px);
+  margin: clamp(16px, 3vw, 32px) 0;
+  padding: clamp(14px, 2.6vw, 20px);
   border: 1px solid var(--border);
-  border-radius: var(--rounded-lg);
+  border-radius: var(--rounded);
   background: var(--surface);
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .feature-image {
   width: 100%;
-  min-height: 220px;
+  min-height: 200px;
   aspect-ratio: 16/10;
-  border-radius: var(--rounded);
+  border: 1px solid var(--border);
+  border-radius: var(--rounded-sm);
   overflow: hidden;
-  box-shadow: var(--shadow-strong);
   background: var(--surface-alt);
 }
 
@@ -26,7 +26,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 320ms ease;
 }
 
 .feature-text {
@@ -38,12 +37,12 @@
 }
 
 .feature:hover .feature-image img {
-  transform: scale(1.03);
+  transform: none;
 }
 
 .feature-title {
   margin: 0 0 0.65rem !important;
-  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
   text-align: left;
   font-family: var(--heading);
   font-weight: var(--bold);

@@ -1,39 +1,39 @@
 [data-dark=false] {
   --primary: #0f766e;
-  --secondary: #d1fae5;
+  --secondary: #e2f5f1;
   --text: #0f172a;
-  --background: #f4f7fb;
-  --background-alt: #edf2f8;
-  --light-gray: #d6dee9;
+  --background: #f8fafc;
+  --background-alt: #f1f5f9;
+  --light-gray: #e2e8f0;
   --gray: #64748b;
   --dark-gray: #334155;
-  --overlay: #0f172a14;
+  --overlay: #0f172a0f;
   --surface: #ffffff;
-  --surface-alt: #f8fbff;
-  --surface-frost: #ffffffe3;
-  --surface-veil: #ffffffda;
-  --border: #d5dfeb;
-  --focus: #0f766e40;
-  --primary-soft: #0f766e66;
+  --surface-alt: #f8fafc;
+  --surface-frost: #ffffff;
+  --surface-veil: #ffffff;
+  --border: #e2e8f0;
+  --focus: #0f766e33;
+  --primary-soft: #0f766e33;
 }
 
 [data-dark=true] {
-  --primary: #34d399;
-  --secondary: #18352f;
-  --text: #e6edf6;
-  --background: #0f1722;
-  --background-alt: #121b28;
-  --light-gray: #2b3a4d;
-  --gray: #8ba1bd;
-  --dark-gray: #c2cfde;
-  --overlay: #00000050;
-  --surface: #162132;
-  --surface-alt: #1b2a3f;
-  --surface-frost: #162132e6;
-  --surface-veil: #0f1722d4;
-  --border: #2b3f58;
-  --focus: #34d3994d;
-  --primary-soft: #34d39966;
+  --primary: #2dd4bf;
+  --secondary: #15332e;
+  --text: #e2e8f0;
+  --background: #0b1220;
+  --background-alt: #0f172a;
+  --light-gray: #243244;
+  --gray: #94a3b8;
+  --dark-gray: #cbd5e1;
+  --overlay: #0000004a;
+  --surface: #111b2d;
+  --surface-alt: #13203a;
+  --surface-frost: #111b2d;
+  --surface-veil: #111b2d;
+  --border: #243244;
+  --focus: #2dd4bf40;
+  --primary-soft: #2dd4bf44;
 }
 
 :root {
@@ -50,14 +50,14 @@
   --bold: 700;
   --spacing: 1.75;
   --compact: 1.45;
-  --rounded-sm: 10px;
-  --rounded: 14px;
-  --rounded-lg: 22px;
-  --shadow: 0 8px 24px 0 var(--overlay);
-  --shadow-strong: 0 22px 48px -18px var(--overlay);
-  --transition: 180ms ease;
-  --page: 1120px;
-  --section-pad: clamp(28px, 4.5vw, 64px);
+  --rounded-sm: 8px;
+  --rounded: 12px;
+  --rounded-lg: 16px;
+  --shadow: 0 4px 16px -8px var(--overlay);
+  --shadow-strong: 0 12px 28px -18px var(--overlay);
+  --transition: 160ms ease;
+  --page: 1080px;
+  --section-pad: clamp(24px, 4vw, 56px);
 }
 
 /*# sourceMappingURL=-theme.css.map */

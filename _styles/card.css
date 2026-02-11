@@ -5,14 +5,14 @@
   flex-direction: column;
   width: 350px;
   max-width: calc(100% - 20px - 20px);
-  margin: 14px;
+  margin: 12px;
   border: 1px solid var(--border);
   background: var(--surface);
-  border-radius: var(--rounded-lg);
+  border-radius: var(--rounded);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: none;
   vertical-align: top;
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  transition: border-color var(--transition), background var(--transition);
 }
 
 .card[data-style=small] {
@@ -20,9 +20,10 @@
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-strong);
+  transform: none;
+  box-shadow: none;
   border-color: var(--primary-soft);
+  background: var(--surface-alt);
 }
 
 .card-image {
@@ -36,11 +37,6 @@
   aspect-ratio: 16/10;
   object-fit: cover;
   width: 100%;
-  transition: transform 300ms ease;
-}
-
-.card:hover .card-image img {
-  transform: scale(1.03);
 }
 
 .card-text {
@@ -48,9 +44,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   max-width: 100%;
-  padding: 18px 20px 20px;
+  padding: 16px 18px 18px;
   text-align: left;
 }
 
@@ -60,16 +56,16 @@
 
 .card-title {
   font-family: var(--heading);
-  font-size: 1.1rem;
+  font-size: 1.04rem;
   font-weight: var(--bold);
   color: var(--text);
   text-decoration: none;
 }
 
 .card-subtitle {
-  margin-top: -4px !important;
+  margin-top: -3px !important;
   color: var(--gray);
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   font-style: italic;
 }
 

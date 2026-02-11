@@ -13,11 +13,11 @@ button {
   gap: 8px;
   max-width: calc(100% - 5px - 5px);
   margin: 4px;
-  padding: 0.58rem 1rem;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  background: var(--primary);
-  color: var(--surface);
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--rounded-sm);
+  background: var(--surface);
+  color: var(--text);
   text-align: center;
   font: inherit;
   font-family: var(--heading);
@@ -26,15 +26,14 @@ button {
   text-decoration: none;
   vertical-align: middle;
   appearance: none;
-  box-shadow: var(--shadow);
-  transition: background var(--transition), color var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: none;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
 
 .button:hover {
-  background: var(--text);
-  color: var(--surface);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-strong);
+  background: var(--surface-alt);
+  color: var(--primary);
+  border-color: var(--primary-soft);
 }
 
 .button[data-style=bare] {
@@ -46,10 +45,8 @@ button {
   border-radius: var(--rounded-sm);
 }
 .button[data-style=bare]:hover {
-  color: var(--text);
-  background: var(--secondary);
-  transform: none;
-  box-shadow: none;
+  color: var(--primary);
+  background: transparent;
 }
 
 .button[data-flip] {
