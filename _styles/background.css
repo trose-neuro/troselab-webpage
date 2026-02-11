@@ -15,8 +15,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  opacity: 0.16;
+  opacity: 0;
   z-index: -2;
+  transition: opacity var(--transition);
 }
 
 .background:after {
@@ -24,16 +25,27 @@
   position: absolute;
   inset: 0;
   background: var(--surface-veil);
-  opacity: 0.84;
+  opacity: 0;
   z-index: -1;
+  transition: opacity var(--transition), background var(--transition);
 }
 
-header.background:before {
-  opacity: 0.36;
+header.background:before,
+footer.background:before {
+  opacity: var(--media-image-opacity);
 }
 
-header.background:after {
-  opacity: 0.74;
+header.background:after,
+footer.background:after {
+  opacity: var(--media-veil-opacity);
+}
+
+section.background[data-has-image=true]:before {
+  opacity: var(--media-image-opacity);
+}
+
+section.background[data-has-image=true]:after {
+  opacity: var(--media-veil-opacity);
 }
 
 /*# sourceMappingURL=background.css.map */

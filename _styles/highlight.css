@@ -1,6 +1,6 @@
 mark {
-  background: #fef08a;
-  color: #000000;
+  background: var(--secondary);
+  color: var(--text);
 }
 
 /*# sourceMappingURL=highlight.css.map */

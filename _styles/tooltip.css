@@ -1,6 +1,7 @@
 .tippy-box {
-  background: var(--background);
-  color: var(--text);
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  border: 1px solid var(--tooltip-border);
   padding: 7.5px;
   text-align: left;
   box-shadow: var(--shadow);
@@ -14,8 +15,31 @@
 .tippy-arrow:before {
   width: 10px;
   height: 10px;
-  background: var(--background);
+  background: var(--tooltip-bg);
+  border: 1px solid var(--tooltip-border);
   box-shadow: var(--shadow);
+}
+
+.tippy-box[data-dark=false] {
+  background: var(--tooltip-bg-light);
+  color: var(--tooltip-text-light);
+  border-color: var(--tooltip-border-light);
+}
+
+.tippy-box[data-dark=false] .tippy-arrow:before {
+  background: var(--tooltip-bg-light);
+  border-color: var(--tooltip-border-light);
+}
+
+.tippy-box[data-dark=true] {
+  background: var(--tooltip-bg-dark);
+  color: var(--tooltip-text-dark);
+  border-color: var(--tooltip-border-dark);
+}
+
+.tippy-box[data-dark=true] .tippy-arrow:before {
+  background: var(--tooltip-bg-dark);
+  border-color: var(--tooltip-border-dark);
 }
 
 .tippy-arrow {

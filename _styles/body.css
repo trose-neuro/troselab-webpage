@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: var(--background);
+  background: radial-gradient(1200px 640px at -10% -15%, var(--bg-glow-1), transparent 65%), radial-gradient(1000px 580px at 110% -20%, var(--bg-glow-2), transparent 68%), var(--background);
   color: var(--text);
   font-family: var(--body);
   font-size: 1.05rem;
@@ -13,6 +13,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition), color var(--transition);
 }
 
 html {
