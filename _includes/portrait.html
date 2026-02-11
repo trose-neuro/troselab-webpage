@@ -8,6 +8,7 @@
 {% endif %}
 
 {% assign type = site.data.types[member.role] %}
+{% assign show_image = member.group != "alumni" %}
 
 <div class="portrait-wrapper">
   <a
@@ -16,19 +17,22 @@
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
+    data-no-image="{% if show_image %}false{% else %}true{% endif %}"
     aria-label="{{ member.name | default: "member link" | regex_strip }}"
   >
-    {% if type %}
+    {% if type and show_image %}
       {% include icon.html icon=type.icon %}
     {% endif %}
 
-    <img
-      src="{{ member.image | relative_url | uri_escape }}"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      {% include fallback.html %}
-    >
+    {% if show_image %}
+      <img
+        src="{{ member.image | relative_url | uri_escape }}"
+        class="portrait-image"
+        alt="member portrait"
+        loading="lazy"
+        {% include fallback.html %}
+      >
+    {% endif %}
 
     {% if member.name %}
       <span class="portrait-name">
