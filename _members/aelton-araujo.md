@@ -1,6 +1,6 @@
 ---
 name: Aelton Araujo
-image: https://rose-group.ieecr-bonn.de/wp-content/uploads/2023/09/Aelton-Araujo_Website.png
+image: images/members/aelton-araujo_portrait.jpg
 role: phd
 affiliation: Rose Group
 ---

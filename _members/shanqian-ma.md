@@ -1,6 +1,6 @@
 ---
 name: Shanqian Ma
-image: https://rose-group.ieecr-bonn.de/wp-content/uploads/2024/11/Shan.jpeg
+image: images/members/shanqian-ma_portrait.jpg
 role: phd
 affiliation: Rose Group
 ---

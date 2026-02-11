@@ -1,6 +1,6 @@
 ---
 name: Tobias Rose
-image: https://rose-group.ieecr-bonn.de/wp-content/uploads/2022/05/DSC_3875-1024x642.jpeg
+image: images/members/tobias-rose_portrait.jpg
 role: pi
 affiliation: University of Bonn Medical Center
 links:
