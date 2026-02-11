@@ -7,7 +7,8 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-book" %}Publications
 
-Selected papers from the current lab website.
+Selected publications aligned with the research program described in the tenure evaluation dossier.
+The list highlights work on representational drift, thalamocortical plasticity, circuit structure-function links, and natural vision.
 
 ## 2025
 

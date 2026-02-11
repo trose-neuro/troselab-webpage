@@ -1,49 +1,127 @@
-- title: ADAMACS Documentation
-  subtitle: Central pipeline and operations docs
+- title: Project 1.1 - Feedback Alignment in Visual Cortex
+  subtitle: Goal I / Current
   group: featured
+  image: images/members/leon-kremers_landscape.jpg
+  link: research
+  description: |
+    Chronic two-photon imaging and deep nonlinear receptive-field models to test how higher-order feedback stabilizes representations across dLGN, V1, and LM.
+    Milestone target from dossier: mid-2025.
+  tags:
+    - representational drift
+    - feedback
+    - visual cortex
+
+- title: Project 1.2 - Thalamocortical Stabilization in dLGN
+  subtitle: Goal I / Current
+  group: featured
+  image: images/members/jisoo-jung_landscape.jpg
+  link: research
+  description: |
+    Tests whether cortical feedback stabilizes long-term thalamic responses despite structural convergence in retinothalamic input.
+    Connected to DFG SPP 2411 support.
+  tags:
+    - thalamus
+    - plasticity
+    - dLGN
+
+- title: Project 3 - RSC Memory Stabilization
+  subtitle: Goal II / Current
+  group: featured
+  image: images/members/natalia-krasilshchikova_landscape.jpg
+  link: research
+  description: |
+    Closed-loop learning and memory paradigms with miniature two-photon imaging to study stabilization of spatial and contextual signals in retrosplenial cortex.
+    Funded in the SFB1089 context (D09).
+  tags:
+    - retrosplenial cortex
+    - learning
+    - memory
+
+- title: Project 4 - Natural Vision and Active Orienting
+  subtitle: Goal III / Current
+  group: featured
+  image: images/members/shanqian-ma_landscape.jpg
+  link: research
+  description: |
+    Freely moving visual orienting assays with head-mounted imaging, gaze tracking, and pose/scene reconstruction to study peri-saccadic processing.
+  tags:
+    - natural vision
+    - orienting
+    - closed-loop behavior
+
+- title: Project 2 - Experience in V1 versus CA1
+  subtitle: Goal I / Current
+  image: images/members/tobias-rose_landscape.jpg
+  link: research
+  description: |
+    Compares representational stability in visual cortex and hippocampus using sparse manipulation of plasticity-related genes during active and passive virtual reality.
+  tags:
+    - V1
+    - CA1
+    - experience
+
+- title: Project 5 - Uncertainty and Neuromodulation
+  subtitle: Goal I / Planned
+  image: images/members/yoshiki-hatashita_landscape.jpg
+  link: research
+  description: |
+    Tests how uncertainty-dependent behavioral states and cholinergic neuromodulation regulate representational drift across scales, including spatial transcriptomics.
+  tags:
+    - uncertainty
+    - neuromodulation
+    - transcriptomics
+
+- title: Project 6 - Landmark Affordance Coding
+  subtitle: Goal III / Planned
+  image: images/members/laura-kueck_landscape.jpg
+  link: research
+  description: |
+    Quantifies how RSC and V1 encode landmark utility dimensions (stability, value, salience) in gaze-contingent closed-loop navigation tasks.
+  tags:
+    - affordance
+    - landmarks
+    - navigation
+
+- title: Project 7 - Latent Learning Circuits
+  subtitle: Goal IV / Planned
+  image: images/members/aelton-araujo_landscape.jpg
+  link: research
+  description: |
+    Multisensory preconditioning in virtual reality to resolve circuit mechanisms of unsupervised cue association and transfer in cortical memory systems.
+  tags:
+    - latent learning
+    - preconditioning
+    - multisensory
+
+- title: Miniature Two-Photon Platform
+  subtitle: Infrastructure
+  image: images/photo.jpg
+  link: research
+  description: |
+    Custom head-mounted and bench-top systems for longitudinal, high-throughput recordings in freely moving and head-fixed animals.
+  tags:
+    - microscopy
+    - hardware
+    - infrastructure
+
+- title: ADAMACS Data Infrastructure
+  subtitle: Collaborative Data Platform
   image: images/background.jpg
-  link: https://adamacs-documentation.readthedocs.io
-  description: ReadTheDocs manual for ingest, analysis, infrastructure, and troubleshooting.
-  tags:
-    - documentation
-
-- title: ADAMACS Ingest
-  subtitle: Ingest-first pipeline repository
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/SFB1089/adamacs_ingest
-  description: Session registration, GUI workflow, and task insertion for the ADAMACS pipeline.
-  tags:
-    - software
-
-- title: ADAMACS Analysis
-  subtitle: Student-facing analysis repository
-  image: images/photo.jpg
-  link: https://github.com/SFB1089/adamacs_analysis
-  description: Querying workflows, analysis utilities, and schema-oriented notebooks.
-  tags:
-    - software
-
-- title: ADAMACS Legacy Monorepo
-  subtitle: Historical source context
-  image: images/logo.jpg
   link: https://github.com/SFB1089/adamacs
-  description: Legacy repository with historical setup context and migration references.
+  description: |
+    Data management, processing, and database infrastructure developed for collaborative neurophysiology and open workflow reuse.
   tags:
+    - data management
+    - open science
     - software
 
-- title: DataJoint
-  subtitle: Relational workflow engine
+- title: iBehave Network and Platforms
+  subtitle: Collaborative Ecosystem
   image: images/logo.jpg
-  link: https://www.datajoint.com/
-  description: Data pipeline framework used throughout group infrastructure and analysis workflows.
+  link: https://ibehave.nrw
+  description: |
+    Cross-institutional research network with shared technology platforms (CADRE, iBOTS, eLAB) and whole-brain recording initiatives.
   tags:
-    - data
-
-- title: Troselab Main Website
-  subtitle: Current public lab website
-  image: images/background.jpg
-  link: https://www.troselab.de
-  description: Legacy WordPress-based lab website currently being modernized.
-  tags:
-    - website
+    - network
+    - collaboration
+    - technology platform

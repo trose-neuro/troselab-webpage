@@ -3,8 +3,7 @@
 
 # Rose Group
 
-We study **circuit mechanisms of behavior** with a focus on visual perception, learning, and memory.
-Our work addresses how neural representations remain stable enough for reliable behavior while circuits remain plastic.
+Circuit Mechanisms of Behavior
 
 {% include button.html type="website" text="Current Site" link="https://www.troselab.de" %}
 {% include button.html type="github" text="GitHub" link="trose-neuro" %}
@@ -14,36 +13,57 @@ Our work addresses how neural representations remain stable enough for reliable 
 
 {% include section.html %}
 
-## Research Focus
+Stability is a central challenge for the brain: neural circuits must remain adaptable enough to learn from experience while preserving reliable perception, memory, and behavior.
+In the Rose Group, we study the circuit mechanisms that stabilize computation and memory across dynamic sensory environments and behavioral states.
+
+## Current Program
+
+- Long-term representational stability in visual thalamocortical circuits
+- Stabilization of spatial and contextual representations in retrosplenial cortex during learning and memory
+- Active visual orienting and peri-saccadic processing in natural vision
+
+{% include section.html %}
 
 {% capture text %}
 
-Our group investigates the stability-plasticity conundrum across the visual system, retrosplenial cortex, and hippocampal formation.
-We combine longitudinal synapse- and circuit-level optophysiology with behavior in ecologically relevant settings.
+Three research goals, four current projects, and a future roadmap (Projects 5-7) targeting representational drift, natural vision, and latent learning.
+The program combines longitudinal optophysiology, closed-loop behavior, deep modeling, and circuit-level perturbation.
 
-{% include button.html link="research" text="Read research themes" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
+{% include button.html link="research" text="Read the full research roadmap" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{% include feature.html image="images/photo.jpg" link="research" title="Current Research" text=text %}
+{% include feature.html image="images/photo.jpg" link="research" title="Research" text=text %}
 
 {% capture text %}
 
-See selected papers and links to journal pages.
-A complete publication list remains available on the legacy site and can be imported here in the next step.
+Current and planned projects are organized across Goals I-IV, with explicit timelines, milestones, and technology development tracks.
+This includes work on feedback stabilization, RSC memory circuits, active orienting, uncertainty-dependent drift, affordance coding, and latent learning.
+
+{% include button.html link="projects" text="Browse project portfolio" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
+
+{% endcapture %}
+
+{% include feature.html image="images/background.jpg" link="projects" title="Projects" flip=true style="bare" text=text %}
+
+{% capture text %}
+
+Selected contributions on representational drift, thalamocortical plasticity, and cortical coding.
+Publication updates are linked to journal pages and the legacy archive.
 
 {% include button.html link="publications" text="Browse publications" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{% include feature.html image="images/background.jpg" link="publications" title="Publications" flip=true style="bare" text=text %}
+{% include feature.html image="images/logo.jpg" link="publications" title="Publications" text=text %}
 
 {% capture text %}
 
-Meet current members and alumni.
+Meet current members, alumni, and lab leadership.
+The group currently operates with an international team focused on closed-loop systems neuroscience and technology development.
 
 {% include button.html link="team" text="Meet the team" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{% include feature.html image="images/logo.jpg" link="team" title="Team" text=text %}
+{% include feature.html image="images/members/DSC_0185.jpg" link="team" title="Team" flip=true style="bare" text=text %}

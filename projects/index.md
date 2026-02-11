@@ -1,25 +1,26 @@
 ---
-title: Resources
+title: Projects
 nav:
   order: 4
-  tooltip: Code, data workflows, and infrastructure
+  tooltip: Current and planned projects
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Resources
+# {% include icon.html icon="fa-solid fa-diagram-project" %}Projects
 
-Code repositories and infrastructure resources used by the group.
+This page summarizes the group's current and planned project portfolio based on the tenure evaluation dossier.
+Projects are organized around representational stability, learning and memory, natural vision, and latent learning, with linked technology development.
 
-{% include tags.html tags="software, data, documentation" %}
+{% include tags.html tags="representational drift, natural vision, learning, memory, infrastructure" %}
 {% include search-info.html %}
 
 {% include section.html %}
 
-## Featured
+## Current Focus (Projects 1-4)
 
 {% include list.html component="card" data="projects" filter="group == 'featured'" %}
 
 {% include section.html %}
 
-## More
+## Expanded Portfolio (Projects 2, 5-7 and Platforms)
 
 {% include list.html component="card" data="projects" filter="!group" style="small" %}

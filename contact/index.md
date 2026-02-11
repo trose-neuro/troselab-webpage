@@ -13,6 +13,8 @@ Life and Brain Center (Building 76)
 Venusberg-Campus 1  
 53127 Bonn
 
+For collaborations, trainee applications, or project inquiries, please contact the group directly.
+
 {% include button.html type="email" text="tobias.rose@ukbonn.de" link="mailto:tobias.rose@ukbonn.de" %}
 {% include button.html type="phone" text="+49 228 287 62331" link="+49 228 287 62331" %}
 {% include button.html type="website" text="www.troselab.de" link="https://www.troselab.de" %}
