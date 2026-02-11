@@ -1,5 +1,6 @@
 ---
 title: CV Rose
+header: images/members/tobias-rose_landscape.jpg
 nav:
   order: 4.5
   tooltip: Curriculum vitae

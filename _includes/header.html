@@ -1,4 +1,9 @@
-{% assign image = page.header | default: site.header %}
+{% assign image = page.header %}
+{% if image == nil and page.collection == "members" and page.image %}
+  {% assign member_landscape = page.image | replace: "_portrait.", "_landscape." %}
+  {% assign image = member_landscape | file_exists | default: page.image %}
+{% endif %}
+{% assign image = image | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
 {% assign svg = "images/logo.svg" | file_exists %}

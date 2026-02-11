@@ -1,5 +1,6 @@
 ---
 title: Contact
+header: images/members/DSC_0177.jpg
 nav:
   order: 6
   tooltip: Email, address, and links

@@ -1,4 +1,5 @@
 ---
+header: images/share.jpg
 ---
 
 # Rose Group

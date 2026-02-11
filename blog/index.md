@@ -1,5 +1,6 @@
 ---
 title: News
+header: images/members/DSC_0149.jpg
 nav:
   order: 5
   tooltip: Updates and announcements

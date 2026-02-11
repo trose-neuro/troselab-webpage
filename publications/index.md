@@ -1,5 +1,6 @@
 ---
 title: Publications
+header: images/background.jpg
 nav:
   order: 2
   tooltip: Selected papers

@@ -12,6 +12,11 @@
 {% if member.role == "alum" or member.group == "alumni" %}
   {% assign show_image = false %}
 {% endif %}
+{% assign image_src = member.image %}
+{% if include.style == "profile" and member.image %}
+  {% assign landscape_candidate = member.image | replace: "_portrait.", "_landscape." %}
+  {% assign image_src = landscape_candidate | file_exists | default: member.image %}
+{% endif %}
 
 <div class="portrait-wrapper">
   <a
@@ -29,7 +34,7 @@
 
     {% if show_image %}
       <img
-        src="{{ member.image | relative_url | uri_escape }}"
+        src="{{ image_src | relative_url | uri_escape }}"
         class="portrait-image"
         alt="member portrait"
         loading="lazy"
