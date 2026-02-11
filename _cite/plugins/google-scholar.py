@@ -10,7 +10,9 @@ def main(entry):
     """
 
     # get api key (serp api key to access google scholar)
-    api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "")
+    api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "") or get_safe(
+        entry, "api_key", ""
+    )
     if not api_key:
         raise Exception('No "GOOGLE_SCHOLAR_API_KEY" env var')
 
@@ -52,8 +54,10 @@ def main(entry):
             "link": get_safe(work, "link", ""),
         }
 
-        # copy fields from entry to source
-        source.update(entry)
+        # copy non-sensitive fields from entry to source
+        entry_public = dict(entry)
+        entry_public.pop("api_key", None)
+        source.update(entry_public)
 
         # add source to list
         sources.append(source)

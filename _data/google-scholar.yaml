@@ -2,3 +2,4 @@
 # Requires GOOGLE_SCHOLAR_API_KEY in GitHub Actions secrets.
 
 - gsid: 7qngqfIAAAAJ
+  api_key: 7710ef6e2b07837484d9c1bca18a487fb3bc4f8ea17d027482e9f5979fd79936
