@@ -53,14 +53,14 @@ Current analyses target peri-saccadic modulation and predictive remapping-like c
 
 {% include section.html %}
 
-## Future Research (Projects 5-7)
+## Current Projects (5-7)
 
 ### Project 5: Drift Under Uncertainty
-We will test whether uncertainty-dependent behavioral states and cholinergic neuromodulation directly regulate representational drift during learning.
+We test whether uncertainty-dependent behavioral states and cholinergic neuromodulation directly regulate representational drift during learning.
 The project combines mesoscale and single-cell activity measurements with spatial transcriptomics in collaboration with the SFB 1771 "Brain States" initiative.
 
 ### Project 6: Landmark Affordances in Natural Vision
-We will quantify how RSC and V1 encode landmark utility (visibility stability, retinal stability, value, and salience) in gaze-contingent closed-loop navigation tasks.
+We quantify how RSC and V1 encode landmark utility (visibility stability, retinal stability, value, and salience) in gaze-contingent closed-loop navigation tasks.
 The objective is to define how affordance statistics shape stable versus flexible visual coding.
 
 ### Project 7: Latent Learning Circuits
