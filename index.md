@@ -1,5 +1,5 @@
 ---
-header: images/members/DSC_0137.jpg
+header: images/background.jpg
 ---
 
 <!-- # Rose Group -->
