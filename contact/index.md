@@ -1,11 +1,10 @@
 ---
 title: Contact
-nav:
-  order: 6
-  tooltip: Email, address, and links
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
+
+Group leader: Circuit Mechanisms of Behavior
 
 Institute of Experimental Epileptology and Cognition Research  
 University of Bonn Medical Center  

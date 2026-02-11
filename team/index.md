@@ -1,13 +1,18 @@
 ---
-title: Team
+title: Members
 nav:
   order: 3
   tooltip: Current members and alumni
+permalink: /member/
+redirect_from:
+  - /team/
+  - /members/
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %}Members
 
-Current Rose Group members and alumni.
+Current members and alumni of the Rose Group.
+Role labels and affiliations were migrated from the legacy troselab.de member pages.
 
 {% include section.html %}
 
@@ -15,7 +20,7 @@ Current Rose Group members and alumni.
 
 {% include list.html data="members" component="portrait" filter="role == 'pi'" %}
 
-## Team
+## Current Members
 
 {% include list.html data="members" component="portrait" filter="role != 'pi' and group != 'alumni'" %}
 
