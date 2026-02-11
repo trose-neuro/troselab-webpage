@@ -20,6 +20,24 @@
 
 .card[data-style="small"] {
   width: 260px;
+  height: 420px;
+}
+
+.card[data-style="small"] .card-text {
+  flex: 1;
+  overflow: hidden;
+}
+
+.card[data-style="small"] .card-text > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.card[data-style="small"] .card-text > .tags {
+  overflow: hidden;
+  max-height: 2.8em;
 }
 
 .card:hover {

@@ -1,7 +1,7 @@
 {% assign image = include.image %}
 {% assign optimized_stem = image
   | regex_replace: "^images/", "images/optimized/"
-  | regex_replace: "\\.[^.]+$", ""
+  | regex_replace: '\.[^.]+$', ""
 %}
 {% assign widths = "480|960|1280|1500|1600|2200" | split: "|" %}
 
@@ -58,6 +58,9 @@
     {% endif %}
     {% if include.style %}
       style="{{ include.style }}"
+    {% endif %}
+    {% if include.data_highres %}
+      data-highres="{{ include.data_highres | relative_url | uri_escape }}"
     {% endif %}
     alt="{{ include.alt | default: "image" | regex_strip }}"
     loading="{{ include.loading | default: "lazy" }}"

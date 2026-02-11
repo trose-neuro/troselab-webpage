@@ -11,20 +11,36 @@
 {% endif %}
 {% assign image_optimized_1500 = image
   | regex_replace: "^images/", "images/optimized/"
-  | regex_replace: "\\.[^.]+$", "-1500.webp"
+  | regex_replace: '\.[^.]+$', "-1500.webp"
   | file_exists
 %}
 {% assign image_optimized_1280 = image
   | regex_replace: "^images/", "images/optimized/"
-  | regex_replace: "\\.[^.]+$", "-1280.webp"
+  | regex_replace: '\.[^.]+$', "-1280.webp"
   | file_exists
 %}
-{% assign image = image_optimized_1500 | default: image_optimized_1280 | default: image %}
+{% assign image_optimized_960 = image
+  | regex_replace: "^images/", "images/optimized/"
+  | regex_replace: '\.[^.]+$', "-960.webp"
+  | file_exists
+%}
+{% assign image_optimized_480 = image
+  | regex_replace: "^images/", "images/optimized/"
+  | regex_replace: '\.[^.]+$', "-480.webp"
+  | file_exists
+%}
+{% assign image = image_optimized_1500 | default: image_optimized_1280 | default: image_optimized_960 | default: image_optimized_480 | default: image %}
 
 {% assign svg = "images/logo.svg" | file_exists %}
 {% assign png = "images/logo.png" | file_exists %}
 {% assign jpg = "images/logo.jpg" | file_exists %}
 {% assign logo = svg | default: png | default: jpg | default: nil %}
+{% assign logo_optimized = logo
+  | regex_replace: "^images/", "images/optimized/"
+  | regex_replace: '\.[^.]+$', "-480.jpg"
+  | file_exists
+%}
+{% assign logo = logo_optimized | default: logo %}
 
 <header
   class="background"
@@ -34,15 +50,25 @@
       {%- for banner in banner_images -%}
         {%- assign banner_optimized_1500 = banner
           | regex_replace: "^images/", "images/optimized/"
-          | regex_replace: "\\.[^.]+$", "-1500.webp"
+          | regex_replace: '\.[^.]+$', "-1500.webp"
           | file_exists
         -%}
         {%- assign banner_optimized_1280 = banner
           | regex_replace: "^images/", "images/optimized/"
-          | regex_replace: "\\.[^.]+$", "-1280.webp"
+          | regex_replace: '\.[^.]+$', "-1280.webp"
           | file_exists
         -%}
-        {%- assign banner_selected = banner_optimized_1500 | default: banner_optimized_1280 | default: banner -%}
+        {%- assign banner_optimized_960 = banner
+          | regex_replace: "^images/", "images/optimized/"
+          | regex_replace: '\.[^.]+$', "-960.webp"
+          | file_exists
+        -%}
+        {%- assign banner_optimized_480 = banner
+          | regex_replace: "^images/", "images/optimized/"
+          | regex_replace: '\.[^.]+$', "-480.webp"
+          | file_exists
+        -%}
+        {%- assign banner_selected = banner_optimized_1500 | default: banner_optimized_1280 | default: banner_optimized_960 | default: banner_optimized_480 | default: banner -%}
         "{{ banner_selected | relative_url | uri_escape }}"{% unless forloop.last %},{% endunless %}
       {%- endfor -%}
     ]'

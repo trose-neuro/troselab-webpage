@@ -64,7 +64,7 @@ They cover representational drift, memory stabilization, active vision, uncertai
 
 {% endcapture %}
 
-{% include feature.html image="images/members/DSC_0189.jpg" link="projects" title="Projects" flip=true style="bare" text=text %}
+{% include feature.html image="images/banner/multilevel spines.jpg" link="projects" title="Projects" flip=true style="bare" text=text %}
 
 {% capture text %}
 
@@ -75,7 +75,7 @@ Entries link directly to journals and the legacy publication archive.
 
 {% endcapture %}
 
-{% include feature.html image="images/members/DSC_0149.jpg" link="publications" title="Publications" text=text %}
+{% include feature.html image="images/banner/Chiams LGN.jpg" link="publications" title="Publications" text=text %}
 
 {% capture text %}
 

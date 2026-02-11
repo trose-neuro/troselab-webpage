@@ -15,7 +15,20 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE_ROOT = ROOT / "images"
 OUTPUT_ROOT = IMAGE_ROOT / "optimized"
-SOURCE_PATTERNS = ("images/banner/*.jpg", "images/miini2prose.JPG")
+# Optimize every image actively rendered by site components/pages.
+SOURCE_PATTERNS = (
+    "images/banner/*.jpg",
+    "images/logo.jpg",
+    "images/mini2p.jpg",
+    "images/members/*_portrait.jpg",
+    "images/members/*_landscape.jpg",
+    "images/members/DSC_0137.jpg",
+    "images/members/DSC_0149.jpg",
+    "images/members/DSC_0177.jpg",
+    "images/members/DSC_0185.jpg",
+    "images/members/DSC_0189.jpg",
+    "images/collaborators/*",
+)
 TARGET_WIDTHS = (480, 960, 1280, 1500, 1600, 2200)
 
 

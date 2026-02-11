@@ -17,6 +17,14 @@
   {% assign landscape_candidate = member.image | replace: "_portrait.", "_landscape." %}
   {% assign image_src = landscape_candidate | file_exists | default: member.image %}
 {% endif %}
+{% assign portrait_sizes = "(max-width: 640px) 46vw, 205px" %}
+{% if include.style == "profile" %}
+  {% assign portrait_sizes = "(max-width: 900px) calc(100vw - 56px), 380px" %}
+{% elsif include.style == "tiny" %}
+  {% assign portrait_sizes = "54px" %}
+{% elsif include.style == "small" %}
+  {% assign portrait_sizes = "(max-width: 640px) 42vw, 138px" %}
+{% endif %}
 
 <div class="portrait-wrapper">
   <a
@@ -33,13 +41,15 @@
     {% endif %}
 
     {% if show_image %}
-      <img
-        src="{{ image_src | relative_url | uri_escape }}"
+      {%
+        include responsive-image.html
+        image=image_src
         class="portrait-image"
-        alt="member portrait"
+        alt=member.name
+        sizes=portrait_sizes
         loading="lazy"
-        {% include fallback.html %}
-      >
+        data_highres=image_src
+      %}
     {% endif %}
 
     {% if member.name %}

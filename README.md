@@ -62,7 +62,9 @@ python3 tools/optimize_images.py
 
 Generated outputs:
 - `images/optimized/banner/*`
-- `images/optimized/miini2prose-*`
+- `images/optimized/mini2p-*`
+- `images/optimized/members/*`
+- `images/optimized/logo-*`
 
 Automation:
 - `.github/workflows/optimize-images.yaml` runs on pushes that change source images or optimization tooling and commits updated optimized files.

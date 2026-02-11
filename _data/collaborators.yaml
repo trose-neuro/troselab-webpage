@@ -1,0 +1,29 @@
+- title: Katharina A. Wilmes
+  subtitle: Adjunct Professor, Institute of Neuroinformatics, University of Zurich
+  image: images/collaborators/katharina-wilmes.png
+  link: https://katharinawilmes.com/
+  description: Computational neuroscience and uncertainty-modulated learning.
+
+- title: Fabian H. Sinz
+  subtitle: Professor for Machine Learning, University of Gottingen
+  image: images/collaborators/fabian-sinz.png
+  link: https://www.uni-goettingen.de/en/644835.html
+  description: Machine learning for neuroscience and neural system identification.
+
+- title: Heinz Beck
+  subtitle: Institute for Experimental Epileptology and Cognition Research, University of Bonn
+  image: images/collaborators/heinz-beck.webp
+  link: https://www.uni-bonn.de/en/research-and-teaching/research-profile/transdisciplinary-research-areas/tra-3-life-and-health/members-directory/heinz-beck
+  description: Neuronal circuits, behavior, and neurological disorders.
+
+- title: Tatjana Tchumatchenko
+  subtitle: Institute for Experimental Epileptology and Cognition Research, University of Bonn
+  image: images/collaborators/tatjana-tchumatchenko.webp
+  link: https://www.tchumatchenko.de/
+  description: Computational neuroscience and synaptic learning dynamics.
+
+- title: Simon Musall
+  subtitle: IBI-3, Forschungszentrum Julich; Junior Professor of Neuromodulation, RWTH Aachen
+  image: images/collaborators/simon-musall.jpg
+  link: https://www.fz-juelich.de/profile/musall_s
+  description: In-vivo neurophysiology, decision-making, and multisensory processing.

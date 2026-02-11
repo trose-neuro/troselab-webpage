@@ -1,4 +1,4 @@
-<figure class="figure">
+<figure class="figure{% if include.boxed %} figure-boxed{% endif %}{% if include.class %} {{ include.class }}{% endif %}">
   <a
     {% if include.link %}
       href="{{ include.link | relative_url | uri_escape }}"
@@ -6,16 +6,17 @@
     class="figure-image"
     aria-label="{{ include.caption | default: "figure link" | regex_strip }}"
   >
-    <img
-      src="{{ include.image | relative_url | uri_escape }}"
-      style="
-        width: {{ include.width | default: "auto" }};
-        max-height: {{ include.height | default: "unset" }};
-      "
-      alt="{{ include.caption | default: "figure image" | regex_strip }}"
+    {% assign figure_sizes = "(max-width: 1200px) 96vw, 1100px" %}
+    {% capture figure_style %}width: {{ include.width | default: "auto" }}; max-height: {{ include.height | default: "unset" }};{% endcapture %}
+    {%
+      include responsive-image.html
+      image=include.image
+      alt=include.caption
+      sizes=figure_sizes
       loading="lazy"
-      {% include fallback.html %}
-    >
+      style=figure_style
+      data_highres=include.image
+    %}
   </a>
   {% if include.caption %}
     <figcaption class="figure-caption">

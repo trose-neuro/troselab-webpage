@@ -12,7 +12,7 @@
   <div class="post-excerpt">
     {% assign url = post.url | relative_url | uri_escape %}
     {% assign title = post.title %}
-    {% assign image = post.image | relative_url | uri_escape %}
+    {% assign image = post.image %}
 
     {% if image %}
       <a
@@ -20,12 +20,14 @@
         class="post-excerpt-image"
         aria-label="{{ title | default: "excerpt link" | regex_strip }}"
       >
-        <img
-          src="{{ image }}"
-          alt="{{ title | default: "excerpt image" | regex_strip }}"
+        {% assign excerpt_sizes = "(max-width: 800px) 100vw, 200px" %}
+        {%
+          include responsive-image.html
+          image=image
+          alt=title
+          sizes=excerpt_sizes
           loading="lazy"
-          {% include fallback.html %}
-        >
+        %}
       </a>
     {% endif %}
 

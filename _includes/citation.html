@@ -18,12 +18,14 @@
         class="citation-image"
         aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
       >
-        <img
-          src="{{ citation.image | relative_url | uri_escape }}"
-          alt="{{ citation.title | default: "citation image" | regex_strip }}"
+        {% assign citation_sizes = "(max-width: 800px) 100vw, 180px" %}
+        {%
+          include responsive-image.html
+          image=citation.image
+          alt=citation.title
+          sizes=citation_sizes
           loading="lazy"
-          {% include fallback.html %}
-        >
+        %}
       </a>
     {% endif %}
 

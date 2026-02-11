@@ -7,7 +7,9 @@ on:
       - main
     paths:
       - images/banner/**
-      - images/miini2prose.JPG
+      - images/members/**
+      - images/logo.jpg
+      - images/mini2p.jpg
       - tools/optimize_images.py
       - tools/requirements.txt
       - .github/workflows/optimize-images.yaml

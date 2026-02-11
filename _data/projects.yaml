@@ -92,7 +92,7 @@
 
 - title: Miniature Two-Photon Platform
   subtitle: Infrastructure
-  image: images/miini2prose.JPG
+  image: images/mini2p.jpg
   link: research
   description: |
     Custom head-mounted and bench-top systems for longitudinal, high-throughput recordings in freely moving and head-fixed animals.
@@ -103,14 +103,14 @@
 
 - title: ADAMACS Data Infrastructure
   subtitle: Collaborative Data Platform
-  image: images/banner/background.jpg
-  link: https://github.com/trose-neuro/adamacs_documentation
+  image: images/members/DSC_0177.jpg
+  link: https://adamacs-documentation.readthedocs.io
   description: |
     Data management, processing, and database infrastructure for collaborative neurophysiology and open workflow reuse.
   buttons:
     - type: docs
       text: Documentation
-      link: https://github.com/trose-neuro/adamacs_documentation
+      link: https://adamacs-documentation.readthedocs.io
     - type: source
       text: adamacs_ingest
       link: https://github.com/trose-neuro/adamacs_ingest
