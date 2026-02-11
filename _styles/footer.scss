@@ -12,11 +12,11 @@ footer {
   padding: clamp(22px, 4vw, 34px);
   border: 1px solid var(--border);
   border-radius: var(--rounded);
-  background: var(--surface);
+  background: var(--surface-frost);
   color: var(--dark-gray);
   text-align: center;
   line-height: 1.6;
-  box-shadow: none;
+  box-shadow: var(--shadow);
 }
 
 footer a {

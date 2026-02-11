@@ -1,7 +1,7 @@
 - title: Project 1.1 - Feedback Alignment in Visual Cortex
   subtitle: Current Project
   group: featured
-  image: images/members/leon-kremers_landscape.jpg
+  image: "images/banner/binocular axons VCElement 1@4x-100.jpg"
   link: research
   description: |
     Chronic two-photon imaging and deep receptive-field models test how higher-order feedback stabilizes representations across dLGN, V1, and LM.
@@ -13,7 +13,7 @@
 - title: Project 1.2 - Thalamocortical Stabilization in dLGN
   subtitle: Current Project
   group: featured
-  image: images/members/jisoo-jung_landscape.jpg
+  image: "images/banner/Chiams LGN.jpg"
   link: research
   description: |
     Tests whether cortical feedback stabilizes long-term dLGN responses despite structural convergence in retinothalamic input.
@@ -22,10 +22,21 @@
     - plasticity
     - dLGN
 
+- title: Project 2 - Experience in V1 versus CA1
+  subtitle: Current Project
+  image: images/banner/tdtomatoGGsliceEPI.jpg
+  link: research
+  description: |
+    Compares representational stability in visual cortex and hippocampus after sparse manipulation of plasticity-related genes during active and passive virtual reality.
+  tags:
+    - V1
+    - CA1
+    - experience
+
 - title: Project 3 - RSC Memory Stabilization
   subtitle: Current Project
   group: featured
-  image: images/members/natalia-krasilshchikova_landscape.jpg
+  image: "images/banner/hippocampus ca1.jpg"
   link: research
   description: |
     Closed-loop learning and memory paradigms with miniature two-photon imaging test how spatial and contextual signals stabilize in retrosplenial cortex.
@@ -37,7 +48,7 @@
 - title: Project 4 - Natural Vision and Active Orienting
   subtitle: Current Project
   group: featured
-  image: images/members/shanqian-ma_landscape.jpg
+  image: images/banner/g2.jpg
   link: research
   description: |
     Freely moving visual orienting assays with head-mounted imaging, gaze tracking, and scene reconstruction test peri-saccadic processing.
@@ -46,31 +57,9 @@
     - orienting
     - closed-loop behavior
 
-- title: Project 2 - Experience in V1 versus CA1
+- title: Project 5 - Landmark Affordance Coding
   subtitle: Current Project
-  image: images/members/tobias-rose_landscape.jpg
-  link: research
-  description: |
-    Compares representational stability in visual cortex and hippocampus after sparse manipulation of plasticity-related genes during active and passive virtual reality.
-  tags:
-    - V1
-    - CA1
-    - experience
-
-- title: Project 5 - Uncertainty and Neuromodulation
-  subtitle: Current Project
-  image: images/members/yoshiki-hatashita_landscape.jpg
-  link: research
-  description: |
-    Tests how uncertainty-dependent states and cholinergic neuromodulation regulate representational drift across scales, including spatial transcriptomics.
-  tags:
-    - uncertainty
-    - neuromodulation
-    - transcriptomics
-
-- title: Project 6 - Landmark Affordance Coding
-  subtitle: Current Project
-  image: images/members/laura-kueck_landscape.jpg
+  image: images/banner/photo.jpg
   link: research
   description: |
     Quantifies how RSC and V1 encode landmark utility (stability, value, salience) in gaze-contingent closed-loop navigation.
@@ -79,9 +68,20 @@
     - landmarks
     - navigation
 
+- title: Project 6 - Uncertainty and Neuromodulation
+  subtitle: Current Project
+  image: "images/banner/multilevel spines.jpg"
+  link: research
+  description: |
+    Tests how uncertainty-dependent states and cholinergic neuromodulation regulate representational drift across scales, including spatial transcriptomics.
+  tags:
+    - uncertainty
+    - neuromodulation
+    - transcriptomics
+
 - title: Project 7 - Latent Learning Circuits
   subtitle: Current Project
-  image: images/members/aelton-araujo_landscape.jpg
+  image: images/banner/background.jpg
   link: research
   description: |
     Multisensory preconditioning in virtual reality resolves circuit mechanisms of unsupervised cue association and transfer in cortical memory systems.
@@ -92,7 +92,7 @@
 
 - title: Miniature Two-Photon Platform
   subtitle: Infrastructure
-  image: images/banner/photo.jpg
+  image: images/miini2prose.JPG
   link: research
   description: |
     Custom head-mounted and bench-top systems for longitudinal, high-throughput recordings in freely moving and head-fixed animals.
@@ -104,9 +104,10 @@
 - title: ADAMACS Data Infrastructure
   subtitle: Collaborative Data Platform
   image: images/banner/background.jpg
-  link: https://github.com/SFB1089/adamacs
+  link: https://github.com/trose-neuro/adamacs_documentation
   description: |
     Data management, processing, and database infrastructure for collaborative neurophysiology and open workflow reuse.
+    Core repositories: [adamacs_ingest](https://github.com/trose-neuro/adamacs_ingest) and [adamacs_analysis](https://github.com/trose-neuro/adamacs_analysis).
   tags:
     - data management
     - open science

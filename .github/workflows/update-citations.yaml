@@ -33,11 +33,15 @@ jobs:
         uses: crazy-max/ghaction-dump-context@v2
 
       - name: Checkout branch contents
-        if: github.event.action != 'closed'
+        if: github.event.action != 'closed' && github.event.pull_request != null
         uses: actions/checkout@v4
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Checkout current branch contents
+        if: github.event.action != 'closed' && github.event.pull_request == null
+        uses: actions/checkout@v4
 
       - name: Set up Python
         if: github.event.action != 'closed'

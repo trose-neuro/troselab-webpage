@@ -14,11 +14,12 @@ redirect_from:
 Prof. Dr. Tobias Rose  
 Group leader "Circuit Mechanisms of Behavior"
 
-{% include figure.html image="images/members/tobias-rose_portrait.jpg" %}
+{% include figure.html image="images/members/tobias-rose_portrait.jpg" width="min(100%, 240px)" %}
 
 {% include button.html type="email" text="tobias.rose@ukbonn.de" link="mailto:tobias.rose@ukbonn.de" %}
 {% include button.html type="phone" text="+49 228 287 62331" link="+49 228 287 62331" %}
 {% include button.html type="website" text="www.troselab.de" link="https://www.troselab.de" %}
+{% include button.html type="orcid" text="ORCID" link="0000-0002-7156-4714" %}
 
 {% include section.html %}
 

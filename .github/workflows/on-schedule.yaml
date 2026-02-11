@@ -3,8 +3,8 @@ run-name: on schedule
 
 on:
   schedule:
-    # weekly
-    - cron: "0 0 * * 1"
+    # daily at 03:00 UTC
+    - cron: "0 3 * * *"
 
   # run if user manually requests it
   workflow_dispatch:
@@ -20,4 +20,4 @@ jobs:
     uses: ./.github/workflows/update-citations.yaml
     secrets: inherit
     with:
-      open-pr: true
+      open-pr: false

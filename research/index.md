@@ -44,13 +44,13 @@ Automated closed-loop tasks and miniature two-photon imaging test interactions a
 We develop closed-loop visual orienting paradigms in freely moving mice.
 Miniature two-photon imaging with gaze, pose, and egocentric scene tracking tests peri-saccadic modulation and remapping-like computations.
 
-**Project 6**
+**Project 5**
 We quantify how RSC and V1 encode landmark utility (stability, value, and salience) in gaze-contingent closed-loop navigation.
 This work defines how affordance statistics shape stable versus flexible coding.
 
 ### Circuit Dynamics and State Modulation
 
-**Project 5**
+**Project 6**
 We test whether uncertainty-dependent states and cholinergic neuromodulation regulate representational drift during learning.
 The project combines mesoscale and single-cell activity measurements with spatial transcriptomics in collaboration with SFB 1771 "Brain States".
 

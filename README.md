@@ -34,3 +34,17 @@ bundle exec jekyll serve --livereload
 
 Open:
 - http://localhost:4000
+
+## Automatic Google Scholar Sync
+
+This repository includes automatic citation sync from your Google Scholar profile.
+
+Setup:
+1. Keep your Google Scholar user id in `_data/google-scholar.yaml`:
+   - `gsid: 7qngqfIAAAAJ`
+2. Add a repository secret named `GOOGLE_SCHOLAR_API_KEY` (SerpAPI key).
+
+How it works:
+- `.github/workflows/on-schedule.yaml` runs daily.
+- `.github/workflows/update-citations.yaml` regenerates `_data/citations.yaml` and commits changes automatically.
+- The publications page reads from that generated citations file.
