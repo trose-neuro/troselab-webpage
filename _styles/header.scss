@@ -8,26 +8,24 @@ $collapse: 900px;
 $sticky: true;
 
 header {
-  width: min(calc(100% - 24px), var(--page));
-  margin: 14px auto 0;
+  width: min(calc(100% - 28px), var(--page));
+  margin: 12px auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 12px 16px;
+  gap: 16px;
+  padding: 10px 14px;
   border: 1px solid var(--border);
-  border-radius: var(--rounded-lg);
+  border-radius: var(--rounded);
   background: var(--surface-frost);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
   transition: border-color var(--transition), box-shadow var(--transition),
     background var(--transition);
 
   @if $sticky {
     position: sticky !important;
-    top: 12px;
+    top: 10px;
     z-index: 50 !important;
   }
 }
@@ -49,7 +47,6 @@ header a {
 
 .logo {
   height: $logo;
-  filter: drop-shadow(0 3px 8px var(--overlay));
 }
 
 .logo > * {
@@ -69,9 +66,9 @@ header a {
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: var(--bold);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
 
 .subtitle {
@@ -115,23 +112,23 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   font-family: var(--heading);
-  font-size: 0.86rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 0.92rem;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 nav > a {
-  padding: 7px 12px;
-  border-radius: 999px;
+  padding: 6px 10px;
+  border-radius: var(--rounded-sm);
   color: var(--dark-gray);
   transition: background var(--transition), color var(--transition);
 }
 
 nav > a:hover {
   color: var(--text);
-  background: var(--secondary);
+  background: var(--surface-alt);
 }
 
 header:not([data-big]) {
@@ -166,11 +163,11 @@ header[data-big] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 28px;
-  margin-top: 22px;
-  padding: $big-padding clamp(16px, 4vw, 36px);
+  gap: 22px;
+  margin-top: 14px;
+  padding: clamp(40px, 10vw, 86px) clamp(14px, 4vw, 30px);
   text-align: center;
-  box-shadow: var(--shadow-strong);
+  box-shadow: var(--shadow);
 
   @if $sticky {
     position: relative !important;
@@ -197,11 +194,11 @@ header[data-big] {
   }
 
   .title {
-    font-size: clamp(2rem, 5.2vw, 3.25rem);
+    font-size: clamp(1.9rem, 4.5vw, 2.8rem);
   }
 
   .subtitle {
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
   }
 
   nav {

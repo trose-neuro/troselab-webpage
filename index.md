@@ -10,7 +10,7 @@ Circuit Mechanisms of Behavior
 {% include button.html type="email" text="Contact" link="tobias.rose@ukbonn.de" %}
 {% include button.html type="website" text="CV Rose" link="cv" %}
 
-{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" %}
+{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 900px)" %}
 
 {% include section.html %}
 
@@ -27,7 +27,7 @@ In the Rose Group, we study the circuit mechanisms that stabilize computation an
 
 {% capture text %}
 
-Three research goals and seven current projects targeting representational drift, natural vision, and latent learning.
+Seven current projects targeting representational drift, natural vision, learning, and latent learning.
 The program combines longitudinal optophysiology, closed-loop behavior, deep modeling, and circuit-level perturbation.
 
 {% include button.html link="research" text="Read the full research roadmap" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
@@ -38,7 +38,7 @@ The program combines longitudinal optophysiology, closed-loop behavior, deep mod
 
 {% capture text %}
 
-Current projects are organized across Goals I-IV, with explicit timelines, milestones, and technology development tracks.
+Current projects are organized across representational stability, memory, natural vision, and latent learning, with explicit timelines, milestones, and technology development tracks.
 This includes work on feedback stabilization, RSC memory circuits, active orienting, uncertainty-dependent drift, affordance coding, and latent learning.
 
 {% include button.html link="projects" text="Browse project portfolio" icon="fa-solid fa-arrow-right" flip=true style="bare" %}

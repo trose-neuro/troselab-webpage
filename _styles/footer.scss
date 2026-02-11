@@ -3,20 +3,20 @@
 
 footer {
   width: min(calc(100% - 24px), var(--page));
-  margin: 14px auto;
+  margin: 12px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 18px;
-  padding: clamp(26px, 5vw, 44px);
+  gap: 14px;
+  padding: clamp(22px, 4vw, 34px);
   border: 1px solid var(--border);
-  border-radius: var(--rounded-lg);
+  border-radius: var(--rounded);
   background: var(--surface);
   color: var(--dark-gray);
   text-align: center;
   line-height: 1.6;
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 footer a {

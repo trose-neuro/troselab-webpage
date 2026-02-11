@@ -1,5 +1,5 @@
 - title: Project 1.1 - Feedback Alignment in Visual Cortex
-  subtitle: Goal I / Current
+  subtitle: Current Project
   group: featured
   image: images/members/leon-kremers_landscape.jpg
   link: research
@@ -12,7 +12,7 @@
     - visual cortex
 
 - title: Project 1.2 - Thalamocortical Stabilization in dLGN
-  subtitle: Goal I / Current
+  subtitle: Current Project
   group: featured
   image: images/members/jisoo-jung_landscape.jpg
   link: research
@@ -25,7 +25,7 @@
     - dLGN
 
 - title: Project 3 - RSC Memory Stabilization
-  subtitle: Goal II / Current
+  subtitle: Current Project
   group: featured
   image: images/members/natalia-krasilshchikova_landscape.jpg
   link: research
@@ -38,7 +38,7 @@
     - memory
 
 - title: Project 4 - Natural Vision and Active Orienting
-  subtitle: Goal III / Current
+  subtitle: Current Project
   group: featured
   image: images/members/shanqian-ma_landscape.jpg
   link: research
@@ -50,7 +50,7 @@
     - closed-loop behavior
 
 - title: Project 2 - Experience in V1 versus CA1
-  subtitle: Goal I / Current
+  subtitle: Current Project
   image: images/members/tobias-rose_landscape.jpg
   link: research
   description: |
@@ -61,7 +61,7 @@
     - experience
 
 - title: Project 5 - Uncertainty and Neuromodulation
-  subtitle: Goal I / Current
+  subtitle: Current Project
   image: images/members/yoshiki-hatashita_landscape.jpg
   link: research
   description: |
@@ -72,7 +72,7 @@
     - transcriptomics
 
 - title: Project 6 - Landmark Affordance Coding
-  subtitle: Goal III / Current
+  subtitle: Current Project
   image: images/members/laura-kueck_landscape.jpg
   link: research
   description: |
@@ -83,7 +83,7 @@
     - navigation
 
 - title: Project 7 - Latent Learning Circuits
-  subtitle: Goal IV / Current
+  subtitle: Current Project
   image: images/members/aelton-araujo_landscape.jpg
   link: research
   description: |

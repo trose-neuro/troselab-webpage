@@ -15,12 +15,12 @@ Projects are organized around representational stability, learning and memory, n
 
 {% include section.html %}
 
-## Current Focus (Projects 1-4)
+## Current Core Projects
 
 {% include list.html component="card" data="projects" filter="group == 'featured'" %}
 
 {% include section.html %}
 
-## Current Expansion (Projects 2, 5-7 and Platforms)
+## Current Projects and Platforms
 
 {% include list.html component="card" data="projects" filter="!group" style="small" %}
