@@ -5,6 +5,6 @@
 
   # trose-neuro's Website
 
-  Visit **[website url](#)** 🚀
+  Visit **[trose-neuro.github.io/troselab-webpage](https://trose-neuro.github.io/troselab-webpage)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
