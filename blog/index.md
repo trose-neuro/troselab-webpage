@@ -1,5 +1,8 @@
 ---
 title: News
+nav:
+  order: 5
+  tooltip: Updates and announcements
 ---
 
 # {% include icon.html icon="fa-solid fa-bullhorn" %}News

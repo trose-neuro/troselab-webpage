@@ -1,5 +1,8 @@
 ---
 title: Resources
+nav:
+  order: 4
+  tooltip: Code, data workflows, and infrastructure
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Resources
