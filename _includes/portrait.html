@@ -8,7 +8,10 @@
 {% endif %}
 
 {% assign type = site.data.types[member.role] %}
-{% assign show_image = member.group != "alumni" %}
+{% assign show_image = true %}
+{% if member.role == "alum" or member.group == "alumni" %}
+  {% assign show_image = false %}
+{% endif %}
 
 <div class="portrait-wrapper">
   <a
