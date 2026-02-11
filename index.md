@@ -11,7 +11,7 @@ header: images/background.jpg
 {% include button.html type="website" text="CV Rose" link="cv" style="bare" %}
 {% include button.html type="github" text="Code and Data" link="trose-neuro" style="bare" %} -->
 
-{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 800px)" %}
+
 
 {% include section.html %}
 
@@ -85,3 +85,5 @@ The team is international, interdisciplinary, and focused on experimental and co
 {% endcapture %}
 
 {% include feature.html image="images/members/DSC_0185.jpg" link="team" title="Team" flip=true style="bare" text=text %}
+
+{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 800px)" %}
