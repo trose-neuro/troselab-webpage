@@ -30,12 +30,18 @@
   transition: opacity var(--transition), background var(--transition);
 }
 
-header.background:before,
+header.background:before {
+  opacity: var(--header-banner-image-opacity, var(--banner-image-opacity, var(--media-image-opacity)));
+}
+
 footer.background:before {
   opacity: var(--banner-image-opacity, var(--media-image-opacity));
 }
 
-header.background:after,
+header.background:after {
+  opacity: var(--header-banner-veil-opacity, var(--banner-veil-opacity, var(--media-veil-opacity)));
+}
+
 footer.background:after {
   opacity: var(--banner-veil-opacity, var(--media-veil-opacity));
 }
@@ -46,6 +52,10 @@ footer.background:after {
   z-index: -2;
   pointer-events: none;
   opacity: var(--banner-image-opacity, var(--media-image-opacity));
+}
+
+header.background .banner-rotator {
+  opacity: var(--header-banner-image-opacity, var(--banner-image-opacity, var(--media-image-opacity)));
 }
 
 .banner-rotator-layer {
