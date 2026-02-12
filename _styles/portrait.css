@@ -158,19 +158,26 @@
   font-size: 1rem;
 }
 
+.portrait[data-style=small][data-no-image=true] {
+  gap: 8px;
+}
 .portrait[data-style=small][data-no-image=true] .portrait-name {
-  min-height: 3.9em;
+  min-height: 5em;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   text-align: center;
+  font-size: 0.96rem;
+  line-height: 1.25;
+  overflow-wrap: break-word;
 }
 .portrait[data-style=small][data-no-image=true] .portrait-description {
-  min-height: 1.5em;
+  min-height: 1.4em;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   text-align: center;
+  line-height: 1.35;
 }
 
 /*# sourceMappingURL=portrait.css.map */
