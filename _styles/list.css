@@ -2,6 +2,7 @@ ul,
 ol {
   margin: 1rem 0;
   padding-left: 1.4rem;
+  line-height: 1.62;
 }
 
 ul {
@@ -13,7 +14,7 @@ li {
   padding-left: 0.35rem;
   color: var(--dark-gray);
   text-align: left;
-  line-height: 1.65;
+  line-height: 1.58;
 }
 li ul,
 li ol {

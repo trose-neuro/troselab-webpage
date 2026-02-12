@@ -33,7 +33,7 @@ html[data-dark=false] {
   --footer-ink: #132035;
   --header-chip: #f0f5fcc9;
   --header-chip-border: #c8d5e6d9;
-  --header-text-shadow: #ffffff66;
+  --header-text-shadow: #ffffff52;
   --tooltip-bg: #101828;
   --tooltip-text: #f8fafc;
   --tooltip-border: #1f2937;
@@ -74,7 +74,7 @@ html[data-dark=true] {
   --footer-ink: #e7edf5;
   --header-chip: #0f1a2788;
   --header-chip-border: #344860cc;
-  --header-text-shadow: #0000008f;
+  --header-text-shadow: #00000070;
   --tooltip-bg: #182331;
   --tooltip-text: #e7edf5;
   --tooltip-border: #2a3a4d;
@@ -101,6 +101,8 @@ html[data-dark=true] {
   --shadow-strong: 0 26px 56px -34px var(--overlay);
   --transition: 220ms cubic-bezier(0.22, 1, 0.36, 1);
   --page: 1080px;
+  --measure: 74ch;
+  --measure-wide: 88ch;
   --section-pad: clamp(26px, 4vw, 60px);
   --tooltip-bg-light: #ffffff;
   --tooltip-text-light: #0f172a;

@@ -4,6 +4,19 @@ section {
   transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
 
+section > :where(h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote) {
+  max-width: var(--measure);
+}
+
+section > :where(h1, h2) {
+  max-width: var(--measure-wide);
+}
+
+section > h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section[data-size=wide] {
   padding: var(--section-pad);
 }

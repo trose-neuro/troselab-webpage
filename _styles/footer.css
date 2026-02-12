@@ -16,7 +16,7 @@ footer {
   text-align: center;
   line-height: 1.6;
   box-shadow: var(--shadow), inset 0 1px 0 var(--glass-highlight);
-  text-shadow: 0 1px 1px var(--header-text-shadow, transparent);
+  text-shadow: none;
 }
 
 footer a {
@@ -40,6 +40,7 @@ footer > div:first-child {
 
 footer > div:last-of-type {
   font-size: 0.94rem;
+  font-weight: var(--semi-bold);
 }
 
 /*# sourceMappingURL=footer.css.map */
