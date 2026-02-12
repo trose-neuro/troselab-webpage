@@ -9,8 +9,10 @@
 
 {% assign type = site.data.types[member.role] %}
 {% assign show_image = true %}
+{% assign is_alumni = false %}
 {% if member.role == "alum" or member.role == "alumni" or member.group == "alumni" %}
   {% assign show_image = false %}
+  {% assign is_alumni = true %}
 {% endif %}
 {% assign image_src = member.image %}
 {% if include.style == "profile" and member.image %}
@@ -64,7 +66,7 @@
       </span>
     {% endif %}
 
-    {% if member.affiliation %}
+    {% if member.affiliation and is_alumni == false %}
       <span class="portrait-affiliation">
         {{ member.affiliation }}
       </span>

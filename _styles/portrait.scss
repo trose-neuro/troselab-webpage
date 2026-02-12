@@ -165,3 +165,21 @@
     font-size: 1rem;
   }
 }
+
+.portrait[data-style="small"][data-no-image="true"] {
+  .portrait-name {
+    min-height: 3.9em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .portrait-description {
+    min-height: 1.5em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+}
