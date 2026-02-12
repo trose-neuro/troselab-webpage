@@ -8,8 +8,4 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-award" %}Grants
 
-The Rose Group is supported by competitive national and international funding programmes.
-
-{% include section.html %}
-
 {% include list.html component="card" data="grants" style="small" %}

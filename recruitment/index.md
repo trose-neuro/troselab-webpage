@@ -40,6 +40,7 @@ We also welcome direct inquiries from postdoctoral candidates with strong intere
 
 ## Consortia and Research Networks
 
+- [BonnBrain Conference](https://bonnbrain.de/)
 - [iBehave](https://ibehave.nrw/)
 - [iBOTS](https://ibots-bonn.de/)
 - [CADRE data core](https://ibehave.nrw/the-cadre-data-management-core-at-ibehave/)

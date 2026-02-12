@@ -2,13 +2,6 @@
 header: images/banner/twitter1500x500.jpg
 ---
 
-{% include section.html %}
-
-Brains must adapt without losing reliable function.
-We study the circuit mechanisms that keep behavior and perception stable over time.
-
-{% include featured-news.html %}
-
 {% include cols.html
 problem="
 ### Problem

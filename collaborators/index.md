@@ -8,9 +8,4 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-handshake" %}Collaborators
 
-We work closely with collaborators across systems neuroscience, computational neuroscience, and neurotechnology.
-The profiles below link to their official pages.
-
-{% include section.html %}
-
 {% include list.html component="card" data="collaborators" style="small" %}
