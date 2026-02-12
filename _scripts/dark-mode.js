@@ -4,8 +4,7 @@
 
 {
   const STORAGE_KEY = "dark-mode";
-  const MEDIA_QUERY = "(prefers-color-scheme: dark)";
-  const media = window.matchMedia(MEDIA_QUERY);
+  const DEFAULT_DARK = true;
 
   const getSavedMode = () => {
     try {
@@ -32,11 +31,9 @@
     }
   };
 
-  const hasManualPreference = () => getSavedMode() !== null;
-
-  // immediately apply saved mode, otherwise use system/browser preference
+  // immediately apply saved mode, otherwise default to dark mode
   const saved = getSavedMode();
-  applyMode(saved === null ? media.matches : saved === "true");
+  applyMode(saved === null ? DEFAULT_DARK : saved === "true");
 
   const onLoad = () => {
     // ensure toggle stays in sync after initial render
@@ -45,18 +42,6 @@
 
   // after page loads
   window.addEventListener("load", onLoad);
-
-  // follow live system changes unless user has chosen manually
-  const onSystemModeChange = (event) => {
-    if (!hasManualPreference()) {
-      applyMode(event.matches);
-    }
-  };
-  if (typeof media.addEventListener === "function") {
-    media.addEventListener("change", onSystemModeChange);
-  } else if (typeof media.addListener === "function") {
-    media.addListener(onSystemModeChange);
-  }
 
   // when user toggles mode button
   window.onDarkToggleChange = (event) => {
