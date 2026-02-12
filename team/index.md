@@ -13,7 +13,7 @@ During the tenure period, the lab operated at full capacity with PhD students, p
 
 We emphasize independent project ownership, open-science workflows, and hands-on technical training in experimental and computational neuroscience.
 
-{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 840px)" boxed=true class="figure-compact-top" %}
+{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 840px)" boxed=true class="figure-compact-top figure-group-photo" %}
 
 ## Group Lead
 

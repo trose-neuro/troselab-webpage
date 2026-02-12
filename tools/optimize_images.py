@@ -28,6 +28,7 @@ SOURCE_PATTERNS = (
     "images/members/DSC_0185.jpg",
     "images/members/DSC_0189.jpg",
     "images/collaborators/*",
+    "images/partners/*",
 )
 TARGET_WIDTHS = (480, 960, 1280, 1500, 1600, 2200)
 
