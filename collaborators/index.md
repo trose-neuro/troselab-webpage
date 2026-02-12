@@ -8,4 +8,12 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-handshake" %}Collaborators
 
-{% include list.html component="card" data="collaborators" style="small" %}
+{% assign collaborators = site.data.collaborators | sort: "title" %}
+
+{% for collaborator in collaborators %}
+### [{{ collaborator.title }}]({{ collaborator.link }})
+{{ collaborator.subtitle }}
+
+{{ collaborator.description }}
+
+{% endfor %}

@@ -4,6 +4,9 @@
   | default: emptyarray
   | data_filter: include.filter
 %}
+{% if include.sort %}
+  {% assign data = data | sort: include.sort %}
+{% endif %}
 {% if include.component == "citation" %}
   {% assign data = data | dedupe_citations %}
 {% endif %}

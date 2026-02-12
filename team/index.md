@@ -16,10 +16,10 @@ nav:
 
 ## Team
 
-{% include list.html data="members" component="portrait" filter="role != 'pi' and role != 'alum' and role != 'alumni' and group != 'alumni'" %}
+{% include list.html data="members" component="portrait" filter="role != 'pi' and role != 'alum' and role != 'alumni' and group != 'alumni'" sort="name" %}
 
 {% include section.html %}
 
 ## Alumni
 
-{% include list.html data="members" component="portrait" filter="group == 'alumni' or role == 'alum' or role == 'alumni'" %}
+{% include list.html data="members" component="portrait" filter="group == 'alumni' or role == 'alum' or role == 'alumni'" sort="name" %}
