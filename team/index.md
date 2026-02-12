@@ -22,4 +22,4 @@ nav:
 
 ## Alumni
 
-{% include list.html data="members" component="portrait" filter="group == 'alumni' or role == 'alum' or role == 'alumni'" sort="name" %}
+{% include list.html data="members" component="portrait" filter="group == 'alumni' or role == 'alum' or role == 'alumni'" sort="name" style="small" %}
