@@ -2,17 +2,6 @@
 header: images/banner/twitter1500x500.jpg
 ---
 
-<!-- # Rose Group -->
-
-<!-- Circuit mechanisms of behavior in a changing world
-
-{% include button.html link="research" text="Explore Research Program" icon="fa-solid fa-arrow-right" flip=true %}
-{% include button.html type="email" text="Contact the Lab" link="mailto:tobias.rose@ukbonn.de" %}
-{% include button.html type="website" text="CV Rose" link="cv" style="bare" %}
-{% include button.html type="github" text="Code and Data" link="trose-neuro" style="bare" %} -->
-
-
-
 {% include section.html %}
 
 Brains must adapt without losing reliable function.
@@ -46,8 +35,8 @@ Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from mi
 
 {% capture text %}
 
-We test how stable coding emerges in changing circuits.
-The program combines longitudinal imaging, behavior, and computational analysis.
+We study how stable coding emerges in changing circuits.
+Our work links imaging, behavior, and computational analysis.
 
 {% include button.html link="research" text="Read the full research roadmap" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
@@ -57,8 +46,8 @@ The program combines longitudinal imaging, behavior, and computational analysis.
 
 {% capture text %}
 
-Our projects span stability, memory, natural vision, and state-dependent dynamics.
-Methods and infrastructure are developed alongside biology.
+Our portfolio spans stability, memory, and natural vision.
+Platform development runs alongside hypothesis-driven biology.
 
 {% include button.html link="projects" text="Browse project portfolio" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
@@ -68,8 +57,8 @@ Methods and infrastructure are developed alongside biology.
 
 {% capture text %}
 
-Browse recent and past publications from the group.
-Entries link directly to journal pages and archives.
+Browse recent and past publications.
+Entries link directly to journals and archives.
 
 {% include button.html link="publications" text="Browse publications" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
@@ -79,8 +68,8 @@ Entries link directly to journal pages and archives.
 
 {% capture text %}
 
-Meet current team members, alumni, and collaborators.
-Our lab combines experimental and computational systems neuroscience.
+Meet current members, alumni, and collaborators.
+The lab combines experimental and computational neuroscience.
 
 {% include button.html link="team" text="Meet the team" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 

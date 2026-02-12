@@ -9,7 +9,7 @@ nav:
 # {% include icon.html icon="fa-solid fa-diagram-project" %}Projects
 
 This page outlines our current research and platform work.
-Projects are presented as a single portfolio without ranking.
+All listed projects are active.
 
 {% include tags.html tags="representational drift, natural vision, learning, memory, infrastructure" %}
 {% include search-info.html %}

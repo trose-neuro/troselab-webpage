@@ -22,5 +22,7 @@ For collaborations, trainee applications, or project inquiries, please contact t
 
 {% include section.html %}
 
+Further information:
+
 - Legacy contact page: <http://rose-group.ieecr-bonn.de/>
 - University imprint/contact: <https://eecr-bonn.de/contact-2/>

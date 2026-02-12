@@ -9,7 +9,7 @@ nav:
 # {% include icon.html icon="fa-solid fa-user-plus" %}Recruitment
 
 We recruit PhD students primarily through the **IMPRS for Brain and Behavior** in Bonn.
-Applications are reviewed competitively, and selected candidates are invited to interviews and a symposium in Bonn.
+Selection is competitive and includes interviews in Bonn.
 
 As of **February 12, 2026**, the IMPRS site reports that the **next application round starts in August 2026**; the latest published completed round had a deadline of **October 31, 2025**.
 
@@ -18,6 +18,6 @@ As of **February 12, 2026**, the IMPRS site reports that the **next application 
 
 {% include section.html %}
 
-We also welcome direct inquiries from motivated postdoctoral candidates with strong interests in systems neuroscience, circuit methods, and computational analysis.
+We also welcome direct inquiries from postdoctoral candidates with strong interests in systems neuroscience, circuit methods, and computational analysis.
 
 {% include button.html type="email" text="Contact for postdoc inquiries" link="mailto:tobias.rose@ukbonn.de" %}

@@ -9,6 +9,7 @@ nav:
 # {% include icon.html icon="fa-solid fa-book" %}Publications
 
 Selected and complete publications from the group.
+Use search to filter by author, year, or keyword.
 
 {% include section.html %}
 

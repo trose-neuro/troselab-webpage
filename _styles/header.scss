@@ -34,7 +34,7 @@ header {
 
 header a {
   color: var(--header-ink, var(--text));
-  text-shadow: 0 1px 1px var(--header-text-shadow, transparent);
+  text-shadow: none;
   text-decoration: none;
 }
 
@@ -119,6 +119,7 @@ nav {
   gap: 6px;
   font-family: var(--heading);
   font-size: 0.92rem;
+  font-weight: var(--semi-bold);
   letter-spacing: 0;
   text-transform: none;
 }

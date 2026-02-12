@@ -8,6 +8,8 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-link" %}Links
 
+Programs, training, and partner networks we support.
+
 ## Programs We Endorse and Teach In
 
 - [Cajal Advanced Neuroscience Training Programme](https://cajal-training.org/)
