@@ -3,7 +3,7 @@ title: Research
 header: images/banner/background.jpg
 nav:
   order: 1
-  tooltip: Current research themes
+  tooltip: Research themes and current projects
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
@@ -38,4 +38,6 @@ We study how stable perception, memory, and action emerge in changing circuits.
 
 {% include section.html %}
 
-{% include button.html link="projects" text="See project portfolio" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
+## Current Projects
+
+{% include list.html component="card" data="projects" style="small" %}

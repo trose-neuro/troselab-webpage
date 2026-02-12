@@ -6,7 +6,7 @@ affiliation: University of Bonn Medical Center
 links:
   email: tobias.rose@ukbonn.de
   bluesky: trose-neuro.bsky.social
-  website: https://www.troselab.de
+  website: https://trose-neuro.github.io/troselab-webpage/
 ---
 Group leader of the Rose Group "Circuit Mechanisms of Behavior".
 

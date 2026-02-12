@@ -8,7 +8,7 @@ Live site:
 - [https://trose-neuro.github.io/troselab-webpage/](https://trose-neuro.github.io/troselab-webpage/)
 
 This repository is scaffolded from [greenelab/lab-website-template](https://github.com/greenelab/lab-website-template) and adapted with current content from:
-- [www.troselab.de](https://www.troselab.de)
+- [trose-neuro.github.io/troselab-webpage](https://trose-neuro.github.io/troselab-webpage/)
 - [rose-group.ieecr-bonn.de/current_research/current-research](http://rose-group.ieecr-bonn.de/current_research/current-research/)
 - [rose-group.ieecr-bonn.de/member](http://rose-group.ieecr-bonn.de/member/)
 - [rose-group.ieecr-bonn.de/publication](http://rose-group.ieecr-bonn.de/publication/)

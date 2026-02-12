@@ -13,7 +13,6 @@ const minDiffRatio = Number(process.env.MIN_SCREEN_DIFF_RATIO || "0.005");
 const pages = [
   { path: "/", slug: "home" },
   { path: "/research/", slug: "research" },
-  { path: "/projects/", slug: "projects" },
   { path: "/publications/", slug: "publications" },
   { path: "/blog/", slug: "news" },
 ];

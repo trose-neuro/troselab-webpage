@@ -42,11 +42,11 @@ Our work links imaging, behavior, and computational analysis.
 Our portfolio spans stability, memory, and natural vision.
 Platform development runs alongside hypothesis-driven biology.
 
-{% include button.html link="projects" text="Browse project portfolio" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
+{% include button.html link="research" text="Browse current projects" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
-{% include feature.html image="images/banner/tdtomatoGGsliceEPI-wide.jpg" link="projects" title="Projects" flip=true style="bare" text=text %}
+{% include feature.html image="images/banner/tdtomatoGGsliceEPI-wide.jpg" link="research" title="Current Projects" flip=true style="bare" text=text %}
 
 {% capture text %}
 

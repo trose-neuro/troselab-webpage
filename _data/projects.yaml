@@ -108,11 +108,8 @@
       text: Documentation
       link: https://adamacs-documentation.readthedocs.io
     - type: source
-      text: adamacs_ingest
-      link: https://github.com/trose-neuro/adamacs_ingest
-    - type: source
-      text: adamacs_analysis
-      link: https://github.com/trose-neuro/adamacs_analysis
+      text: adamacs_documentation
+      link: https://github.com/trose-neuro/adamacs_documentation
   tags:
     - data management
     - open science
