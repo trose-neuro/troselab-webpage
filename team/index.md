@@ -8,9 +8,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-The Rose Group is an international, interdisciplinary team focused on circuit mechanisms of stable behavior.
-Members lead independent projects while contributing to shared methods, open workflows, and collaborative science.
-
 {% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 840px)" boxed=true class="figure-compact-top figure-group-photo" %}
 
 ## Group Lead
