@@ -2,7 +2,7 @@
 title: Collaborators
 header: images/banner/Chiams LGN-wide.jpg
 nav:
-  order: 3.5
+  order: 5.8
   tooltip: Collaborators and partner labs
 ---
 
