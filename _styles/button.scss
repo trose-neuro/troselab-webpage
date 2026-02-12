@@ -19,7 +19,7 @@ button {
   padding: 0.5rem 0.9rem;
   border: 1px solid var(--border);
   border-radius: var(--rounded-sm);
-  background: var(--surface);
+  background: var(--surface-frost);
   color: var(--text);
   text-align: center;
   font: inherit;
@@ -29,15 +29,18 @@ button {
   text-decoration: none;
   vertical-align: middle;
   appearance: none;
-  box-shadow: none;
+  box-shadow: var(--shadow);
   transition: background var(--transition), color var(--transition),
-    border-color var(--transition);
+    border-color var(--transition), box-shadow var(--transition),
+    transform var(--transition);
 }
 
 .button:hover {
-  background: var(--surface-alt);
+  background: var(--surface);
   color: var(--primary);
   border-color: var(--primary-soft);
+  box-shadow: var(--shadow-strong);
+  transform: translateY(-1px);
 }
 
 .button[data-style="bare"] {
@@ -51,6 +54,8 @@ button {
   &:hover {
     color: var(--primary);
     background: transparent;
+    box-shadow: none;
+    transform: none;
   }
 }
 
