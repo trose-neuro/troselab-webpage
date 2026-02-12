@@ -41,9 +41,19 @@
 }
 
 .figure-boxed .figure-image img {
+  margin: 0 auto;
   border: 0;
   box-shadow: none;
   border-radius: calc(var(--rounded) - 4px);
+}
+
+.figure-group-photo.figure-boxed .figure-image {
+  display: flex;
+  justify-content: center;
+}
+
+.figure-group-photo.figure-boxed .figure-image img {
+  object-position: center center;
 }
 
 /*# sourceMappingURL=figure.css.map */
