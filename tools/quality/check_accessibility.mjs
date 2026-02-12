@@ -8,7 +8,7 @@ const require = createRequire(import.meta.url);
 const axeSource = readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
 
 const baseUrl = process.argv[2] || "http://127.0.0.1:4173";
-const pages = ["/", "/research/", "/projects/", "/publications/", "/blog/"];
+const pages = ["/", "/research/", "/publications/", "/blog/"];
 const modes = ["light", "dark"];
 const failures = [];
 

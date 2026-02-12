@@ -16,25 +16,24 @@
 }
 
 .card[data-style=small] {
-  width: 260px;
-  height: 420px;
+  width: 300px;
+  height: 560px;
 }
 
 .card[data-style=small] .card-text {
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .card[data-style=small] .card-text > p {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  overflow: visible;
+  display: block;
+  -webkit-line-clamp: unset;
 }
 
 .card[data-style=small] .card-text > .tags {
-  overflow: hidden;
-  max-height: 2.8em;
+  overflow: visible;
+  max-height: none;
 }
 
 .card:hover {
