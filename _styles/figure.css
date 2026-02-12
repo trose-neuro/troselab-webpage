@@ -7,6 +7,10 @@
   margin: clamp(18px, 4vw, 40px) 0;
 }
 
+.figure.figure-compact-top {
+  margin-top: clamp(6px, 1.2vw, 12px);
+}
+
 .figure-image {
   display: contents;
 }
@@ -25,6 +29,21 @@
   font-size: 0.95rem;
   font-style: italic;
   text-align: center;
+}
+
+.figure-boxed .figure-image {
+  display: block;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--rounded);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.figure-boxed .figure-image img {
+  border: 0;
+  box-shadow: none;
+  border-radius: calc(var(--rounded) - 4px);
 }
 
 /*# sourceMappingURL=figure.css.map */

@@ -163,8 +163,7 @@ header[data-big] .home {
   gap: 16px;
 }
 header[data-big] .logo {
-  height: 80px;
-  flex-shrink: 0;
+  display: none;
 }
 header[data-big] .title-text {
   flex-direction: column;

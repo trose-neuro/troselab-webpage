@@ -32,12 +32,12 @@
 
 header.background:before,
 footer.background:before {
-  opacity: var(--media-image-opacity);
+  opacity: var(--banner-image-opacity, var(--media-image-opacity));
 }
 
 header.background:after,
 footer.background:after {
-  opacity: var(--media-veil-opacity);
+  opacity: var(--banner-veil-opacity, var(--media-veil-opacity));
 }
 
 section.background[data-has-image=true]:before {
