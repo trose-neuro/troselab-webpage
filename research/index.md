@@ -8,8 +8,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Brains must stay reliable while they adapt.
-We study how stable perception, memory, and action emerge in changing circuits.
+We study how stable perception, memory, and action emerge in changing circuits in changing environments.
 
 ## Focus Areas
 
