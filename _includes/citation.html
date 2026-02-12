@@ -7,10 +7,17 @@
 {% else %}
   {% assign citation = include %}
 {% endif %}
+{% assign citation_image = citation.image %}
+{% if citation_image == nil or citation_image == "" %}
+  {% assign citation_assets = site.data["citation-images"][citation.id] %}
+  {% if citation_assets and citation_assets.image %}
+    {% assign citation_image = citation_assets.image %}
+  {% endif %}
+{% endif %}
 
 <div class="citation-container">
   <div class="citation">
-    {% if include.style == "rich" %}
+    {% if include.style == "rich" and citation_image %}
       <a
         {% if citation.link %}
           href="{{ citation.link | relative_url | uri_escape }}"
@@ -21,7 +28,7 @@
         {% assign citation_sizes = "(max-width: 800px) 100vw, 180px" %}
         {%
           include responsive-image.html
-          image=citation.image
+          image=citation_image
           alt=citation.title
           sizes=citation_sizes
           loading="lazy"

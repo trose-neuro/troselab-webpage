@@ -27,17 +27,6 @@
 %}
 {% assign image = image_optimized_1500 | default: image_optimized_1280 | default: image_optimized_960 | default: image_optimized_480 | default: image %}
 
-{% assign svg = "images/logo.svg" | file_exists %}
-{% assign png = "images/logo.png" | file_exists %}
-{% assign jpg = "images/logo.jpg" | file_exists %}
-{% assign logo = svg | default: png | default: jpg | default: nil %}
-{% assign logo_optimized = logo
-  | regex_replace: "^images/", "images/optimized/"
-  | regex_replace: '\.[^.]+$', "-480.jpg"
-  | file_exists
-%}
-{% assign logo = logo_optimized | default: logo %}
-
 <header
   class="background"
   style="--image: url('{{ image | relative_url | uri_escape }}')"
@@ -77,15 +66,6 @@
   {% endif %}
 >
   <a href="{{ "/" | relative_url }}" class="home">
-    {% if logo %}
-      <span class="logo">
-        {% if svg %}
-          {{ svg | file_read }}
-        {% else %}
-          <img src="{{ logo | relative_url | uri_escape }}" alt="logo">
-        {% endif %}
-      </span>
-    {% endif %}
     {% if site.logo-text != false %}
       <span class="title-text" data-tooltip="Home">
         {% if site.title and site.show-title != false %}

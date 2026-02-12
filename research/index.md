@@ -8,14 +8,14 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-We study how stable perception, memory, and action emerge in dynamic circuits in changing environments.
+We study how stable perception, memory, and action arise from dynamic neural circuits in changing environments.
 
 ## Focus Areas
 
-- Stability and drift across visual and thalamocortical pathways
+- Stability and drift across visual pathways
 - Spatial and contextual coding in retrosplenial circuits
-- Natural vision and active orienting behavior
-- State, neuromodulation, and uncertainty-dependent dynamics
+- Natural vision and active orienting behavior in freely moving mice
+- State, neuromodulation, and uncertainty-dependent dynamics in cortical circuits
 - Latent learning and crossmodal integration in cortical circuits
 
 {% include section.html %}
@@ -25,7 +25,7 @@ We study how stable perception, memory, and action emerge in dynamic circuits in
 - Longitudinal optophysiology at synapse, cell, and circuit scales
 - Miniature and bench-top two-photon imaging
 - Closed-loop behavioral paradigms with multimodal tracking
-- Computational modeling and analysis across timescales
+- Computational modeling and analysis across spatial and temporal scales
 
 {% include section.html %}
 
@@ -33,7 +33,7 @@ We study how stable perception, memory, and action emerge in dynamic circuits in
 
 - Map structure-function rules of stable and flexible coding
 - Build closed-loop perturbation and readout across hierarchies
-- Link behavior and neural dynamics with predictive models
+- Link behavior and neural dynamics with predictive models in freely moving mice
 
 {% include section.html %}
 
