@@ -19,10 +19,11 @@ Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from mi
 
 ## Current Work
 
-- Stable and flexible coding across visual and thalamocortical circuits
-- Spatial and contextual processing in retrosplenial cortex
-- Natural vision during active orienting behavior
-- Latent learning in cortical memory networks
+- Stable and flexible coding across cortical and subcortical circuits
+- Active vision during visual orienting behavior
+- Latent learning and crossmodal integration in cortical circuits 
+- Contextual processing during spatial learning
+- State, neuromodulation, and uncertainty-dependent dynamics in cortical circuits
 
 {% include section.html %}
 
@@ -40,7 +41,7 @@ Our work links imaging, behavior, and computational analysis.
 {% capture text %}
 
 Our portfolio spans stability, memory, and natural vision.
-Platform development runs alongside hypothesis-driven biology.
+Platform development runs alongside hypothesis-driven and exploratory biology.
 
 {% include button.html link="research" text="Browse current projects" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 

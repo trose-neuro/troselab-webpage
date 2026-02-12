@@ -16,7 +16,7 @@ We study how stable perception, memory, and action emerge in changing circuits i
 - Spatial and contextual coding in retrosplenial circuits
 - Natural vision and active orienting behavior
 - State, neuromodulation, and uncertainty-dependent dynamics
-- Latent learning and cue integration in cortical memory systems
+- Latent learning and crossmodal integration in cortical circuits
 
 {% include section.html %}
 
