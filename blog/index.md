@@ -1,6 +1,6 @@
 ---
 title: News
-header: images/members/DSC_0149.jpg
+header: images/banner/binocular axons VCElement 1@4x-100.jpg
 nav:
   order: 5
   tooltip: Updates and announcements

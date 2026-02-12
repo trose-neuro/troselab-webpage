@@ -1,6 +1,6 @@
 ---
 title: Projects
-header: images/members/DSC_0185.jpg
+header: images/banner/tdtomatoGGsliceEPI.jpg
 nav:
   order: 4
   tooltip: Current project portfolio

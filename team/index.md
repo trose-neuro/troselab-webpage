@@ -1,6 +1,6 @@
 ---
 title: Team
-header: images/members/DSC_0137.jpg
+header: images/banner/g2.jpg
 nav:
   order: 3
   tooltip: Current members and alumni
