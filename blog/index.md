@@ -3,14 +3,10 @@ title: News
 header: images/banner/binocular axons VCElement 1@4x-100-wide.jpg
 nav:
   order: 5
-  tooltip: Updates and announcements
+  tooltip: News and announcements
 ---
 
 # {% include icon.html icon="fa-solid fa-bullhorn" %}News
-
-Updates from the group and website.
-
-{% include section.html %}
 
 {% include search-box.html %}
 {% include tags.html tags=site.tags %}

@@ -10,13 +10,9 @@ nav:
 
 {% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 840px)" boxed=true class="figure-compact-top figure-group-photo" %}
 
-## Group Lead
-
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-
 ## Team
 
-{% include list.html data="members" component="portrait" filter="role != 'pi' and role != 'alum' and role != 'alumni' and group != 'alumni'" sort="name" %}
+{% include list.html data="members" component="portrait" filter="role != 'alum' and role != 'alumni' and group != 'alumni'" sort="name" %}
 
 {% include section.html %}
 
