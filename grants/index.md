@@ -1,6 +1,6 @@
 ---
 title: Grants
-header: images/banner/Chiams LGN.jpg
+header: images/banner/Chiams LGN-wide.jpg
 nav:
   order: 4.6
   tooltip: Funding sources and support

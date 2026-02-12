@@ -1,6 +1,6 @@
 ---
 title: Team
-header: images/banner/g2.jpg
+header: images/banner/hippocampus ca1-wide.jpg
 nav:
   order: 3
   tooltip: Current members and alumni

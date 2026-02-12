@@ -1,6 +1,6 @@
 ---
 title: CV Rose
-header: images/banner/hippocampus ca1.jpg
+header: images/banner/hippocampus ca1-wide.jpg
 nav:
   order: 4.5
   tooltip: Curriculum vitae

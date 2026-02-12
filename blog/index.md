@@ -1,6 +1,6 @@
 ---
 title: News
-header: images/banner/binocular axons VCElement 1@4x-100.jpg
+header: images/banner/binocular axons VCElement 1@4x-100-wide.jpg
 nav:
   order: 5
   tooltip: Updates and announcements

@@ -1,90 +1,86 @@
-- title: Project 1.1 - Feedback Alignment in Visual Cortex
+- title: Feedback and Visual Stability
   subtitle: Current Project
-  group: featured
-  image: "images/banner/binocular axons VCElement 1@4x-100.jpg"
+  image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
   link: research
   description: |
-    Chronic two-photon imaging and deep receptive-field models test how higher-order feedback stabilizes representations across dLGN, V1, and LM.
+    We test how feedback pathways support stable coding across visual circuits.
   tags:
     - representational drift
     - feedback
     - visual cortex
 
-- title: Project 1.2 - Thalamocortical Stabilization in dLGN
+- title: Thalamocortical Stability
   subtitle: Current Project
-  group: featured
-  image: "images/banner/Chiams LGN.jpg"
+  image: "images/banner/Chiams LGN-wide.jpg"
   link: research
   description: |
-    Tests whether cortical feedback stabilizes long-term dLGN responses despite structural convergence in retinothalamic input.
+    We examine long-term stability in thalamic and cortical sensory processing.
   tags:
     - thalamus
     - plasticity
     - dLGN
 
-- title: Project 2 - Experience in V1 versus CA1
+- title: Experience Across Cortex and Hippocampus
   subtitle: Current Project
-  image: images/banner/tdtomatoGGsliceEPI.jpg
+  image: images/banner/tdtomatoGGsliceEPI-wide.jpg
   link: research
   description: |
-    Compares representational stability in visual cortex and hippocampus after sparse manipulation of plasticity-related genes during active and passive virtual reality.
+    We compare how experience shapes stability across cortical and hippocampal circuits.
   tags:
     - V1
     - CA1
     - experience
 
-- title: Project 3 - RSC Memory Stabilization
+- title: Memory Stabilization in RSC
   subtitle: Current Project
-  group: featured
-  image: "images/banner/hippocampus ca1.jpg"
+  image: "images/banner/hippocampus ca1-wide.jpg"
   link: research
   description: |
-    Closed-loop learning and memory paradigms with miniature two-photon imaging test how spatial and contextual signals stabilize in retrosplenial cortex.
+    We study how spatial and contextual memory signals stabilize over learning.
   tags:
     - retrosplenial cortex
     - learning
     - memory
 
-- title: Project 4 - Natural Vision and Active Orienting
+- title: Natural Vision and Orienting
   subtitle: Current Project
-  group: featured
-  image: images/banner/g2.jpg
+  image: images/banner/background.jpg
   link: research
   description: |
-    Freely moving visual orienting assays with head-mounted imaging, gaze tracking, and scene reconstruction test peri-saccadic processing.
+    We study visual processing during active orienting in natural behavior.
   tags:
     - natural vision
     - orienting
     - closed-loop behavior
 
-- title: Project 5 - Landmark Affordance Coding
+- title: Landmark Coding in Navigation
   subtitle: Current Project
-  image: images/banner/photo.jpg
+  image: images/banner/multilevel spines.jpg
   link: research
   description: |
-    Quantifies how RSC and V1 encode landmark utility (stability, value, salience) in gaze-contingent closed-loop navigation.
+    We test how cortical circuits encode landmark relevance during navigation.
   tags:
     - affordance
     - landmarks
     - navigation
 
-- title: Project 6 - Uncertainty and Neuromodulation
+- title: State, Uncertainty, and Neuromodulation
   subtitle: Current Project
   image: "images/banner/multilevel spines.jpg"
   link: research
   description: |
-    Tests how uncertainty-dependent states and cholinergic neuromodulation regulate representational drift across scales, including spatial transcriptomics.
+    We test how internal state and neuromodulation shape stable and flexible coding.
   tags:
     - uncertainty
     - neuromodulation
     - transcriptomics
 
-- title: Project 7 - Latent Learning Circuits
+- title: Latent Learning Circuits
   subtitle: Current Project
   image: images/banner/background.jpg
   link: research
   description: |
-    Multisensory preconditioning in virtual reality resolves circuit mechanisms of unsupervised cue association and transfer in cortical memory systems.
+    We study unsupervised cue learning and transfer in cortical memory circuits.
   tags:
     - latent learning
     - preconditioning
@@ -103,10 +99,10 @@
 
 - title: ADAMACS Data Infrastructure
   subtitle: Collaborative Data Platform
-  image: images/members/DSC_0177.jpg
+  image: images/banner/background.jpg
   link: https://adamacs-documentation.readthedocs.io
   description: |
-    Data management, processing, and database infrastructure for collaborative neurophysiology and open workflow reuse.
+    Data management and analysis infrastructure for collaborative neurophysiology.
   buttons:
     - type: docs
       text: Documentation
@@ -127,7 +123,7 @@
   image: images/logo.jpg
   link: https://ibehave.nrw
   description: |
-    Cross-institutional network with shared technology platforms (CADRE, iBOTS, eLAB) and whole-brain recording initiatives.
+    Cross-institutional network for shared methods, platforms, and training.
   tags:
     - network
     - collaboration

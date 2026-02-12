@@ -1,12 +1,8 @@
 {% assign image = page.header %}
-{% if image == nil and page.collection == "members" and page.image %}
-  {% assign member_landscape = page.image | replace: "_portrait.", "_landscape." %}
-  {% assign image = member_landscape | file_exists | default: page.image %}
-{% endif %}
 {% assign image = image | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 {% if page.url == "/" %}
-  {% assign banner_images = "images/banner/twitter1500x500.jpg|images/banner/background.jpg|images/banner/photo.jpg|images/banner/g2.jpg|images/banner/multilevel spines.jpg|images/banner/tdtomatoGGsliceEPI.jpg|images/banner/binocular axons VCElement 1@4x-100.jpg|images/banner/hippocampus ca1.jpg|images/banner/Chiams LGN.jpg" | split: "|" %}
+  {% assign banner_images = "images/banner/twitter1500x500.jpg|images/banner/background.jpg|images/banner/multilevel spines.jpg|images/banner/tdtomatoGGsliceEPI-wide.jpg|images/banner/binocular axons VCElement 1@4x-100-wide.jpg|images/banner/hippocampus ca1-wide.jpg|images/banner/Chiams LGN-wide.jpg" | split: "|" %}
   {% assign image = banner_images | first %}
 {% endif %}
 {% assign image_optimized_1500 = image

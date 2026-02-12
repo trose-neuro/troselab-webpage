@@ -1,6 +1,6 @@
 ---
 title: Recruitment
-header: images/banner/binocular axons VCElement 1@4x-100.jpg
+header: images/banner/binocular axons VCElement 1@4x-100-wide.jpg
 nav:
   order: 5.4
   tooltip: PhD and postdoc opportunities

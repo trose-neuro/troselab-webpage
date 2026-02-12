@@ -1,6 +1,6 @@
 ---
 title: Collaborators
-header: images/banner/g2.jpg
+header: images/banner/Chiams LGN-wide.jpg
 nav:
   order: 3.5
   tooltip: Collaborators and partner labs

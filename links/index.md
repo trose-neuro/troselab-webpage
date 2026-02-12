@@ -1,6 +1,6 @@
 ---
 title: Links
-header: images/banner/hippocampus ca1.jpg
+header: images/banner/hippocampus ca1-wide.jpg
 nav:
   order: 5.3
   tooltip: Programs, networks, and institutions
