@@ -8,7 +8,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-We study how stable perception, memory, and action emerge in changing circuits in changing environments.
+We study how stable perception, memory, and action emerge in dynamic circuits in changing environments.
 
 ## Focus Areas
 
