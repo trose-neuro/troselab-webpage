@@ -10,9 +10,9 @@
   background: var(--surface);
   border-radius: var(--rounded);
   overflow: hidden;
-  box-shadow: none;
+  box-shadow: var(--shadow);
   vertical-align: top;
-  transition: border-color var(--transition), background var(--transition);
+  transition: border-color var(--transition), background var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
 .card[data-style=small] {
@@ -38,8 +38,8 @@
 }
 
 .card:hover {
-  transform: none;
-  box-shadow: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
   border-color: var(--primary-soft);
   background: var(--surface-alt);
 }
@@ -55,6 +55,11 @@
   aspect-ratio: 16/10;
   object-fit: cover;
   width: 100%;
+  transition: transform var(--transition);
+}
+
+.card:hover .card-image img {
+  transform: scale(1.018);
 }
 
 .card-text {

@@ -1,7 +1,7 @@
 section {
   position: relative;
   padding: var(--section-pad) max(20px, (100% - var(--page)) / 2);
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
 
 section[data-size=wide] {
@@ -39,6 +39,10 @@ main > section:nth-of-type(odd) {
 
 main > section:nth-of-type(even) {
   background: var(--section-alt);
+}
+
+main > section + section {
+  border-top: 1px solid var(--border);
 }
 
 /*# sourceMappingURL=section.css.map */

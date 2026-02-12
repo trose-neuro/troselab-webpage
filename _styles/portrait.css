@@ -17,16 +17,17 @@
   border: 1px solid var(--border);
   border-radius: var(--rounded);
   background: var(--surface);
-  box-shadow: none;
+  box-shadow: var(--shadow);
   overflow: hidden;
   text-decoration: none;
-  transition: border-color var(--transition), background var(--transition);
+  transition: border-color var(--transition), background var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
 .portrait:hover {
-  transform: none;
+  transform: translateY(-2px);
   border-color: var(--primary-soft);
   background: var(--surface-alt);
+  box-shadow: var(--shadow-strong);
 }
 
 .portrait[data-style=small] {
@@ -57,11 +58,12 @@
   width: 28px;
   aspect-ratio: 1/1;
   border-radius: 999px;
-  background: var(--surface);
+  background: var(--surface-frost);
   border: 1px solid var(--border);
-  box-shadow: none;
+  box-shadow: var(--shadow);
   color: var(--primary);
-  transform: none;
+  transform: translateY(0);
+  transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .portrait[data-style=small] .icon {
@@ -79,15 +81,25 @@
   aspect-ratio: 4/5;
   border-radius: var(--rounded-sm);
   object-fit: cover;
-  box-shadow: none;
+  box-shadow: var(--shadow);
   cursor: zoom-in;
+  transition: transform var(--transition);
+}
+
+.portrait:hover .portrait-image {
+  transform: scale(1.018);
+}
+
+.portrait:hover .icon {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-strong);
 }
 
 .portrait[data-style=tiny] .portrait-image {
   width: 54px;
   aspect-ratio: 1/1;
   margin: 0;
-  box-shadow: none;
+  box-shadow: var(--shadow);
 }
 
 .portrait[data-style=profile] {
