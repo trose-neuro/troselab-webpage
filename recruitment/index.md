@@ -30,12 +30,10 @@ We also welcome direct inquiries from postdoctoral candidates with strong intere
 
 # {% include icon.html icon="fa-solid fa-link" %}Links
 
-## Programs We Endorse and Teach In
-
-- [Cajal Advanced Neuroscience Training Programme](https://cajal-training.org/)
-- [TENSS Neuroscience Summer School](https://www.tenss.ro/)
-- [Live ADAMACS documentation](https://adamacs-documentation.readthedocs.io)
-
+## Institutional Links
+- [Institute of Experimental Epileptology and Cognition Research](https://ieecr-bonn.de)
+- [University Hospital Bonn (UKB)](https://www.ukbonn.de/en/)
+- [University of Bonn](https://www.uni-bonn.de/en)
 {% include section.html %}
 
 ## Consortia and Research Networks
@@ -45,17 +43,20 @@ We also welcome direct inquiries from postdoctoral candidates with strong intere
 - [iBOTS](https://ibots-bonn.de/)
 - [CADRE data core](https://ibehave.nrw/ibots-platform/CADRE/)
 - [SFB 1089](https://bonn-neuroscience.de/consortia-list/dfg-collaborative-research-center-synaptic-micronetworks-in-health-and-disease-sfb-1089/)
-- [SFB 1989 (BCN context)](https://bonn-neuroscience.de/)
 - [Bonn-Cologne Neuroscience Center (BCN)](https://bonn-neuroscience.de/)
 - [BIGS Neuroscience Graduate School](https://www.bigs-neuroscience.de/bigs/)
 - [IMPRS for Brain and Behavior](https://imprs-brain-behavior.mpg.de/)
-
+- [Cajal Advanced Neuroscience Training Programme](https://cajal-training.org/)
+- [TENSS Neuroscience Summer School](https://www.tenss.ro/)
 {% include section.html %}
 
-## Institutional Links
+## Scientific Data Handling
 
-- [University Hospital Bonn (UKB)](https://www.ukbonn.de/en/)
-- [University of Bonn](https://www.uni-bonn.de/en)
+We use a structured and reproducible data workflow for acquisition, curation, analysis, and long-term reuse.  
+Our setup combines ADAMACS for project-level documentation and processing standards with DataJoint-based data management for traceable computational pipelines.
+
+- [ADAMACS documentation](https://adamacs-documentation.readthedocs.io/)
+- [DataJoint documentation](https://docs.datajoint.com/)
 
 {% include section.html %}
 
