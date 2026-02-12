@@ -9,7 +9,7 @@ footer {
   padding: clamp(22px, 4vw, 34px);
   border: 1px solid var(--border);
   border-radius: var(--rounded);
-  background: var(--surface-frost);
+  background: var(--frame-frost, var(--surface-frost));
   backdrop-filter: blur(14px) saturate(125%);
   -webkit-backdrop-filter: blur(14px) saturate(125%);
   color: var(--dark-gray);

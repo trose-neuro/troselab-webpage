@@ -40,6 +40,33 @@ footer.background:after {
   opacity: var(--banner-veil-opacity, var(--media-veil-opacity));
 }
 
+.banner-rotator {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  opacity: var(--banner-image-opacity, var(--media-image-opacity));
+}
+
+.banner-rotator-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0;
+  transition: opacity 1700ms ease-in-out;
+}
+
+.banner-rotator-layer[data-active=true] {
+  opacity: 1;
+}
+
+header.background[data-rotating=true]:before,
+footer.background[data-rotating=true]:before {
+  opacity: 0;
+}
+
 section.background[data-has-image=true]:before {
   opacity: var(--media-image-opacity);
 }
