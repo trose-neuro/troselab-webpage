@@ -27,3 +27,9 @@
   image: images/collaborators/simon-musall.jpg
   link: https://www.fz-juelich.de/profile/musall_s
   description: In-vivo neurophysiology, decision-making, and multisensory processing.
+
+- title: Tobias Ackels
+  subtitle: Assistant Professor, Cajal International Neuroscience Center (CINC-CSIC), Madrid
+  photo: images/collaborators/tobias-ackels.png
+  link: https://tobiasackels.github.io/
+  description: Olfactory circuit physiology, sensory coding, and behavior.
