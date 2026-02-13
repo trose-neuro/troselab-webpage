@@ -176,6 +176,38 @@ def unpaywall_candidates(session: requests.Session, doi: str) -> List[str]:
     return dedupe(candidates)
 
 
+def europepmc_candidates(session: requests.Session, doi: str) -> List[str]:
+    query = quote(f'DOI:"{doi}"', safe="")
+    api_url = (
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+        f"?query={query}&format=json&pageSize=5&resultType=core"
+    )
+    try:
+        response = session.get(api_url, timeout=TIMEOUT)
+        response.raise_for_status()
+        payload = response.json()
+    except (requests.RequestException, ValueError):
+        return []
+
+    out: List[str] = []
+    results = (payload.get("resultList") or {}).get("result") or []
+    for result in results:
+        pmcid = str(result.get("pmcid", "")).strip()
+        if pmcid:
+            out.append(f"https://europepmc.org/articles/{pmcid}?pdf=render")
+
+        full_text_urls = (result.get("fullTextUrlList") or {}).get("fullTextUrl") or []
+        for item in full_text_urls:
+            url = str(item.get("url", "")).strip()
+            style = str(item.get("documentStyle", "")).lower()
+            if not url:
+                continue
+            if style == "pdf" or ".pdf" in url.lower() or "pdf=render" in url.lower():
+                out.append(url)
+
+    return dedupe(out)
+
+
 def resolve_landing(session: requests.Session, doi: str) -> tuple[Optional[str], Optional[str]]:
     doi_url = f"https://doi.org/{quote(doi, safe='')}"
     try:
@@ -251,6 +283,7 @@ def build_candidates(
                 for version in range(1, 9):
                     candidates.append(f"https://{host}/content/{doi}v{version}.full.pdf")
 
+        candidates.extend(europepmc_candidates(session, doi))
         candidates.extend(unpaywall_candidates(session, doi))
         candidates.extend(crossref_pdf_candidates(session, doi))
         doi_pdf = doi_accept_pdf_candidate(session, doi)
