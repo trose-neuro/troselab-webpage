@@ -8,7 +8,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-{% include figure.html image="images/members/DSC_0137.jpg" caption="Rose Group" width="min(100%, 840px)" boxed=true class="figure-compact-top figure-group-photo" %}
+{% include figure.html image="images/members/DSC_0137.jpg" caption="troselab" width="min(100%, 840px)" boxed=true class="figure-compact-top figure-group-photo" %}
 
 ## Team
 

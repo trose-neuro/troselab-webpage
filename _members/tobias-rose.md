@@ -8,7 +8,7 @@ links:
   bluesky: trose-neuro.bsky.social
   website: https://trose-neuro.github.io/troselab-webpage/
 ---
-Group leader of the Rose Group "Circuit Mechanisms of Behavior".
+Group leader of the troselab "Circuit Mechanisms of Behavior".
 
 Research focus: circuit mechanisms that stabilize neural representations across perception, learning, and memory while preserving adaptability.
 Current work spans representational drift in visual pathways, memory-related coding in retrosplenial cortex, and active vision during orienting behavior.
