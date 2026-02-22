@@ -1,8 +1,8 @@
 ---
 ---
 
-$two: 750px;
-$one: 500px;
+$two: 980px;
+$one: 640px;
 
 .cols {
   display: grid;
@@ -40,5 +40,11 @@ $one: 500px;
 @media (max-width: $one) {
   .cols {
     --repeat: min(1, var(--cols));
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  .cols > * {
+    padding: 12px;
   }
 }

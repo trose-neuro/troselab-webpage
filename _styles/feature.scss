@@ -1,7 +1,7 @@
 ---
 ---
 
-$wrap: 900px;
+$wrap: 980px;
 
 .feature {
   display: grid;
@@ -89,5 +89,17 @@ $wrap: 900px;
 
   .feature-title {
     text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .feature {
+    margin: 14px 0;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .feature-image {
+    min-height: 160px;
   }
 }

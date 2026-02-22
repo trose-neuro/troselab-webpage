@@ -5,6 +5,7 @@ $logo-big: 80px;
 $logo: 44px;
 $big-padding: clamp(56px, 11vw, 130px);
 $collapse: 900px;
+$mobile: 640px;
 $sticky: true;
 
 header {
@@ -126,6 +127,7 @@ nav {
 
 nav > a {
   padding: 6px 11px;
+  min-height: 34px;
   border: 1px solid var(--header-chip-border, transparent);
   border-radius: var(--rounded-sm);
   background: var(--header-chip, transparent);
@@ -219,5 +221,102 @@ header[data-big] {
 
   nav {
     justify-content: center;
+  }
+}
+
+@media (max-width: $collapse) {
+  header {
+    width: min(calc(100% - 14px), var(--page));
+    margin-top: 8px;
+    padding: 9px 12px;
+    gap: 10px;
+
+    @if $sticky {
+      top: max(6px, env(safe-area-inset-top));
+    }
+  }
+
+  .home {
+    min-width: 0;
+    flex-basis: auto;
+  }
+
+  .title-text {
+    gap: 4px;
+  }
+
+  .title {
+    font-size: 1.03rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav-toggle {
+    display: flex;
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-toggle:not(:checked) + nav {
+    display: none;
+  }
+
+  nav {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    padding-top: 4px;
+  }
+
+  nav > a {
+    width: 100%;
+    padding: 10px 12px;
+    text-align: left;
+  }
+
+  header:not([data-big]) nav {
+    align-items: stretch;
+  }
+
+  header:not([data-big]) nav > a {
+    text-align: left;
+  }
+
+  header[data-big] {
+    gap: 14px;
+    padding: clamp(24px, 8vw, 42px) 12px;
+  }
+
+  header[data-big] .home {
+    gap: 12px;
+  }
+
+  header[data-big] .title {
+    font-size: clamp(1.5rem, 7vw, 2.1rem);
+  }
+
+  header[data-big] .subtitle {
+    font-size: clamp(0.9rem, 3.2vw, 1rem);
+  }
+
+  header[data-big] nav > a {
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile) {
+  header {
+    border-radius: calc(var(--rounded) - 2px);
+  }
+
+  nav {
+    gap: 4px;
+  }
+
+  nav > a {
+    font-size: 0.94rem;
   }
 }

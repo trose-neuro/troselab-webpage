@@ -1,8 +1,8 @@
 ---
 ---
 
-$two: 750px;
-$one: 500px;
+$two: 980px;
+$one: 640px;
 
 .grid {
   display: grid;
@@ -31,6 +31,8 @@ $one: 500px;
 @media (max-width: $one) {
   .grid {
     --repeat: 1;
+    gap: 14px;
+    margin: 16px 0;
   }
 }
 
