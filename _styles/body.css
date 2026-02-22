@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   overflow-x: clip;
+  background-color: #0d131b;
   background: radial-gradient(1200px 640px at -10% -15%, var(--bg-glow-1), transparent 65%), radial-gradient(1000px 580px at 110% -20%, var(--bg-glow-2), transparent 68%), var(--background);
   color: var(--text);
   font-family: var(--body);
@@ -19,6 +20,8 @@ body {
 }
 
 html {
+  color-scheme: dark;
+  background-color: #0d131b;
   background: var(--background);
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
