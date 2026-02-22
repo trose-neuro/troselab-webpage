@@ -95,10 +95,41 @@
     modal.removeAttribute("data-mode");
   }
 
+  function escapeHtml(value) {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+  }
+
+  function renderCaptionWithLinks(caption) {
+    const text = (caption || "").trim();
+    if (!text) return "";
+
+    const linkPattern = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+    let html = "";
+    let lastIndex = 0;
+    let match = linkPattern.exec(text);
+
+    while (match) {
+      const [full, label, href] = match;
+      html += escapeHtml(text.slice(lastIndex, match.index));
+      html += `<a href="${href}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+      lastIndex = match.index + full.length;
+      match = linkPattern.exec(text);
+    }
+
+    html += escapeHtml(text.slice(lastIndex));
+    return html.replaceAll("\n", "<br>");
+  }
+
   function setCaption(modal, caption) {
     const modalCaption = modal.querySelector(".image-lightbox-caption");
     if (!modalCaption) return;
-    modalCaption.textContent = (caption || "").trim();
+    const rendered = renderCaptionWithLinks(caption);
+    modalCaption.innerHTML = rendered;
   }
 
   function closeModal(modal) {
