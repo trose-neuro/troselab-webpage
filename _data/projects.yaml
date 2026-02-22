@@ -6,7 +6,7 @@
   description: |
     We test whether cortical feedback stabilizes receptive fields over time.
   video_caption: |
-    Month-scale visual-cortex recordings used to estimate maximally exciting neural inputs with deep visual-cortex models, in collaboration with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
+    These are maximally exciting inputs (MEIs) of individual excitatory L2/3 neurons tracked over one month, estimated with deep visual-cortex models in collaboration with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
   buttons:
     - type: link
       text: Leon Kremers
