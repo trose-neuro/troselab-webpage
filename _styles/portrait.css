@@ -209,4 +209,40 @@
   flex: 0 0 auto;
 }
 
+@media (max-width: 720px) {
+  .portrait {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 12px;
+  }
+  .portrait[data-style=small] {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+  .portrait-image {
+    max-height: min(62vw, 320px);
+    margin-bottom: 8px;
+  }
+  .portrait[data-style=small] .portrait-image {
+    max-height: min(58vw, 260px);
+  }
+  .portrait[data-style=small][data-no-image=true] {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    grid-template-rows: auto;
+    justify-items: stretch;
+    gap: 8px;
+  }
+  .alumni-row > .portrait {
+    flex: 0 0 min(82vw, 280px);
+    width: min(82vw, 280px);
+    margin-right: 10px;
+  }
+}
+
 /*# sourceMappingURL=portrait.css.map */

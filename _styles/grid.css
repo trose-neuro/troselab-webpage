@@ -15,14 +15,16 @@
   margin: 0 !important;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 980px) {
   .grid {
     --repeat: 2;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .grid {
     --repeat: 1;
+    gap: 14px;
+    margin: 16px 0;
   }
 }
 .grid[data-style=square] {

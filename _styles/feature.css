@@ -70,7 +70,7 @@
   order: 1;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .feature {
     grid-template-columns: 1fr !important;
     padding: 16px;
@@ -81,6 +81,16 @@
   }
   .feature-title {
     text-align: left;
+  }
+}
+@media (max-width: 640px) {
+  .feature {
+    margin: 14px 0;
+    padding: 12px;
+    gap: 12px;
+  }
+  .feature-image {
+    min-height: 160px;
   }
 }
 

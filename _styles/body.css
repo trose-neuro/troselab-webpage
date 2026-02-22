@@ -24,6 +24,12 @@ main {
   isolation: isolate;
 }
 
+@media (max-width: 720px) {
+  body {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   ::before,

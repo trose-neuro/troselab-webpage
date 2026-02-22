@@ -25,14 +25,19 @@
   margin-bottom: 0 !important;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 980px) {
   .cols {
     --repeat: min(2, var(--cols));
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .cols {
     --repeat: min(1, var(--cols));
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .cols > * {
+    padding: 12px;
   }
 }
 

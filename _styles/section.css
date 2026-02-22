@@ -58,4 +58,11 @@ main > section + section {
   border-top: 1px solid var(--border);
 }
 
+@media (max-width: 720px) {
+  section,
+  section[data-size=wide] {
+    padding: clamp(18px, 6vw, 24px) 14px;
+  }
+}
+
 /*# sourceMappingURL=section.css.map */

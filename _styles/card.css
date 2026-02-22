@@ -121,4 +121,24 @@
   font-style: italic;
 }
 
+@media (max-width: 720px) {
+  .card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .card[data-style=small] {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+  .card-text {
+    gap: 10px;
+    padding: 14px;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
 /*# sourceMappingURL=card.css.map */
