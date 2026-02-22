@@ -219,7 +219,7 @@
   flex: 0 0 auto;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 720px), (hover: none) and (pointer: coarse) {
   .portrait {
     width: 100%;
     max-width: 100%;

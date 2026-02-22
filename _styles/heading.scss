@@ -57,7 +57,7 @@ h6 {
   opacity: 0.75;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 720px), (hover: none) and (pointer: coarse) {
   h1 {
     margin: 0.4rem 0 1.2rem;
     font-size: clamp(1.7rem, 8vw, 2.2rem);

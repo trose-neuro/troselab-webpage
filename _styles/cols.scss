@@ -37,7 +37,7 @@ $one: 640px;
   }
 }
 
-@media (max-width: $one) {
+@media (max-width: $one), (hover: none) and (pointer: coarse) {
   .cols {
     --repeat: min(1, var(--cols));
     gap: 12px;

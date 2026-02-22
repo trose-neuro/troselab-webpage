@@ -28,7 +28,7 @@ $one: 640px;
   }
 }
 
-@media (max-width: $one) {
+@media (max-width: $one), (hover: none) and (pointer: coarse) {
   .grid {
     --repeat: 1;
     gap: 14px;

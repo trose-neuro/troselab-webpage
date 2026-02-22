@@ -46,7 +46,7 @@ footer > div:last-of-type {
   font-weight: var(--semi-bold);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 720px), (hover: none) and (pointer: coarse) {
   footer {
     width: calc(100% - 14px);
     gap: 10px;

@@ -149,7 +149,7 @@ nav > a[aria-current="page"] {
 }
 
 header:not([data-big]) {
-  @media (max-width: $collapse) {
+  @media (max-width: $collapse), (hover: none) and (pointer: coarse) {
     justify-content: flex-end;
 
     .nav-toggle {
@@ -224,7 +224,7 @@ header[data-big] {
   }
 }
 
-@media (max-width: $collapse) {
+@media (max-width: $collapse), (hover: none) and (pointer: coarse) {
   header {
     width: min(calc(100% - 14px), var(--page));
     margin-top: 8px;
@@ -307,7 +307,7 @@ header[data-big] {
   }
 }
 
-@media (max-width: $mobile) {
+@media (max-width: $mobile), (hover: none) and (pointer: coarse) {
   header {
     border-radius: calc(var(--rounded) - 2px);
   }

@@ -76,7 +76,7 @@ $wrap: 980px;
   order: 1;
 }
 
-@media (max-width: $wrap) {
+@media (max-width: $wrap), (hover: none) and (pointer: coarse) {
   .feature {
     grid-template-columns: 1fr !important;
     padding: 16px;
@@ -92,7 +92,7 @@ $wrap: 980px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px), (hover: none) and (pointer: coarse) {
   .feature {
     margin: 14px 0;
     padding: 12px;

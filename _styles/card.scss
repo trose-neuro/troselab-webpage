@@ -125,7 +125,7 @@
   font-style: italic;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 720px), (hover: none) and (pointer: coarse) {
   .card {
     width: 100%;
     max-width: 100%;
