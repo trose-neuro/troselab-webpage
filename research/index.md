@@ -10,6 +10,12 @@ nav:
 
 We study how stable perception, memory, and action arise from dynamic neural circuits in changing environments.
 
+## Current Projects
+
+{% include list.html component="card" data="projects" style="small" %}
+
+{% include section.html %}
+
 ## Focus Areas
 
 - Stability and drift across visual pathways
@@ -29,14 +35,8 @@ We study how stable perception, memory, and action arise from dynamic neural cir
 
 {% include section.html %}
 
-## Direction
+## Directions
 
 - Map structure-function rules of stable and flexible coding
 - Build closed-loop perturbation and readout across hierarchies
 - Link behavior and neural dynamics with predictive models in freely moving mice
-
-{% include section.html %}
-
-## Current Projects
-
-{% include list.html component="card" data="projects" style="small" %}
