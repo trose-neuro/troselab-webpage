@@ -148,6 +148,80 @@
     }
   }
 
+  function setupPreviewAutoplay() {
+    const previews = Array.from(document.querySelectorAll('video[data-autoplay-preview="true"]'));
+    if (!previews.length) return;
+
+    const tryPlay = (video) => {
+      if (!(video instanceof HTMLVideoElement) || document.hidden) return;
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {});
+      }
+    };
+
+    previews.forEach((video) => {
+      video.muted = true;
+      video.defaultMuted = true;
+      video.autoplay = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.setAttribute("muted", "");
+      video.setAttribute("autoplay", "");
+      video.setAttribute("loop", "");
+      video.setAttribute("playsinline", "");
+      video.setAttribute("webkit-playsinline", "");
+      video.setAttribute("disablepictureinpicture", "");
+      video.setAttribute("disableremoteplayback", "");
+      video.addEventListener("loadedmetadata", () => tryPlay(video), { passive: true });
+      video.addEventListener("canplay", () => tryPlay(video), { passive: true });
+    });
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+            if (!(video instanceof HTMLVideoElement)) return;
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.25) {
+              tryPlay(video);
+            } else {
+              video.pause();
+            }
+          });
+        },
+        { threshold: [0, 0.25, 0.5] }
+      );
+
+      previews.forEach((video) => observer.observe(video));
+    } else {
+      previews.forEach((video) => tryPlay(video));
+    }
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) return;
+      previews.forEach((video) => {
+        const rect = video.getBoundingClientRect();
+        const visible = rect.bottom > 0 && rect.top < window.innerHeight;
+        if (visible) {
+          tryPlay(video);
+        }
+      });
+    });
+
+    window.addEventListener("pageshow", () => {
+      previews.forEach((video) => {
+        const rect = video.getBoundingClientRect();
+        const visible = rect.bottom > 0 && rect.top < window.innerHeight;
+        if (visible) {
+          tryPlay(video);
+        }
+      });
+    });
+  }
+
+  setupPreviewAutoplay();
+
   document.addEventListener("click", (event) => {
     const target = event.target;
     if (!(target instanceof Element)) return;

@@ -51,7 +51,11 @@
         muted
         loop
         playsinline
+        webkit-playsinline
         preload="metadata"
+        data-autoplay-preview="true"
+        disablepictureinpicture
+        disableremoteplayback
         aria-label="{{ include.title | default: "project video" | regex_strip }}"
       >
         <source src="{{ card_video_src | relative_url | uri_escape }}" type="video/mp4" />
