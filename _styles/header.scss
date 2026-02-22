@@ -250,11 +250,11 @@ header[data-big] {
   }
 
   .title {
-    font-size: 1.22rem;
+    font-size: 1.3rem;
   }
 
   .subtitle {
-    font-size: 1.08rem;
+    font-size: 1.14rem;
   }
 
   .nav-toggle {
@@ -283,7 +283,7 @@ header[data-big] {
     width: 100%;
     padding: 11px 12px;
     min-height: 44px;
-    font-size: 1.16rem;
+    font-size: 1.24rem;
     text-align: left;
   }
 
@@ -310,7 +310,7 @@ header[data-big] {
   }
 
   header[data-big] .subtitle {
-    font-size: clamp(1rem, 3.5vw, 1.08rem);
+    font-size: clamp(1.08rem, 3.7vw, 1.18rem);
   }
 }
 
@@ -324,6 +324,6 @@ header[data-big] {
   }
 
   nav > a {
-    font-size: 1.16rem;
+    font-size: 1.22rem;
   }
 }

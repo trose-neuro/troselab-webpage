@@ -250,7 +250,7 @@
 
   .portrait-description,
   .portrait-affiliation {
-    font-size: 1.01rem;
+    font-size: 1.06rem;
   }
 
   .portrait[data-style="small"][data-no-image="true"] {
@@ -260,6 +260,17 @@
     grid-template-rows: auto;
     justify-items: stretch;
     gap: 8px;
+
+    .portrait-name {
+      font-size: 1.02rem;
+      line-height: 1.28;
+    }
+
+    .portrait-description,
+    .portrait-affiliation {
+      font-size: 1rem;
+      line-height: 1.38;
+    }
   }
 
   .alumni-row > .portrait {

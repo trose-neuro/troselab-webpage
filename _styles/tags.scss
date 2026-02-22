@@ -36,3 +36,10 @@
   background: var(--surface-alt);
   border-color: var(--border);
 }
+
+@media (max-width: 720px), (hover: none) and (pointer: coarse) {
+  .tag {
+    font-size: 0.98rem;
+    padding: 0.34rem 0.74rem;
+  }
+}
