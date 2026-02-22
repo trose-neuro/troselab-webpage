@@ -21,7 +21,10 @@ For collaborations, trainee applications, or project inquiries, please contact t
 
 {% include button.html type="email" text="tobias.rose@ukbonn.de" link="mailto:tobias.rose@ukbonn.de" %}
 {% include button.html type="phone" text="+49 228 287 62331" link="+49 228 287 62331" %}
-{% include button.html type="website" text="trose-neuro.github.io/troselab-webpage" link="https://trose-neuro.github.io/troselab-webpage/" %}
+{% include button.html type="website" text="www.troselab.de" link="https://www.troselab.de/" %}
+{% include button.html type="github" text="troselab" link="https://github.com/troselab" %}
+{% include button.html type="github" text="SFB1089 ADAMACS" link="https://github.com/SFB1089/adamacs" %}
+{% include button.html type="github" text="trose-neuro" link="https://github.com/trose-neuro" %}
 {% include button.html type="orcid" text="ORCID" link="0000-0002-7156-4714" %}
 
 {% include section.html %}

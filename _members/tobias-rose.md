@@ -5,8 +5,9 @@ role: pi
 affiliation: University of Bonn Medical Center
 links:
   email: tobias.rose@ukbonn.de
+  github: trose-neuro
   bluesky: trose-neuro.bsky.social
-  website: https://trose-neuro.github.io/troselab-webpage/
+  website: https://www.troselab.de/
 ---
 Group leader of the troselab "Circuit Mechanisms of Behavior".
 
