@@ -1,5 +1,6 @@
 (() => {
   const MODAL_ID = "image-lightbox";
+  const DEFAULT_VIDEO_LOOP_SECONDS = 30;
 
   function parseBestSrc(srcset) {
     if (!srcset) return null;
@@ -50,28 +51,101 @@
       <div class="image-lightbox-backdrop"></div>
       <div class="image-lightbox-content">
         <img class="image-lightbox-image" alt="">
+        <video class="image-lightbox-video" controls preload="metadata" playsinline></video>
+        <p class="image-lightbox-caption"></p>
       </div>
     `;
     document.body.appendChild(modal);
+    const modalVideo = modal.querySelector(".image-lightbox-video");
+    if (modalVideo) {
+      modalVideo.addEventListener("timeupdate", () => {
+        const loopSeconds = Number(modalVideo.dataset.maxSeconds || DEFAULT_VIDEO_LOOP_SECONDS);
+        if (!Number.isFinite(loopSeconds) || loopSeconds <= 0) return;
+        if (modalVideo.currentTime >= loopSeconds) {
+          modalVideo.currentTime = 0;
+          const playPromise = modalVideo.play();
+          if (playPromise && typeof playPromise.catch === "function") {
+            playPromise.catch(() => {});
+          }
+        }
+      });
+    }
     return modal;
   }
 
+  function clearModal(modal) {
+    const modalImage = modal.querySelector(".image-lightbox-image");
+    const modalVideo = modal.querySelector(".image-lightbox-video");
+    const modalCaption = modal.querySelector(".image-lightbox-caption");
+
+    if (modalImage) {
+      modalImage.removeAttribute("src");
+      modalImage.alt = "";
+    }
+    if (modalVideo) {
+      modalVideo.pause();
+      modalVideo.removeAttribute("src");
+      modalVideo.removeAttribute("poster");
+      modalVideo.removeAttribute("data-max-seconds");
+      modalVideo.load();
+    }
+    if (modalCaption) {
+      modalCaption.textContent = "";
+    }
+    modal.removeAttribute("data-mode");
+  }
+
+  function setCaption(modal, caption) {
+    const modalCaption = modal.querySelector(".image-lightbox-caption");
+    if (!modalCaption) return;
+    modalCaption.textContent = (caption || "").trim();
+  }
+
   function closeModal(modal) {
+    clearModal(modal);
     modal.removeAttribute("data-open");
     modal.setAttribute("aria-hidden", "true");
     document.body.classList.remove("lightbox-open");
   }
 
-  function openModal(src, alt) {
+  function openImageModal(src, alt, caption) {
     const modal = ensureModal();
     const modalImage = modal.querySelector(".image-lightbox-image");
     if (!modalImage) return;
 
+    clearModal(modal);
     modalImage.src = src;
     modalImage.alt = alt || "Expanded image";
+    setCaption(modal, caption || "");
+    modal.dataset.mode = "image";
     modal.setAttribute("data-open", "true");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
+  }
+
+  function openVideoModal(src, options = {}) {
+    const modal = ensureModal();
+    const modalVideo = modal.querySelector(".image-lightbox-video");
+    if (!modalVideo || !src) return;
+
+    clearModal(modal);
+    modalVideo.src = src;
+    if (options.poster) {
+      modalVideo.poster = options.poster;
+    }
+    modalVideo.dataset.maxSeconds = String(
+      Number(options.maxSeconds) > 0 ? Number(options.maxSeconds) : DEFAULT_VIDEO_LOOP_SECONDS
+    );
+    setCaption(modal, options.caption || "");
+    modal.dataset.mode = "video";
+    modal.setAttribute("data-open", "true");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-open");
+
+    const playPromise = modalVideo.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {});
+    }
   }
 
   document.addEventListener("click", (event) => {
@@ -83,6 +157,24 @@
       target.closest(".image-lightbox-close") || target.closest(".image-lightbox-backdrop");
     if (clickedClose) {
       closeModal(modal);
+      return;
+    }
+
+    const videoTrigger = target.closest("a.card-image[data-video-lightbox]");
+    if (videoTrigger) {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+        return;
+      }
+
+      const src = videoTrigger.getAttribute("data-video-lightbox");
+      if (!src) return;
+      event.preventDefault();
+      event.stopPropagation();
+      openVideoModal(src, {
+        caption: videoTrigger.getAttribute("data-video-caption"),
+        poster: videoTrigger.getAttribute("data-video-poster"),
+        maxSeconds: Number(videoTrigger.getAttribute("data-video-max-seconds"))
+      });
       return;
     }
 
@@ -106,7 +198,7 @@
 
     event.preventDefault();
     event.stopPropagation();
-    openModal(getHighResSource(image), image.getAttribute("alt"));
+    openImageModal(getHighResSource(image), image.getAttribute("alt"), "");
   });
 
   document.addEventListener("keydown", (event) => {
