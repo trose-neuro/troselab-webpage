@@ -226,7 +226,7 @@
     height: auto;
     min-height: 0;
     margin: 0;
-    padding: 12px;
+    padding: 10px;
   }
 
   .portrait[data-style="small"] {
@@ -236,12 +236,21 @@
   }
 
   .portrait-image {
-    max-height: min(62vw, 320px);
-    margin-bottom: 8px;
+    max-height: min(50vw, 240px);
+    margin-bottom: 6px;
   }
 
   .portrait[data-style="small"] .portrait-image {
-    max-height: min(58vw, 260px);
+    max-height: min(46vw, 210px);
+  }
+
+  .portrait-name {
+    font-size: 1.06rem;
+  }
+
+  .portrait-description,
+  .portrait-affiliation {
+    font-size: 0.96rem;
   }
 
   .portrait[data-style="small"][data-no-image="true"] {
@@ -254,8 +263,8 @@
   }
 
   .alumni-row > .portrait {
-    flex: 0 0 min(82vw, 280px);
-    width: min(82vw, 280px);
+    flex: 0 0 min(72vw, 240px);
+    width: min(72vw, 240px);
     margin-right: 10px;
   }
 }
