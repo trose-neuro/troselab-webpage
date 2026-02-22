@@ -32,9 +32,12 @@
 
 {% assign description = description | xml_escape %}
 
+{% assign svg = "images/icon.svg" | file_exists %}
 {% assign png = "images/icon.png" | file_exists %}
 {% assign jpg = "images/icon.jpg" | file_exists %}
-{% assign icon = png | default: jpg | relative_url %}
+{% assign icon = svg | default: png | default: jpg | relative_url %}
+{% assign icon_png = png | default: jpg | relative_url %}
+{% assign icon_version = "?v=microscope" %}
 
 {% assign jpg = "images/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
@@ -56,7 +59,16 @@
 
 <title>{{ fulltitle }}</title>
 
-<link rel="icon" href="{{ icon }}">
+{% if svg %}
+  <link rel="icon" type="image/svg+xml" href="{{ icon | append: icon_version }}">
+{% endif %}
+{% if png or jpg %}
+  <link rel="icon" type="image/png" href="{{ icon_png | append: icon_version }}">
+  <link rel="shortcut icon" href="{{ icon_png | append: icon_version }}">
+  <link rel="apple-touch-icon" href="{{ icon_png | append: icon_version }}">
+{% else %}
+  <link rel="icon" href="{{ icon | append: icon_version }}">
+{% endif %}
 
 <meta name="title" content="{{ title }}">
 <meta name="description" content="{{ description }}">
