@@ -2,9 +2,14 @@
   subtitle: Current Project
   # image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
   video: images/projects/videos/feedback-visual-stability.mp4
-  link: research
+  link: members/leon-kremers/
   description: |
     We test how feedback pathways support stable coding across visual circuits.
+  buttons:
+    - type: link
+      text: Leon
+      link: members/leon-kremers/
+      style: bare
   tags:
     - representational drift
     - feedback
@@ -14,9 +19,14 @@
   subtitle: Current Project
   # image: "images/banner/hippocampus ca1-wide.jpg"
   video: images/projects/videos/memory-stabilization-rsc.mp4
-  link: research
+  link: members/jisoo-jung/
   description: |
     We study how spatial and contextual memory signals stabilize over learning.
+  buttons:
+    - type: link
+      text: Jisoo
+      link: members/jisoo-jung/
+      style: bare
   tags:
     - retrosplenial cortex
     - learning
@@ -26,9 +36,14 @@
   subtitle: Current Project
   # image: images/banner/background.jpg
   video: images/projects/videos/natural-vision-orienting.mp4
-  link: research
+  link: members/natalia-krasilshchikova/
   description: |
     We study visual processing during active orienting in natural behavior.
+  buttons:
+    - type: link
+      text: Natasha
+      link: members/natalia-krasilshchikova/
+      style: bare
   tags:
     - natural vision
     - orienting
@@ -38,9 +53,14 @@
   subtitle: Current Project
   # image: images/banner/multilevel spines.jpg
   video: images/projects/videos/landmark-navigation.mp4
-  link: research
+  link: members/shanqian-ma/
   description: |
     We test how cortical circuits encode landmark relevance during navigation.
+  buttons:
+    - type: link
+      text: Shan
+      link: members/shanqian-ma/
+      style: bare
   tags:
     - affordance
     - landmarks
@@ -50,9 +70,14 @@
   subtitle: Current Project
   # image: "images/banner/Chiams LGN-wide.jpg"
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
-  link: research
+  link: members/yoshiki-hatashita/
   description: |
     We test how internal state and neuromodulation shape stable and flexible coding.
+  buttons:
+    - type: link
+      text: Yoshiki
+      link: members/yoshiki-hatashita/
+      style: bare
   tags:
     - uncertainty
     - neuromodulation
@@ -62,9 +87,14 @@
   subtitle: Current Project
   # image: images/banner/tdtomatoGGsliceEPI-wide.jpg
   video: images/projects/videos/latent-learning-circuits.mp4
-  link: research
+  link: members/aelton-araujo/
   description: |
     We study unsupervised cue learning and transfer in cortical memory circuits.
+  buttons:
+    - type: link
+      text: Aelton
+      link: members/aelton-araujo/
+      style: bare
   tags:
     - latent learning
     - preconditioning
@@ -74,9 +104,22 @@
   subtitle: Infrastructure
   # image: images/mini2p.jpg
   video: images/projects/videos/miniature-two-photon-platform.mp4
-  link: research
+  link: members/natalia-krasilshchikova/
   description: |
     Custom head-mounted and bench-top systems for longitudinal, high-throughput recordings in freely moving and head-fixed animals.
+  buttons:
+    - type: link
+      text: Natasha
+      link: members/natalia-krasilshchikova/
+      style: bare
+    - type: link
+      text: Jisoo
+      link: members/jisoo-jung/
+      style: bare
+    - type: link
+      text: Shan
+      link: members/shanqian-ma/
+      style: bare
   tags:
     - microscopy
     - hardware

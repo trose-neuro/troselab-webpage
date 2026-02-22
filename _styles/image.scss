@@ -35,6 +35,8 @@ body.lightbox-open {
 .image-lightbox-content {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
   max-width: min(95vw, 1800px);
   max-height: 94vh;
   border: 1px solid var(--border);
@@ -45,10 +47,39 @@ body.lightbox-open {
 }
 
 .image-lightbox-image {
+  display: none;
   max-width: min(95vw, 1800px);
-  max-height: calc(94vh - 10px);
+  max-height: calc(94vh - 48px);
   width: auto;
   height: auto;
+}
+
+.image-lightbox-video {
+  display: none;
+  width: min(95vw, 1800px);
+  max-height: calc(94vh - 90px);
+  background: #000;
+}
+
+.image-lightbox-caption {
+  margin: 0;
+  padding: 10px 14px 12px;
+  border-top: 1px solid var(--border);
+  color: var(--gray);
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+.image-lightbox-caption:empty {
+  display: none;
+}
+
+.image-lightbox[data-mode="image"] .image-lightbox-image {
+  display: block;
+}
+
+.image-lightbox[data-mode="video"] .image-lightbox-video {
+  display: block;
 }
 
 .image-lightbox-close {
@@ -65,4 +96,12 @@ body.lightbox-open {
   font-size: 1.25rem;
   line-height: 1;
   cursor: pointer;
+}
+
+.card-image[data-video-lightbox] {
+  cursor: zoom-in;
+}
+
+.card-image[data-video-lightbox] video {
+  cursor: inherit;
 }
