@@ -5,5 +5,5 @@ role: alum
 group: alumni
 affiliation: MSc Biomedical Sciences (Neurobiology), University of Amsterdam
 links:
-  github: https://github.com/search?q=Kevin+Hoogers&type=users
+  linkedin: kevin-hoogers-a534771bb
 ---

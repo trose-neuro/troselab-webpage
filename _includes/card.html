@@ -11,12 +11,34 @@
     aria-label="{{ include.title | default: "card link" | regex_strip }}"
     class="card-image"
   >
-    {%
-      include responsive-image.html
-      image=include.image
-      alt=include.title
-      sizes=card_sizes
-    %}
+    {% if include.video %}
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        {% if include.image %}
+          poster="{{ include.image | relative_url | uri_escape }}"
+        {% endif %}
+        aria-label="{{ include.title | default: "project video" | regex_strip }}"
+      >
+        <source src="{{ include.video | relative_url | uri_escape }}" type="video/mp4" />
+        {%
+          include responsive-image.html
+          image=include.image
+          alt=include.title
+          sizes=card_sizes
+        %}
+      </video>
+    {% else %}
+      {%
+        include responsive-image.html
+        image=include.image
+        alt=include.title
+        sizes=card_sizes
+      %}
+    {% endif %}
   </a>
 
   <div class="card-text">

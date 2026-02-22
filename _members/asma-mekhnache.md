@@ -6,4 +6,5 @@ group: alumni
 affiliation: Max Planck Institute for Neurobiology of Behavior, University of Bonn
 links:
   github: Asma-ch
+  linkedin: asma-mekhnache-56aa39333
 ---

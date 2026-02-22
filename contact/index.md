@@ -23,8 +23,8 @@ For collaborations, trainee applications, or project inquiries, please contact t
 {% include button.html type="phone" text="+49 228 287 62331" link="+49 228 287 62331" %}
 {% include button.html type="website" text="www.troselab.de" link="https://www.troselab.de/" %}
 
-{% include button.html type="github" text="troselab" link="https://github.com/troselab" %}<br>
-{% include button.html type="website" text="SFB1089" link="https://www.sfb1089.de/" %}<br>
+{% include button.html type="github" text="troselab" link="https://github.com/troselab" %}
+{% include button.html type="website" text="SFB1089" link="https://www.sfb1089.de/" %}
 {% include button.html type="github" text="trose-neuro" link="https://github.com/trose-neuro" %}
 {% include button.html type="orcid" text="ORCID" link="0000-0002-7156-4714" %}
 
@@ -59,6 +59,4 @@ Group leader "Circuit Mechanisms of Behavior"
 
 Further information:
 
-- Legacy contact page: <http://rose-group.ieecr-bonn.de/>
 - University imprint/contact: <https://ieecr-bonn.de/contact/>
-{% include button.html type="website" text="Original CV page" link="http://rose-group.ieecr-bonn.de/cv/prof-dr-tobias-rose/" %}

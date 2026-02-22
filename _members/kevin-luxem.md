@@ -5,5 +5,5 @@ role: alum
 group: alumni
 affiliation: Department of Cellular Neuroscience, Leibniz Institute for Neurobiology (LIN), Magdeburg
 links:
-  github: https://github.com/search?q=Kevin+Luxem&type=users
+  orcid: 0000-0001-9298-0314
 ---

@@ -9,9 +9,6 @@ Live site:
 
 This repository is scaffolded from [greenelab/lab-website-template](https://github.com/greenelab/lab-website-template) and adapted with current content from:
 - [trose-neuro.github.io/troselab-webpage](https://trose-neuro.github.io/troselab-webpage/)
-- [rose-group.ieecr-bonn.de/current_research/current-research](http://rose-group.ieecr-bonn.de/current_research/current-research/)
-- [rose-group.ieecr-bonn.de/member](http://rose-group.ieecr-bonn.de/member/)
-- [rose-group.ieecr-bonn.de/publication](http://rose-group.ieecr-bonn.de/publication/)
 
 ## Upstream lineage
 

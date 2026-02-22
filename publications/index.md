@@ -19,4 +19,3 @@ nav:
 {% include section.html %}
 
 {% include button.html type="google-scholar" text="Google Scholar profile" link="7qngqfIAAAAJ" %}
-{% include button.html type="website" text="Legacy publication page" link="http://rose-group.ieecr-bonn.de/publication/" %}

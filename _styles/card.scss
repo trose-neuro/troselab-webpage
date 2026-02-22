@@ -61,7 +61,19 @@
   transition: transform var(--transition);
 }
 
+.card-image video {
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  width: 100%;
+  transition: transform var(--transition);
+}
+
 .card:hover .card-image img {
+  transform: scale(1.018);
+}
+
+.card:hover .card-image video {
   transform: scale(1.018);
 }
 
