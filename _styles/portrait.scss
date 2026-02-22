@@ -220,6 +220,19 @@
 }
 
 @media (max-width: 720px), (hover: none) and (pointer: coarse) {
+  .team-portraits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .team-portraits > .portrait-wrapper {
+    display: block;
+    flex: 0 0 calc(50% - 5px);
+    max-width: calc(50% - 5px);
+  }
+
   .portrait {
     width: 100%;
     max-width: 100%;
@@ -227,6 +240,16 @@
     min-height: 0;
     margin: 0;
     padding: 10px;
+  }
+
+  .team-portraits > .portrait {
+    width: calc(50% - 5px);
+    max-width: calc(50% - 5px);
+  }
+
+  .team-portraits > .portrait-wrapper > .portrait {
+    width: 100%;
+    max-width: 100%;
   }
 
   .portrait[data-style="small"] {

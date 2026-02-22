@@ -4,7 +4,7 @@
   video: images/projects/videos/feedback-visual-stability.mp4
   link: members/leon-kremers.html
   description: |
-    Month-scale visual-cortex recordings of stable and flexible feedback coding.
+    Project 1.1: we test whether recurrent cortical feedback stabilizes long-term receptive fields across visual hierarchies.
   video_caption: |
     Month-scale visual-cortex recordings used to estimate maximally exciting neural inputs with deep visual-cortex models, in collaboration with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
   buttons:
@@ -24,7 +24,7 @@
   video: images/projects/videos/memory-stabilization-rsc.mp4
   link: members/jisoo-jung.html
   description: |
-    Egocentric eye and world signals during spatial-memory behavior.
+    Project 3: we track how retrosplenial spatial and contextual representations form, consolidate, and update during learning.
   video_caption: |
     Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with in-house hardware and frame-level synchronization.
   buttons:
@@ -43,7 +43,7 @@
   video: images/projects/videos/natural-vision-orienting.mp4
   link: members/natalia-krasilshchikova.html
   description: |
-    Closed-loop visual orienting behavior in mice.
+    Project 4: we study active visual orienting in freely moving mice with closed-loop stimulus control and dense gaze tracking.
   video_caption: |
     Mouse behavior during a closed-loop visual orienting task, showing trial-by-trial orienting responses under controlled visual feedback.
   buttons:
@@ -62,7 +62,7 @@
   video: images/projects/videos/landmark-navigation.mp4
   link: members/shanqian-ma.html
   description: |
-    3D gaze reconstruction during landmark navigation.
+    We combine spatial-memory behavior with 3D head-eye tracking to quantify landmark-referenced gaze during navigation.
   video_caption: |
     RSC task data combined with high-resolution 3D marker-based head tracking to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
   buttons:
@@ -81,7 +81,7 @@
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
   link: members/yoshiki-hatashita.html
   description: |
-    Widefield dorsal-cortex activity during passive viewing.
+    Project 2: we compare active navigation and passive replay to define how behavioral state shapes representational stability.
   video_caption: |
     Widefield calcium imaging of dorsal cortex during passive viewing of visual stimuli, showing cortex-wide activity dynamics under controlled viewing.
   buttons:
@@ -100,7 +100,7 @@
   video: images/projects/videos/latent-learning-circuits.mp4
   link: members/aelton-araujo.html
   description: |
-    Latent learning during navigation in a linear VR corridor.
+    We test how unsupervised cue exposure in linear VR supports latent learning and later memory-guided behavior.
   video_caption: |
     Mouse navigation in a linear virtual corridor used to quantify latent learning of task structure.
   buttons:
@@ -119,7 +119,7 @@
   video: images/projects/videos/miniature-two-photon-platform.mp4
   link: members/natalia-krasilshchikova.html
   description: |
-    Mini2p imaging synchronized with behavior in freely moving mice.
+    We develop miniaturized and bench-top two-photon systems for longitudinal, high-throughput recordings in unrestrained behavior.
   video_caption: |
     Mini2p platform integrating neural imaging with synchronized behavior and camera streams for freely moving experiments.
   buttons:

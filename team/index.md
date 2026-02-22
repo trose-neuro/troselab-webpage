@@ -12,7 +12,9 @@ nav:
 
 ## Team
 
+<div class="team-portraits">
 {% include list.html data="members" component="portrait" filter="role != 'alum' and role != 'alumni' and group != 'alumni'" sort="name" %}
+</div>
 
 {% include section.html %}
 
