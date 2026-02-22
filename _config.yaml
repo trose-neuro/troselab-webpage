@@ -72,3 +72,9 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+  - MIGRATION_FROM_WORDPRESS.md
+  - TEMPLATE_COMPARISON.md
+  - tools/
+  - .docker/
+  - artifacts/
+  - images/rose-group-ieecr-bonn-de/
