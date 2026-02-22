@@ -4,7 +4,7 @@
 $logo-big: 80px;
 $logo: 44px;
 $big-padding: clamp(56px, 11vw, 130px);
-$collapse: 900px;
+$collapse: 1000px;
 $mobile: 640px;
 $sticky: true;
 
@@ -84,8 +84,8 @@ header a {
 .nav-toggle {
   display: none;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   margin: 0;
   border: 1px solid var(--border);
   border-radius: var(--rounded-sm);
@@ -102,7 +102,7 @@ header a {
   left: 50%;
   top: 50%;
   color: var(--text);
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   transform: translate(-50%, -50%);
@@ -119,19 +119,22 @@ nav {
   flex-wrap: wrap;
   gap: 6px;
   font-family: var(--heading);
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   font-weight: var(--semi-bold);
   letter-spacing: 0;
   text-transform: none;
 }
 
 nav > a {
-  padding: 6px 11px;
-  min-height: 34px;
+  padding: 7px 12px;
+  min-height: 36px;
   border: 1px solid var(--header-chip-border, transparent);
   border-radius: var(--rounded-sm);
   background: var(--header-chip, transparent);
   color: var(--header-ink, var(--text));
+  text-shadow: 0 1px 1px var(--header-text-shadow, transparent);
+  backdrop-filter: blur(7px) saturate(130%);
+  -webkit-backdrop-filter: blur(7px) saturate(130%);
   transition: background var(--transition), color var(--transition),
     border-color var(--transition);
 }
@@ -143,9 +146,10 @@ nav > a:hover {
 }
 
 nav > a[aria-current="page"] {
-  color: var(--primary);
+  color: var(--header-ink, var(--text));
   background: var(--surface);
-  border-color: var(--primary-soft);
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary-soft);
 }
 
 header:not([data-big]) {
@@ -246,17 +250,21 @@ header[data-big] {
   }
 
   .title {
-    font-size: 1.03rem;
+    font-size: 1.12rem;
   }
 
   .subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .nav-toggle {
     display: flex;
-    width: 36px;
-    height: 36px;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-color: var(--header-chip-border, var(--border));
+    background: var(--header-chip, var(--surface));
   }
 
   .nav-toggle:not(:checked) + nav {
@@ -274,6 +282,8 @@ header[data-big] {
   nav > a {
     width: 100%;
     padding: 10px 12px;
+    min-height: 40px;
+    font-size: 1.05rem;
     text-align: left;
   }
 
@@ -288,6 +298,7 @@ header[data-big] {
   header[data-big] {
     gap: 14px;
     padding: clamp(24px, 8vw, 42px) 12px;
+    --header-banner-veil-opacity: 0.3;
   }
 
   header[data-big] .home {
@@ -295,11 +306,11 @@ header[data-big] {
   }
 
   header[data-big] .title {
-    font-size: clamp(1.5rem, 7vw, 2.1rem);
+    font-size: clamp(1.7rem, 8vw, 2.3rem);
   }
 
   header[data-big] .subtitle {
-    font-size: clamp(0.9rem, 3.2vw, 1rem);
+    font-size: clamp(1rem, 3.5vw, 1.08rem);
   }
 
   header[data-big] nav > a {
@@ -317,6 +328,42 @@ header[data-big] {
   }
 
   nav > a {
-    font-size: 0.94rem;
+    font-size: 1.05rem;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  header[data-big] .nav-toggle {
+    display: none;
+  }
+
+  header[data-big] .nav-toggle:not(:checked) + nav {
+    display: grid;
+  }
+
+  header[data-big] nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 8px;
+    width: 100%;
+    padding: 2px 0 4px;
+  }
+
+  header[data-big] nav > a {
+    width: auto;
+    min-height: 44px;
+    padding: 11px 10px;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 380px), (hover: none) and (pointer: coarse) {
+  header[data-big] nav {
+    grid-template-columns: 1fr;
   }
 }
