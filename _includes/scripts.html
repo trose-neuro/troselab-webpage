@@ -4,7 +4,12 @@
 <script src="https://unpkg.com/mark.js@8" defer></script>
 
 <!-- include all js in scripts folder -->
+{% if site.github and site.github.build_revision %}
+  {% assign asset_version = site.github.build_revision %}
+{% else %}
+  {% assign asset_version = site.time | date: "%s" %}
+{% endif %}
 {% assign scripts = site.static_files | where_exp: "file", "file.path contains '/_scripts'" %}
 {% for script in scripts %}
-  <script src="{{ script.path | relative_url }}"></script>
+  <script src="{{ script.path | relative_url }}?v={{ asset_version }}"></script>
 {% endfor %}
