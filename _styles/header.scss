@@ -313,26 +313,6 @@ header[data-big] {
     font-size: clamp(1rem, 3.5vw, 1.08rem);
   }
 
-  header[data-big] nav > a {
-    text-align: center;
-  }
-}
-
-@media (max-width: $mobile), (hover: none) and (pointer: coarse) {
-  header {
-    border-radius: calc(var(--rounded) - 2px);
-  }
-
-  nav {
-    gap: 4px;
-  }
-
-  nav > a {
-    font-size: 1.05rem;
-  }
-}
-
-@media (hover: none) and (pointer: coarse) {
   header[data-big] .nav-toggle {
     display: none;
   }
@@ -342,6 +322,7 @@ header[data-big] {
   }
 
   header[data-big] nav {
+    display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: stretch;
     align-items: stretch;
@@ -362,7 +343,21 @@ header[data-big] {
   }
 }
 
-@media (max-width: 380px), (hover: none) and (pointer: coarse) {
+@media (max-width: $mobile), (hover: none) and (pointer: coarse) {
+  header {
+    border-radius: calc(var(--rounded) - 2px);
+  }
+
+  nav {
+    gap: 4px;
+  }
+
+  nav > a {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 360px) {
   header[data-big] nav {
     grid-template-columns: 1fr;
   }

@@ -8,6 +8,7 @@ body {
   padding: 0;
   min-height: 100vh;
   min-height: 100dvh;
+  overflow-x: clip;
   background:
     radial-gradient(1200px 640px at -10% -15%, var(--bg-glow-1), transparent 65%),
     radial-gradient(1000px 580px at 110% -20%, var(--bg-glow-2), transparent 68%),

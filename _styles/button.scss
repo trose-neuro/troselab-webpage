@@ -14,6 +14,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  min-height: 40px;
   max-width: calc(100% - 5px - 5px);
   margin: 4px;
   padding: 0.5rem 0.9rem;
@@ -61,4 +62,12 @@ button {
 
 .button[data-flip] {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 720px), (hover: none) and (pointer: coarse) {
+  .button {
+    min-height: 44px;
+    padding: 0.58rem 0.95rem;
+    font-size: 1rem;
+  }
 }

@@ -67,6 +67,6 @@ main > section + section {
 @media (max-width: 720px), (hover: none) and (pointer: coarse) {
   section,
   section[data-size="wide"] {
-    padding: clamp(18px, 6vw, 24px) 14px;
+    padding: clamp(18px, 6vw, 24px) 16px;
   }
 }
