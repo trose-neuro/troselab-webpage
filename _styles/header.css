@@ -216,10 +216,10 @@ header[data-big] nav {
     gap: 4px;
   }
   .title {
-    font-size: 1.16rem;
+    font-size: 1.22rem;
   }
   .subtitle {
-    font-size: 1.04rem;
+    font-size: 1.08rem;
   }
   .nav-toggle {
     display: flex;
@@ -244,7 +244,7 @@ header[data-big] nav {
     width: 100%;
     padding: 11px 12px;
     min-height: 44px;
-    font-size: 1.12rem;
+    font-size: 1.16rem;
     text-align: left;
   }
   header:not([data-big]) nav {
@@ -276,7 +276,7 @@ header[data-big] nav {
     gap: 4px;
   }
   nav > a {
-    font-size: 1.12rem;
+    font-size: 1.16rem;
   }
 }
 

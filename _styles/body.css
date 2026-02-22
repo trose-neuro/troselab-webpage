@@ -31,8 +31,8 @@ main {
 
 @media (max-width: 720px), (hover: none) and (pointer: coarse) {
   body {
-    font-size: 1.12rem;
-    line-height: 1.7;
+    font-size: 1.16rem;
+    line-height: 1.72;
   }
 }
 @media (prefers-reduced-motion: reduce) {
