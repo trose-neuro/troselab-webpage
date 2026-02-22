@@ -24,7 +24,7 @@
   video: images/projects/videos/memory-stabilization-rsc.mp4
   link: members/jisoo-jung.html
   description: |
-    We track how retrosplenial spatial and contextual codes form and stabilize.
+    We track how retrosplenial spatial and contextual codes form and stabilize with 3D head and eye tracking and miniature two-photon imaging.
   video_caption: |
     Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with in-house hardware and frame-level synchronization.
   buttons:
@@ -43,7 +43,7 @@
   video: images/projects/videos/natural-vision-orienting.mp4
   link: members/natalia-krasilshchikova.html
   description: |
-    We study active visual orienting in freely moving mice.
+    We study active visual orienting in freely moving mice with 3D head and eye tracking and miniature two-photon imaging.
   video_caption: |
     Mouse behavior during a closed-loop visual orienting task, showing trial-by-trial orienting responses under controlled visual feedback.
   buttons:
@@ -62,7 +62,7 @@
   video: images/projects/videos/landmark-navigation.mp4
   link: members/shanqian-ma.html
   description: |
-    We quantify landmark-centered gaze with 3D head and eye tracking.
+    We quantify landmark-centered gaze and cortical coding with 3D head and eye tracking and miniature two-photon imaging.
   video_caption: |
     RSC task data combined with high-resolution 3D marker-based head tracking to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
   buttons:
@@ -81,7 +81,7 @@
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
   link: members/yoshiki-hatashita.html
   description: |
-    We compare active navigation and passive replay to test state effects on stability.
+    We study state, neuromodulation, and uncertainty-dependent dynamics in cortical circuits
   video_caption: |
     Widefield calcium imaging of dorsal cortex during passive viewing of visual stimuli, showing cortex-wide activity dynamics under controlled viewing.
   buttons:
@@ -100,7 +100,7 @@
   video: images/projects/videos/latent-learning-circuits.mp4
   link: members/aelton-araujo.html
   description: |
-    We test how unsupervised cues in linear VR drive latent learning.
+    We study how multimodal unsupervised cues in linear VR drive latent learning in cortical circuits.
   video_caption: |
     Mouse navigation in a linear virtual corridor used to quantify latent learning of task structure.
   buttons:
