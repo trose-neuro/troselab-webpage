@@ -18,4 +18,6 @@ nav:
 
 ## Alumni
 
+<div class="alumni-row">
 {% include list.html data="members" component="portrait" filter="group == 'alumni' or role == 'alum' or role == 'alumni'" sort="name" style="small" %}
+</div>

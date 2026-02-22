@@ -7,4 +7,3 @@ affiliation: MSc Neuroscience (University of Bonn); data science
 links:
   github: https://github.com/search?q=Rukhmani+Narayanamurthy&type=users
 ---
-Alumni.

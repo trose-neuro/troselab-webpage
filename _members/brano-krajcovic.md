@@ -7,4 +7,3 @@ affiliation: 2nd Faculty of Medicine, Charles University
 links:
   github: braincotech
 ---
-Alumni.

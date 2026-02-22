@@ -6,4 +6,3 @@ affiliation: troselab
 links:
   github: ShanqMa
 ---
-PhD student.

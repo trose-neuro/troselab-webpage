@@ -7,4 +7,3 @@ affiliation: Okinawa Institute of Science and Technology (OIST)
 links:
   github: danielmk
 ---
-Alumni.

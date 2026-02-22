@@ -6,4 +6,3 @@ affiliation: troselab
 links:
   github: yHatashita
 ---
-Postdoctoral researcher.

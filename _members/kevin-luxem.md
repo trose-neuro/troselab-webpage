@@ -7,4 +7,3 @@ affiliation: Department of Cellular Neuroscience, Leibniz Institute for Neurobio
 links:
   github: https://github.com/search?q=Kevin+Luxem&type=users
 ---
-Alumni.

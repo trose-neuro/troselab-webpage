@@ -204,3 +204,17 @@
     -webkit-line-clamp: 2;
   }
 }
+
+.alumni-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.alumni-row > .portrait {
+  flex: 0 0 auto;
+}

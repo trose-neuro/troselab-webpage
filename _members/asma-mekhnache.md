@@ -7,4 +7,3 @@ affiliation: Max Planck Institute for Neurobiology of Behavior, University of Bo
 links:
   github: Asma-ch
 ---
-Alumni.
