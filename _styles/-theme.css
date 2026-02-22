@@ -31,8 +31,8 @@ html[data-dark=false] {
   --header-banner-veil-opacity: 0.2;
   --header-ink: #0c1628;
   --footer-ink: #132035;
-  --header-chip: #f0f5fcc9;
-  --header-chip-border: #c8d5e6d9;
+  --header-chip: #f1f6fce3;
+  --header-chip-border: #bfd0e6f0;
   --header-text-shadow: #ffffff52;
   --tooltip-bg: #101828;
   --tooltip-text: #f8fafc;
@@ -72,9 +72,9 @@ html[data-dark=true] {
   --header-banner-veil-opacity: 0.18;
   --header-ink: #f2f7ff;
   --footer-ink: #e7edf5;
-  --header-chip: #0f1a2788;
-  --header-chip-border: #344860cc;
-  --header-text-shadow: #00000070;
+  --header-chip: #0f1a27de;
+  --header-chip-border: #4b6480e8;
+  --header-text-shadow: #00000088;
   --tooltip-bg: #182331;
   --tooltip-text: #e7edf5;
   --tooltip-border: #2a3a4d;
