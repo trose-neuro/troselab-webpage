@@ -1,11 +1,28 @@
 {% assign button = include %}
 {% assign button = button | hash_default: site.data.types[include.type] %}
+{% assign href = button.link | replace: "$LINK", button.link %}
+{% assign has_scheme = false %}
+{% assign is_http_external = false %}
+{% if href contains "mailto:" or href contains "tel:" or href contains "://" %}
+  {% assign has_scheme = true %}
+{% endif %}
+{% if href contains "http://" or href contains "https://" %}
+  {% assign is_http_external = true %}
+{% endif %}
 
 {% if button.link or button.icon or button.text %}
   <div class="button-wrapper">
     <a
       class="button"
-      href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
+      {% if has_scheme %}
+        href="{{ href }}"
+      {% else %}
+        href="{{ href | relative_url }}"
+      {% endif %}
+      {% if is_http_external %}
+        target="_blank"
+        rel="noopener noreferrer"
+      {% endif %}
       {% if button.tooltip %}
         data-tooltip="{{ button.tooltip | xml_escape }}"
       {% endif %}
