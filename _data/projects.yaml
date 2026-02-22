@@ -2,30 +2,31 @@
   subtitle: Current Project
   # image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
   video: images/projects/videos/feedback-visual-stability.mp4
-  link: members/leon-kremers/
+  link: members/leon-kremers.html
   description: |
-    We test how feedback pathways support stable coding across visual circuits.
+    Month-scale recordings from visual cortex. The clip shows local neural activity used to estimate maximally exciting input patterns and their stability over weeks, with deep visual-cortex models developed with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
   buttons:
     - type: link
-      text: Leon
-      link: members/leon-kremers/
+      text: Leon Kremers
+      link: members/leon-kremers.html
       style: bare
   tags:
-    - representational drift
-    - feedback
     - visual cortex
+    - deep models
+    - feedback
+    - stability
 
 - title: Memory Stabilization in RSC
   subtitle: Current Project
   # image: "images/banner/hippocampus ca1-wide.jpg"
   video: images/projects/videos/memory-stabilization-rsc.mp4
-  link: members/jisoo-jung/
+  link: members/jisoo-jung.html
   description: |
-    We study how spatial and contextual memory signals stabilize over learning.
+    Synchronized arena, world, and eye recordings during a spatial-memory task. Data are acquired in a custom automated arena with in-house hardware and frame-level synchronization.
   buttons:
     - type: link
-      text: Jisoo
-      link: members/jisoo-jung/
+      text: Jisoo Jung
+      link: members/jisoo-jung.html
       style: bare
   tags:
     - retrosplenial cortex
@@ -36,13 +37,13 @@
   subtitle: Current Project
   # image: images/banner/background.jpg
   video: images/projects/videos/natural-vision-orienting.mp4
-  link: members/natalia-krasilshchikova/
+  link: members/natalia-krasilshchikova.html
   description: |
-    We study visual processing during active orienting in natural behavior.
+    Mouse behavior during a closed-loop visual orienting task. The clip shows trial-by-trial orienting responses under controlled visual feedback.
   buttons:
     - type: link
-      text: Natasha
-      link: members/natalia-krasilshchikova/
+      text: Natalia Krasilshchikova
+      link: members/natalia-krasilshchikova.html
       style: bare
   tags:
     - natural vision
@@ -53,13 +54,13 @@
   subtitle: Current Project
   # image: images/banner/multilevel spines.jpg
   video: images/projects/videos/landmark-navigation.mp4
-  link: members/shanqian-ma/
+  link: members/shanqian-ma.html
   description: |
-    We test how cortical circuits encode landmark relevance during navigation.
+    The same task data as RSC, combined with high-resolution 3D marker-based head tracking to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
   buttons:
     - type: link
-      text: Shan
-      link: members/shanqian-ma/
+      text: Shanqian Ma
+      link: members/shanqian-ma.html
       style: bare
   tags:
     - affordance
@@ -70,30 +71,30 @@
   subtitle: Current Project
   # image: "images/banner/Chiams LGN-wide.jpg"
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
-  link: members/yoshiki-hatashita/
+  link: members/yoshiki-hatashita.html
   description: |
-    We test how internal state and neuromodulation shape stable and flexible coding.
+    Widefield calcium imaging of dorsal cortex during passive visual stimulation. The clip shows cortex-wide activity dynamics under controlled viewing.
   buttons:
     - type: link
-      text: Yoshiki
-      link: members/yoshiki-hatashita/
+      text: Yoshiki Hatashita
+      link: members/yoshiki-hatashita.html
       style: bare
   tags:
-    - uncertainty
-    - neuromodulation
-    - transcriptomics
+    - widefield imaging
+    - dorsal cortex
+    - passive viewing
 
 - title: Latent Learning Circuits
   subtitle: Current Project
   # image: images/banner/tdtomatoGGsliceEPI-wide.jpg
   video: images/projects/videos/latent-learning-circuits.mp4
-  link: members/aelton-araujo/
+  link: members/aelton-araujo.html
   description: |
-    We study unsupervised cue learning and transfer in cortical memory circuits.
+    Mouse navigation in a linear virtual corridor. The video shows behavior used to quantify latent learning of task structure.
   buttons:
     - type: link
-      text: Aelton
-      link: members/aelton-araujo/
+      text: Aelton Araujo
+      link: members/aelton-araujo.html
       style: bare
   tags:
     - latent learning
@@ -104,21 +105,21 @@
   subtitle: Infrastructure
   # image: images/mini2p.jpg
   video: images/projects/videos/miniature-two-photon-platform.mp4
-  link: members/natalia-krasilshchikova/
+  link: members/natalia-krasilshchikova.html
   description: |
-    Custom head-mounted and bench-top systems for longitudinal, high-throughput recordings in freely moving and head-fixed animals.
+    Mini2p platform integrating neural imaging with synchronized behavior and camera streams. The clip shows concurrent acquisition for freely moving experiments.
   buttons:
     - type: link
-      text: Natasha
-      link: members/natalia-krasilshchikova/
+      text: Natalia Krasilshchikova
+      link: members/natalia-krasilshchikova.html
       style: bare
     - type: link
-      text: Jisoo
-      link: members/jisoo-jung/
+      text: Jisoo Jung
+      link: members/jisoo-jung.html
       style: bare
     - type: link
-      text: Shan
-      link: members/shanqian-ma/
+      text: Shanqian Ma
+      link: members/shanqian-ma.html
       style: bare
   tags:
     - microscopy

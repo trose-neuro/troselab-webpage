@@ -22,12 +22,51 @@
     }
   };
 
+  const ensureMeta = (name, attrs = {}) => {
+    const selector = `meta[name="${name}"]${
+      attrs.media ? `[media="${attrs.media}"]` : ":not([media])"
+    }`;
+    let meta = document.querySelector(selector);
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.setAttribute("name", name);
+      if (attrs.media) {
+        meta.setAttribute("media", attrs.media);
+      }
+      const head = document.head || document.querySelector("head");
+      if (head) {
+        head.appendChild(meta);
+      }
+    }
+    return meta;
+  };
+
   const applyMode = (isDark) => {
     document.documentElement.dataset.dark = isDark ? "true" : "false";
+    document.documentElement.style.colorScheme = isDark ? "dark" : "light";
 
     const themeColor = isDark ? "#0d131b" : "#edf2f7";
+    ensureMeta("theme-color", { media: "(prefers-color-scheme: dark)" });
+    ensureMeta("theme-color", { media: "(prefers-color-scheme: light)" });
+    ensureMeta("theme-color");
+
     const themeColorMetas = document.querySelectorAll('meta[name="theme-color"]');
     themeColorMetas.forEach((meta) => meta.setAttribute("content", themeColor));
+    const colorSchemeMeta =
+      document.querySelector('meta[name="color-scheme"]') || ensureMeta("color-scheme");
+    if (colorSchemeMeta) {
+      colorSchemeMeta.setAttribute("content", isDark ? "dark" : "light");
+    }
+    const supportedSchemesMeta =
+      document.querySelector('meta[name="supported-color-schemes"]') ||
+      ensureMeta("supported-color-schemes");
+    if (supportedSchemesMeta) {
+      supportedSchemesMeta.setAttribute("content", "dark light");
+    }
+
+    if (document.body) {
+      document.body.style.backgroundColor = themeColor;
+    }
 
     const toggle = document.querySelector(".dark-toggle");
     if (toggle) {
