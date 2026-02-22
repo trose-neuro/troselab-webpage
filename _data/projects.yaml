@@ -4,7 +4,9 @@
   video: images/projects/videos/feedback-visual-stability.mp4
   link: members/leon-kremers.html
   description: |
-    Month-scale recordings from visual cortex. The clip shows local neural activity used to estimate maximally exciting input patterns and their stability over weeks, with deep visual-cortex models developed with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
+    Month-scale visual-cortex recordings of stable and flexible feedback coding.
+  video_caption: |
+    Month-scale visual-cortex recordings used to estimate maximally exciting neural inputs with deep visual-cortex models, in collaboration with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
   buttons:
     - type: link
       text: Leon Kremers
@@ -22,7 +24,9 @@
   video: images/projects/videos/memory-stabilization-rsc.mp4
   link: members/jisoo-jung.html
   description: |
-    Synchronized arena, world, and eye recordings during a spatial-memory task. Data are acquired in a custom automated arena with in-house hardware and frame-level synchronization.
+    Egocentric eye and world signals during spatial-memory behavior.
+  video_caption: |
+    Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with in-house hardware and frame-level synchronization.
   buttons:
     - type: link
       text: Jisoo Jung
@@ -39,7 +43,9 @@
   video: images/projects/videos/natural-vision-orienting.mp4
   link: members/natalia-krasilshchikova.html
   description: |
-    Mouse behavior during a closed-loop visual orienting task. The clip shows trial-by-trial orienting responses under controlled visual feedback.
+    Closed-loop visual orienting behavior in mice.
+  video_caption: |
+    Mouse behavior during a closed-loop visual orienting task, showing trial-by-trial orienting responses under controlled visual feedback.
   buttons:
     - type: link
       text: Natalia Krasilshchikova
@@ -56,7 +62,9 @@
   video: images/projects/videos/landmark-navigation.mp4
   link: members/shanqian-ma.html
   description: |
-    The same task data as RSC, combined with high-resolution 3D marker-based head tracking to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
+    3D gaze reconstruction during landmark navigation.
+  video_caption: |
+    RSC task data combined with high-resolution 3D marker-based head tracking to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
   buttons:
     - type: link
       text: Shanqian Ma
@@ -73,7 +81,9 @@
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
   link: members/yoshiki-hatashita.html
   description: |
-    Widefield calcium imaging of dorsal cortex during passive visual stimulation. The clip shows cortex-wide activity dynamics under controlled viewing.
+    Widefield dorsal-cortex activity during passive viewing.
+  video_caption: |
+    Widefield calcium imaging of dorsal cortex during passive viewing of visual stimuli, showing cortex-wide activity dynamics under controlled viewing.
   buttons:
     - type: link
       text: Yoshiki Hatashita
@@ -90,7 +100,9 @@
   video: images/projects/videos/latent-learning-circuits.mp4
   link: members/aelton-araujo.html
   description: |
-    Mouse navigation in a linear virtual corridor. The video shows behavior used to quantify latent learning of task structure.
+    Latent learning during navigation in a linear VR corridor.
+  video_caption: |
+    Mouse navigation in a linear virtual corridor used to quantify latent learning of task structure.
   buttons:
     - type: link
       text: Aelton Araujo
@@ -107,7 +119,9 @@
   video: images/projects/videos/miniature-two-photon-platform.mp4
   link: members/natalia-krasilshchikova.html
   description: |
-    Mini2p platform integrating neural imaging with synchronized behavior and camera streams. The clip shows concurrent acquisition for freely moving experiments.
+    Mini2p imaging synchronized with behavior in freely moving mice.
+  video_caption: |
+    Mini2p platform integrating neural imaging with synchronized behavior and camera streams for freely moving experiments.
   buttons:
     - type: link
       text: Natalia Krasilshchikova

@@ -26,7 +26,7 @@
     {% if card_video_src != "" %}
       href="{{ card_video_highres | relative_url | uri_escape }}"
       data-video-lightbox="{{ card_video_highres | relative_url | uri_escape }}"
-      data-video-caption="{{ card_video_caption | markdownify | remove: '<p>' | remove: '</p>' | strip | xml_escape }}"
+      data-video-caption="{{ card_video_caption | strip | xml_escape }}"
       data-video-max-seconds="{{ card_video_max_seconds }}"
       {% if include.image %}
         data-video-poster="{{ include.image | relative_url | uri_escape }}"
