@@ -159,25 +159,40 @@
 }
 
 .portrait[data-style=small][data-no-image=true] {
-  gap: 8px;
+  width: 160px;
+  height: 250px;
+  padding: 12px 10px;
+  display: grid;
+  grid-template-rows: 4.5em 3em 3em;
+  align-content: center;
+  justify-items: center;
+  gap: 6px;
 }
 .portrait[data-style=small][data-no-image=true] .portrait-name {
-  min-height: 5em;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  min-height: 0;
+  max-height: none;
+  width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   text-align: center;
   font-size: 0.96rem;
   line-height: 1.25;
   overflow-wrap: break-word;
 }
-.portrait[data-style=small][data-no-image=true] .portrait-description {
-  min-height: 1.4em;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+.portrait[data-style=small][data-no-image=true] .portrait-description,
+.portrait[data-style=small][data-no-image=true] .portrait-affiliation {
+  min-height: 0;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   text-align: center;
+  font-size: 0.84rem;
   line-height: 1.35;
+  -webkit-line-clamp: 2;
 }
 
 /*# sourceMappingURL=portrait.css.map */
