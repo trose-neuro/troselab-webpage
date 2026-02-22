@@ -30,7 +30,7 @@
     --repeat: min(2, var(--cols));
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 640px), (hover: none) and (pointer: coarse) {
   .cols {
     --repeat: min(1, var(--cols));
     gap: 12px;

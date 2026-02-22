@@ -25,10 +25,9 @@
   const applyMode = (isDark) => {
     document.documentElement.dataset.dark = isDark ? "true" : "false";
 
-    const themeColor = document.querySelector('meta[name="theme-color"]');
-    if (themeColor) {
-      themeColor.setAttribute("content", isDark ? "#0d131b" : "#edf2f7");
-    }
+    const themeColor = isDark ? "#0d131b" : "#edf2f7";
+    const themeColorMetas = document.querySelectorAll('meta[name="theme-color"]');
+    themeColorMetas.forEach((meta) => meta.setAttribute("content", themeColor));
 
     const toggle = document.querySelector(".dark-toggle");
     if (toggle) {
