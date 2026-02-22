@@ -39,7 +39,7 @@ footer > div:first-child {
 }
 
 footer > div:last-of-type {
-  font-size: 0.94rem;
+  font-size: 1rem;
   font-weight: var(--semi-bold);
 }
 
@@ -54,7 +54,7 @@ footer > div:last-of-type {
     gap: 2px;
   }
   footer > div:last-of-type {
-    font-size: 0.94rem;
+    font-size: 1.03rem;
     line-height: 1.45;
   }
 }

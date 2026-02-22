@@ -235,7 +235,7 @@
   }
   .portrait-description,
   .portrait-affiliation {
-    font-size: 1.01rem;
+    font-size: 1.06rem;
   }
   .portrait[data-style=small][data-no-image=true] {
     width: 100%;
@@ -244,6 +244,15 @@
     grid-template-rows: auto;
     justify-items: stretch;
     gap: 8px;
+  }
+  .portrait[data-style=small][data-no-image=true] .portrait-name {
+    font-size: 1.02rem;
+    line-height: 1.28;
+  }
+  .portrait[data-style=small][data-no-image=true] .portrait-description,
+  .portrait[data-style=small][data-no-image=true] .portrait-affiliation {
+    font-size: 1rem;
+    line-height: 1.38;
   }
   .alumni-row > .portrait {
     flex: 0 0 min(72vw, 240px);

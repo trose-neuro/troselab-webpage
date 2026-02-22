@@ -34,8 +34,14 @@ main {
 
 @media (max-width: 720px), (hover: none) and (pointer: coarse) {
   body {
-    font-size: 1.16rem;
-    line-height: 1.72;
+    font-size: 1.2rem;
+    line-height: 1.74;
+  }
+}
+@media (max-width: 480px), (hover: none) and (pointer: coarse) {
+  body {
+    font-size: 1.24rem;
+    line-height: 1.76;
   }
 }
 @media (prefers-reduced-motion: reduce) {
