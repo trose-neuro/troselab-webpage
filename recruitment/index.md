@@ -41,7 +41,7 @@ We also welcome direct inquiries from postdoctoral candidates with strong intere
 - [BonnBrain Conference](https://bonnbrain.de/)
 - [iBehave](https://ibehave.nrw/)
 - [iBOTS](https://ibots-bonn.de/)
-- [CADRE data core](https://ibehave.nrw/ibots-platform/CADRE/)
+- [CADRE](https://ibehave.nrw/ibots-platform/CADRE/)
 - [SFB 1089](https://bonn-neuroscience.de/consortia-list/dfg-collaborative-research-center-synaptic-micronetworks-in-health-and-disease-sfb-1089/)
 - [Bonn-Cologne Neuroscience Center (BCN)](https://bonn-neuroscience.de/)
 - [BIGS Neuroscience Graduate School](https://www.bigs-neuroscience.de/bigs/)
