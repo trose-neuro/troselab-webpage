@@ -4,7 +4,7 @@
   video: images/projects/videos/feedback-visual-stability.mp4
   link: members/leon-kremers.html
   description: |
-    We test whether cortical feedback stabilizes receptive fields over time.
+    We study whether cortical feedback and synaptic plasticty stabilize visual representations over time
   video_caption: |
     These are maximally exciting inputs (MEIs) of individual excitatory L2/3 neurons tracked over one month, estimated with deep visual-cortex models in collaboration with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
   buttons:
@@ -24,7 +24,7 @@
   video: images/projects/videos/memory-stabilization-rsc.mp4
   link: members/jisoo-jung.html
   description: |
-    We track how retrosplenial spatial and contextual codes form and stabilize with 3D head and eye tracking and miniature two-photon imaging.
+    We track how spatial and contextual representations emerge and stabilize in retrosplenial cortex using 3D head and eye tracking with miniature two-photon imaging.
   video_caption: |
     Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with in-house hardware and frame-level synchronization.
   buttons:
@@ -43,7 +43,7 @@
   video: images/projects/videos/natural-vision-orienting.mp4
   link: members/natalia-krasilshchikova.html
   description: |
-    We study active visual orienting in freely moving mice with 3D head and eye tracking and miniature two-photon imaging.
+    We study active visual orienting in freely moving mice using 3D head and eye tracking with miniature two-photon imaging.
   video_caption: |
     Mouse behavior during a closed-loop visual orienting task, showing trial-by-trial orienting responses under controlled visual feedback.
   buttons:
@@ -62,7 +62,7 @@
   video: images/projects/videos/landmark-navigation.mp4
   link: members/shanqian-ma.html
   description: |
-    We quantify landmark-centered gaze and cortical coding with 3D head and eye tracking and miniature two-photon imaging.
+    We study landmark-centered cortical coding with 3D head and eye tracking and miniature two-photon imaging.
   video_caption: |
     RSC task data combined with high-resolution 3D marker-based head tracking to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
   buttons:
