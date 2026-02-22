@@ -1,7 +1,29 @@
 <figure class="figure{% if include.boxed %} figure-boxed{% endif %}{% if include.class %} {{ include.class }}{% endif %}">
+  {% assign figure_href = include.link | default: "" | strip %}
+  {% assign figure_has_scheme = false %}
+  {% assign figure_external = false %}
+  {% if figure_href contains "mailto:" or figure_href contains "tel:" or figure_href contains "://" %}
+    {% assign figure_has_scheme = true %}
+  {% endif %}
+  {% assign figure_prefix = figure_href | slice: 0, 4 %}
+  {% if figure_has_scheme == false and figure_prefix == "www." %}
+    {% assign figure_href = "https://" | append: figure_href %}
+    {% assign figure_has_scheme = true %}
+  {% endif %}
+  {% if figure_href contains "http://" or figure_href contains "https://" %}
+    {% assign figure_external = true %}
+  {% endif %}
   <a
-    {% if include.link %}
-      href="{{ include.link | relative_url | uri_escape }}"
+    {% if figure_href != "" %}
+      {% if figure_has_scheme %}
+        href="{{ figure_href }}"
+      {% else %}
+        href="{{ figure_href | relative_url | uri_escape }}"
+      {% endif %}
+      {% if figure_external %}
+        target="_blank"
+        rel="noopener noreferrer"
+      {% endif %}
     {% endif %}
     class="figure-image"
     aria-label="{{ include.caption | default: "figure link" | regex_strip }}"

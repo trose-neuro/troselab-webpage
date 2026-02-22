@@ -4,9 +4,31 @@
     data-flip
   {% endif %}
 >
+  {% assign feature_href = include.link | default: "" | strip %}
+  {% assign feature_has_scheme = false %}
+  {% assign feature_external = false %}
+  {% if feature_href contains "mailto:" or feature_href contains "tel:" or feature_href contains "://" %}
+    {% assign feature_has_scheme = true %}
+  {% endif %}
+  {% assign feature_prefix = feature_href | slice: 0, 4 %}
+  {% if feature_has_scheme == false and feature_prefix == "www." %}
+    {% assign feature_href = "https://" | append: feature_href %}
+    {% assign feature_has_scheme = true %}
+  {% endif %}
+  {% if feature_href contains "http://" or feature_href contains "https://" %}
+    {% assign feature_external = true %}
+  {% endif %}
   <a
-    {% if include.link %}
-      href="{{ include.link | relative_url | uri_escape }}"
+    {% if feature_href != "" %}
+      {% if feature_has_scheme %}
+        href="{{ feature_href }}"
+      {% else %}
+        href="{{ feature_href | relative_url | uri_escape }}"
+      {% endif %}
+      {% if feature_external %}
+        target="_blank"
+        rel="noopener noreferrer"
+      {% endif %}
     {% endif %}
     class="feature-image"
     aria-label="{{ include.title | default: "feature link" | regex_strip }}"

@@ -14,13 +14,35 @@
     {% assign citation_image = citation_assets.image %}
   {% endif %}
 {% endif %}
+{% assign citation_href = citation.link | default: "" | strip %}
+{% assign citation_has_scheme = false %}
+{% assign citation_external = false %}
+{% if citation_href contains "mailto:" or citation_href contains "tel:" or citation_href contains "://" %}
+  {% assign citation_has_scheme = true %}
+{% endif %}
+{% assign citation_prefix = citation_href | slice: 0, 4 %}
+{% if citation_has_scheme == false and citation_prefix == "www." %}
+  {% assign citation_href = "https://" | append: citation_href %}
+  {% assign citation_has_scheme = true %}
+{% endif %}
+{% if citation_href contains "http://" or citation_href contains "https://" %}
+  {% assign citation_external = true %}
+{% endif %}
 
 <div class="citation-container">
   <div class="citation">
     {% if include.style == "rich" and citation_image %}
       <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | uri_escape }}"
+        {% if citation_href != "" %}
+          {% if citation_has_scheme %}
+            href="{{ citation_href }}"
+          {% else %}
+            href="{{ citation_href | relative_url | uri_escape }}"
+          {% endif %}
+          {% if citation_external %}
+            target="_blank"
+            rel="noopener noreferrer"
+          {% endif %}
         {% endif %}
         class="citation-image"
         aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
@@ -41,8 +63,16 @@
       {% include icon.html icon=type.icon %}
 
       <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | xml_escape }}"
+        {% if citation_href != "" %}
+          {% if citation_has_scheme %}
+            href="{{ citation_href | xml_escape }}"
+          {% else %}
+            href="{{ citation_href | relative_url | xml_escape }}"
+          {% endif %}
+          {% if citation_external %}
+            target="_blank"
+            rel="noopener noreferrer"
+          {% endif %}
         {% endif %}
         class="citation-title"
       >

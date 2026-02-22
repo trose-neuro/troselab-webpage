@@ -1,9 +1,14 @@
 {% assign button = include %}
 {% assign button = button | hash_default: site.data.types[include.type] %}
-{% assign href = button.link | replace: "$LINK", button.link %}
+{% assign href = button.link | replace: "$LINK", button.link | strip %}
 {% assign has_scheme = false %}
 {% assign is_http_external = false %}
 {% if href contains "mailto:" or href contains "tel:" or href contains "://" %}
+  {% assign has_scheme = true %}
+{% endif %}
+{% assign href_prefix = href | slice: 0, 4 %}
+{% if has_scheme == false and href_prefix == "www." %}
+  {% assign href = "https://" | append: href %}
   {% assign has_scheme = true %}
 {% endif %}
 {% if href contains "http://" or href contains "https://" %}

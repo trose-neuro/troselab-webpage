@@ -1,6 +1,6 @@
 - title: Feedback and Visual Stability
   subtitle: Current Project
-  image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
+  # image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
   video: images/projects/videos/feedback-visual-stability.mp4
   link: research
   description: |
@@ -12,7 +12,7 @@
 
 - title: Memory Stabilization in RSC
   subtitle: Current Project
-  image: "images/banner/hippocampus ca1-wide.jpg"
+  # image: "images/banner/hippocampus ca1-wide.jpg"
   video: images/projects/videos/memory-stabilization-rsc.mp4
   link: research
   description: |
@@ -24,7 +24,7 @@
 
 - title: Natural Vision and Orienting
   subtitle: Current Project
-  image: images/banner/background.jpg
+  # image: images/banner/background.jpg
   video: images/projects/videos/natural-vision-orienting.mp4
   link: research
   description: |
@@ -36,7 +36,7 @@
 
 - title: Landmark Coding in Navigation
   subtitle: Current Project
-  image: images/banner/multilevel spines.jpg
+  # image: images/banner/multilevel spines.jpg
   video: images/projects/videos/landmark-navigation.mp4
   link: research
   description: |
@@ -48,7 +48,7 @@
 
 - title: State, Uncertainty, and Neuromodulation
   subtitle: Current Project
-  image: "images/banner/Chiams LGN-wide.jpg"
+  # image: "images/banner/Chiams LGN-wide.jpg"
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
   link: research
   description: |
@@ -60,7 +60,7 @@
 
 - title: Latent Learning Circuits
   subtitle: Current Project
-  image: images/banner/tdtomatoGGsliceEPI-wide.jpg
+  # image: images/banner/tdtomatoGGsliceEPI-wide.jpg
   video: images/projects/videos/latent-learning-circuits.mp4
   link: research
   description: |
@@ -72,7 +72,7 @@
 
 - title: Miniature Two-Photon Platform
   subtitle: Infrastructure
-  image: images/mini2p.jpg
+  # image: images/mini2p.jpg
   video: images/projects/videos/miniature-two-photon-platform.mp4
   link: research
   description: |

@@ -4,9 +4,31 @@
   {% if include.style == "small" %}
     {% assign card_sizes = "(max-width: 640px) calc(100vw - 40px), 260px" %}
   {% endif %}
+  {% assign card_href = include.link | default: "" | strip %}
+  {% assign card_has_scheme = false %}
+  {% assign card_external = false %}
+  {% if card_href contains "mailto:" or card_href contains "tel:" or card_href contains "://" %}
+    {% assign card_has_scheme = true %}
+  {% endif %}
+  {% assign card_prefix = card_href | slice: 0, 4 %}
+  {% if card_has_scheme == false and card_prefix == "www." %}
+    {% assign card_href = "https://" | append: card_href %}
+    {% assign card_has_scheme = true %}
+  {% endif %}
+  {% if card_href contains "http://" or card_href contains "https://" %}
+    {% assign card_external = true %}
+  {% endif %}
   <a
-    {% if include.link %}
-      href="{{ include.link | relative_url | uri_escape }}"
+    {% if card_href != "" %}
+      {% if card_has_scheme %}
+        href="{{ card_href }}"
+      {% else %}
+        href="{{ card_href | relative_url | uri_escape }}"
+      {% endif %}
+      {% if card_external %}
+        target="_blank"
+        rel="noopener noreferrer"
+      {% endif %}
     {% endif %}
     aria-label="{{ include.title | default: "card link" | regex_strip }}"
     class="card-image"
@@ -18,18 +40,9 @@
         loop
         playsinline
         preload="metadata"
-        {% if include.image %}
-          poster="{{ include.image | relative_url | uri_escape }}"
-        {% endif %}
         aria-label="{{ include.title | default: "project video" | regex_strip }}"
       >
         <source src="{{ include.video | relative_url | uri_escape }}" type="video/mp4" />
-        {%
-          include responsive-image.html
-          image=include.image
-          alt=include.title
-          sizes=card_sizes
-        %}
       </video>
     {% else %}
       {%
@@ -44,8 +57,16 @@
   <div class="card-text">
     {% if include.title %}
       <a
-        {% if include.link %}
-          href="{{ include.link | relative_url | uri_escape }}"
+        {% if card_href != "" %}
+          {% if card_has_scheme %}
+            href="{{ card_href }}"
+          {% else %}
+            href="{{ card_href | relative_url | uri_escape }}"
+          {% endif %}
+          {% if card_external %}
+            target="_blank"
+            rel="noopener noreferrer"
+          {% endif %}
         {% endif %}
         {% if include.tooltip %}
           data-tooltip="{{ include.tooltip | xml_escape }}"
