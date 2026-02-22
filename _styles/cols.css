@@ -33,11 +33,11 @@
 @media (max-width: 640px), (hover: none) and (pointer: coarse) {
   .cols {
     --repeat: min(1, var(--cols));
-    gap: 12px;
-    margin: 16px 0;
+    gap: 10px;
+    margin: 12px 0;
   }
   .cols > * {
-    padding: 12px;
+    padding: 10px;
   }
 }
 

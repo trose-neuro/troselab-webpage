@@ -216,10 +216,10 @@ header[data-big] nav {
     gap: 4px;
   }
   .title {
-    font-size: 1.12rem;
+    font-size: 1.16rem;
   }
   .subtitle {
-    font-size: 1rem;
+    font-size: 1.04rem;
   }
   .nav-toggle {
     display: flex;
@@ -244,7 +244,7 @@ header[data-big] nav {
     width: 100%;
     padding: 10px 12px;
     min-height: 40px;
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     text-align: left;
   }
   header:not([data-big]) nav {
@@ -254,8 +254,8 @@ header[data-big] nav {
     text-align: left;
   }
   header[data-big] {
-    gap: 14px;
-    padding: clamp(24px, 8vw, 42px) 12px;
+    gap: 12px;
+    padding: clamp(18px, 7vw, 32px) 10px;
     --header-banner-veil-opacity: 0.3;
   }
   header[data-big] .home {
@@ -278,15 +278,15 @@ header[data-big] nav {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: stretch;
     align-items: stretch;
-    gap: 8px;
+    gap: 6px;
     width: 100%;
     padding: 2px 0 4px;
   }
   header[data-big] nav > a {
     width: auto;
-    min-height: 44px;
-    padding: 11px 10px;
-    font-size: 1rem;
+    min-height: 42px;
+    padding: 9px 10px;
+    font-size: 1.04rem;
     line-height: 1.2;
     text-align: center;
     white-space: normal;
@@ -301,7 +301,7 @@ header[data-big] nav {
     gap: 4px;
   }
   nav > a {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
   }
 }
 @media (max-width: 360px) {
