@@ -216,10 +216,10 @@ header[data-big] nav {
     gap: 4px;
   }
   .title {
-    font-size: 1.3rem;
+    font-size: clamp(1.42rem, 5.2vw, 1.7rem);
   }
   .subtitle {
-    font-size: 1.14rem;
+    font-size: clamp(1.2rem, 3.8vw, 1.32rem);
   }
   .nav-toggle {
     display: flex;
@@ -244,7 +244,7 @@ header[data-big] nav {
     width: 100%;
     padding: 11px 12px;
     min-height: 44px;
-    font-size: 1.24rem;
+    font-size: 1.32rem;
     text-align: left;
   }
   header:not([data-big]) nav {
@@ -262,10 +262,10 @@ header[data-big] nav {
     gap: 12px;
   }
   header[data-big] .title {
-    font-size: clamp(1.7rem, 8vw, 2.3rem);
+    font-size: clamp(1.86rem, 8.6vw, 2.45rem);
   }
   header[data-big] .subtitle {
-    font-size: clamp(1.08rem, 3.7vw, 1.18rem);
+    font-size: clamp(1.2rem, 4.2vw, 1.34rem);
   }
 }
 @media (max-width: 640px), (hover: none) and (pointer: coarse) {
@@ -276,7 +276,7 @@ header[data-big] nav {
     gap: 4px;
   }
   nav > a {
-    font-size: 1.22rem;
+    font-size: 1.34rem;
   }
 }
 
