@@ -42,21 +42,23 @@
         tags=post.tags
       %}
 
-      {% assign excerpt = post.content
+      {% assign excerpt_custom = post.content
         | default: ""
         | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->", true
-        | default: post.excerpt
-        | default: ""
-        | strip_html
       %}
+      {% if excerpt_custom %}
+        {% assign excerpt = excerpt_custom | markdownify %}
+      {% else %}
+        {% assign excerpt = post.excerpt | default: "" %}
+      {% endif %}
       {% assign search = post.content
         | strip_html
         | strip_newlines
         | regex_strip
       %}
-      <p data-search="{{ search }}">
+      <div class="post-excerpt-body" data-search="{{ search }}">
         {{ excerpt }}
-      </p>
+      </div>
     </div>
   </div>
 </div>

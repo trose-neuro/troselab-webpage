@@ -3,6 +3,7 @@ name: Leon Kremers
 image: images/members/leon-kremers_portrait.jpg
 role: phd
 affiliation: PhD Student, troselab
+start: 2021-10-01
 links:
   google-scholar: _GFf60wAAAAJ
   github: LeonKremers

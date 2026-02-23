@@ -14,15 +14,28 @@
   max-width: 100%;
 }
 
-.member-links {
+.member-header-meta {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   flex: 1 1 340px;
   min-width: min(100%, 260px);
   gap: 8px;
+}
+
+.member-start {
+  margin: 0;
+  font-weight: var(--semi-bold);
+  color: var(--text-muted, var(--text));
+}
+
+.member-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  min-width: 0;
+  gap: 8px;
   align-items: center;
   align-content: flex-start;
-  padding-top: 4px;
 }
 
 .member-links .button-wrapper {
@@ -46,9 +59,7 @@
   }
 
   .member-links {
-    flex-basis: 100%;
     min-width: 0;
-    padding-top: 0;
   }
 }
 
@@ -63,6 +74,6 @@
   }
 
   .member-links {
-    padding-top: 0;
+    min-width: 0;
   }
 }

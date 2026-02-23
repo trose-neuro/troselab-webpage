@@ -6,12 +6,19 @@ layout: default
   <div class="member-header-image">
     {% include portrait.html lookup=page.slug style="profile" %}
   </div>
-  <div class="member-links" aria-label="Member links">
-    {% for link in page.links %}
-      {% assign key = link[0] %}
-      {% assign value = link[1] %}
-      {% include button.html type=key link=value %}
-    {% endfor %}
+  <div class="member-header-meta">
+    <div class="member-links" aria-label="Member links">
+      {% for link in page.links %}
+        {% assign key = link[0] %}
+        {% assign value = link[1] %}
+        {% include button.html type=key link=value %}
+      {% endfor %}
+    </div>
+    {% if page.start %}
+      <p class="member-start">
+        Start: {{ page.start | date: "%-d %b %Y" }}
+      </p>
+    {% endif %}
   </div>
 </section>
 
