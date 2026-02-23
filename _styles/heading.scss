@@ -57,26 +57,40 @@ h6 {
   opacity: 0.75;
 }
 
-@media (max-width: 720px), (hover: none) and (pointer: coarse) {
+@media (max-width: 720px) {
   h1 {
     margin: 0.4rem 0 1.2rem;
-    font-size: clamp(2.02rem, 9.2vw, 2.55rem);
+    font-size: clamp(1.86rem, 7.4vw, 2.28rem);
   }
 
   h2 {
     margin-top: 2rem;
-    font-size: clamp(1.56rem, 6.8vw, 2.02rem);
+    font-size: clamp(1.42rem, 5.8vw, 1.8rem);
   }
 
   h3 {
-    font-size: clamp(1.34rem, 5.9vw, 1.62rem);
+    font-size: clamp(1.24rem, 4.8vw, 1.48rem);
   }
 
   h4 {
-    font-size: 1.34rem;
+    font-size: 1.2rem;
   }
 
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.08rem;
+  }
+}
+
+@media (max-width: 720px) and (hover: none) and (pointer: coarse) {
+  h1 {
+    font-size: clamp(1.96rem, 8.2vw, 2.38rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 6.2vw, 1.92rem);
+  }
+
+  h3 {
+    font-size: clamp(1.3rem, 5.2vw, 1.56rem);
   }
 }
