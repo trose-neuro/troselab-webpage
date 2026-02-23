@@ -8,8 +8,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-bullhorn" %}News
 
-{% include button.html type="external" text="View job posting (FENS)" link="https://www.fens.org/careers/job-market/job/125885/" %}
-
 {% include section.html %}
 
 {% include search-box.html %}
