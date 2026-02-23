@@ -8,10 +8,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-bullhorn" %}News
 
-## Opportunity
-
-We are currently advertising a **joint postdoctoral opportunity with the Sinz Lab**.
-
 {% include button.html type="external" text="View job posting (FENS)" link="https://www.fens.org/careers/job-market/job/125885/" %}
 
 {% include section.html %}

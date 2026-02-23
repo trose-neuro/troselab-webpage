@@ -19,6 +19,12 @@ Venusberg-Campus 1
 
 {% include button.html type="address" text="" tooltip="Open in Google Maps" link="https://maps.app.goo.gl/y4vyJcywVR7hSVwf9" style="bare" %}
 
+{% include section.html %}
+
+{% include button.html type="link" text="CV Tobias Rose" link="members/tobias-rose.html" %}
+
+{% include section.html %}
+
 For collaborations, trainee applications, or project inquiries, please contact the group directly.
 
 {% include button.html type="email" text="tobias.rose@ukbonn.de" link="mailto:tobias.rose@ukbonn.de" %}
@@ -28,12 +34,6 @@ For collaborations, trainee applications, or project inquiries, please contact t
 {% include button.html type="github" text="SFB1089" link="https://github.com/SFB1089" %}
 {% include button.html type="github" text="trose-neuro" link="https://github.com/trose-neuro" %}
 {% include button.html type="orcid" text="ORCID" link="0000-0002-7156-4714" %}
-
-{% include section.html %}
-
-{% include button.html type="link" text="Tobias Rose member page" link="members/tobias-rose.html" %}
-
-{% include section.html %}
 
 # {% include icon.html icon="fa-solid fa-route" %}Getting Here
 
