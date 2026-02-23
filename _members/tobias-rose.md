@@ -5,6 +5,7 @@ role: pi
 affiliation: University of Bonn Medical Center
 links:
   email: tobias.rose@ukbonn.de
+  home-page: https://trose-neuro.github.io/troselab-webpage/members/tobias-rose.html
   orcid: 0000-0002-7156-4714
   google-scholar: 7qngqfIAAAAJ
   github: trose-neuro

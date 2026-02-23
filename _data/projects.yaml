@@ -20,25 +20,6 @@
     - feedback
     - stability
 
-- title: Memory Stabilization in RSC
-  subtitle: Current Project
-  # image: "images/banner/hippocampus ca1-wide.jpg"
-  video: images/projects/videos/memory-stabilization-rsc.mp4
-  link: members/jisoo-jung.html
-  description: |
-    Contextual processing during spatial learning: Stabilization of spatial and non-spatial representations in retrosplenial cortex (RSC).
-  video_caption: |
-    Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with custom in-house hardware.
-  buttons:
-    - type: link
-      text: Jisoo Jung
-      link: members/jisoo-jung.html
-      style: bare
-  tags:
-    - retrosplenial cortex
-    - learning
-    - memory
-
 - title: Active Sensing in Visual Orienting
   subtitle: Current Project
   # image: images/banner/background.jpg
@@ -57,6 +38,25 @@
     - natural vision
     - orienting
     - closed-loop behavior
+
+- title: Memory Stabilization in RSC
+  subtitle: Current Project
+  # image: "images/banner/hippocampus ca1-wide.jpg"
+  video: images/projects/videos/memory-stabilization-rsc.mp4
+  link: members/jisoo-jung.html
+  description: |
+    Contextual processing during spatial learning: Stabilization of spatial and non-spatial representations in retrosplenial cortex (RSC).
+  video_caption: |
+    Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with custom in-house hardware.
+  buttons:
+    - type: link
+      text: Jisoo Jung
+      link: members/jisoo-jung.html
+      style: bare
+  tags:
+    - retrosplenial cortex
+    - learning
+    - memory
 
 - title: Landmark Coding in Navigation
   subtitle: Current Project
@@ -119,6 +119,8 @@
   subtitle: Infrastructure
   # image: images/mini2p.jpg
   video: images/projects/videos/miniature-two-photon-platform.mp4
+  video_highres: images/projects/videos/miniature-two-photon-platform-highres.mp4
+  video_max_seconds: 30
   link: members/natalia-krasilshchikova.html
   description: |
     Longitudinal and acute imaging infrastructure for cortical and subcortical circuit studies in freely moving animals.
