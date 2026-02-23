@@ -2,6 +2,8 @@
   subtitle: Current Project
   # image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
   video: images/projects/videos/feedback-visual-stability.mp4
+  video_highres: images/projects/videos/feedback-visual-stability-highres-60s.mp4
+  video_max_seconds: 60
   link: members/leon-kremers.html
   description: |
     Stable and flexible coding across cortical and subcortical circuits.
