@@ -250,11 +250,11 @@ header[data-big] {
   }
 
   .title {
-    font-size: 1.3rem;
+    font-size: clamp(1.42rem, 5.2vw, 1.7rem);
   }
 
   .subtitle {
-    font-size: 1.14rem;
+    font-size: clamp(1.2rem, 3.8vw, 1.32rem);
   }
 
   .nav-toggle {
@@ -283,7 +283,7 @@ header[data-big] {
     width: 100%;
     padding: 11px 12px;
     min-height: 44px;
-    font-size: 1.24rem;
+    font-size: 1.32rem;
     text-align: left;
   }
 
@@ -306,11 +306,11 @@ header[data-big] {
   }
 
   header[data-big] .title {
-    font-size: clamp(1.7rem, 8vw, 2.3rem);
+    font-size: clamp(1.86rem, 8.6vw, 2.45rem);
   }
 
   header[data-big] .subtitle {
-    font-size: clamp(1.08rem, 3.7vw, 1.18rem);
+    font-size: clamp(1.2rem, 4.2vw, 1.34rem);
   }
 }
 
@@ -324,6 +324,6 @@ header[data-big] {
   }
 
   nav > a {
-    font-size: 1.22rem;
+    font-size: 1.34rem;
   }
 }
