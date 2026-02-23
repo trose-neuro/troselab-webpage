@@ -6,4 +6,4 @@ tags:
   - infrastructure
 ---
 
-This repository is the draft migration target for replacing the legacy WordPress setup with a static, self-hosted lab website workflow.
+Website migration. Replacing the legacy WordPress site (https://rose-group.ieecr-bonn.de) with a self-hosted lab website (Github pages) workflow based on https://github.com/greenelab/lab-website-template.
