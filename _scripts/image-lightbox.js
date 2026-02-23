@@ -65,7 +65,7 @@
       <div class="image-lightbox-backdrop"></div>
       <div class="image-lightbox-content">
         <img class="image-lightbox-image" alt="">
-        <video class="image-lightbox-video" preload="metadata" playsinline></video>
+        <video class="image-lightbox-video" preload="metadata" playsinline disablepictureinpicture disableremoteplayback controlslist="nodownload noremoteplayback nofullscreen"></video>
         <p class="image-lightbox-caption"></p>
       </div>
     `;
@@ -284,6 +284,15 @@
   }
 
   setupPreviewAutoplay();
+
+  // Client-side deterrent: disable context menu on video elements and video popup links.
+  document.addEventListener("contextmenu", (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    if (target.closest("video, a.card-image[data-video-lightbox]")) {
+      event.preventDefault();
+    }
+  });
 
   document.addEventListener("click", (event) => {
     const target = event.target;
