@@ -25,7 +25,7 @@ Venusberg-Campus 1
 
 For collaborations, trainee applications, or project inquiries, please contact the group directly.
 
-{% include button.html type="email" text="tobias.rose@ukbonn.de" link="mailto:tobias.rose@ukbonn.de" %}
+{% include button.html type="email" text="Email Tobias Rose" link=site.links.email %}
 {% include button.html type="phone" text="+49 228 287 62290" link="+49 228 287 62290" %}
 
 {% include button.html type="github" text="troselab" link="https://github.com/troselab" %}

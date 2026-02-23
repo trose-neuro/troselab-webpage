@@ -1,10 +1,14 @@
 {% assign button = include %}
 {% assign button = button | hash_default: site.data.types[include.type] %}
 {% assign href = button.link | replace: "$LINK", button.link | strip %}
+{% assign is_mailto = false %}
 {% assign has_scheme = false %}
 {% assign is_http_external = false %}
 {% if href contains "mailto:" or href contains "tel:" or href contains "://" %}
   {% assign has_scheme = true %}
+{% endif %}
+{% if href contains "mailto:" %}
+  {% assign is_mailto = true %}
 {% endif %}
 {% assign href_prefix = href | slice: 0, 4 %}
 {% if has_scheme == false and href_prefix == "www." %}
@@ -16,10 +20,16 @@
 {% endif %}
 
 {% if button.link or button.icon or button.text %}
+  {% assign email_target = href | remove_first: "mailto:" | split: "?" | first %}
+  {% assign email_reversed = email_target | split: "" | reverse | join: "" %}
   <div class="button-wrapper">
     <a
       class="button"
-      {% if has_scheme %}
+      {% if is_mailto %}
+        href="#"
+        data-email-obfuscated="true"
+        data-email-reversed="{{ email_reversed | xml_escape }}"
+      {% elsif has_scheme %}
         href="{{ href }}"
       {% else %}
         href="{{ href | relative_url }}"

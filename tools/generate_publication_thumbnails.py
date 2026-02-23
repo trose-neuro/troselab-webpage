@@ -19,7 +19,7 @@ OUTPUT_DIR = ROOT / "images" / "citations"
 MAPPING_FILE = ROOT / "_data" / "citation-images.yaml"
 TIMEOUT = 25
 MAX_BYTES = 80 * 1024 * 1024
-UNPAYWALL_EMAIL = "contact@troselab.de"
+UNPAYWALL_EMAIL = "tobias.rose@ukbonn.de"
 
 
 def dedupe(items: Iterable[str]) -> List[str]:

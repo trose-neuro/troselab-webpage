@@ -28,7 +28,7 @@ In addition, we are currently advertising a **joint postdoctoral opportunity wit
 
 {% include button.html type="external" text="Joint postdoc posting (FENS)" link="https://www.fens.org/careers/job-market/job/125885/" %}
 
-{% include button.html type="email" text="Contact for postdoc inquiries" link="mailto:tobias.rose@ukbonn.de" %}
+{% include button.html type="email" text="Contact for postdoc inquiries" link=site.links.email %}
 
 {% include section.html %}
 
