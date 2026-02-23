@@ -59,8 +59,12 @@
   justify-content: flex-start;
 }
 
-.post-excerpt-text > p {
+.post-excerpt-body {
   width: 100%;
+}
+
+.post-excerpt-body > * {
+  margin: 0;
 }
 
 @container (max-width: 800px) {
