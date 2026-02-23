@@ -12,7 +12,9 @@ We study how stable perception, memory, and action arise from dynamic neural cir
 
 ## Current Projects
 
+<div class="research-panels">
 {% include list.html component="card" data="projects" style="small" %}
+</div>
 
 {% include section.html %}
 

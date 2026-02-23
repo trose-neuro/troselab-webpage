@@ -3,7 +3,7 @@ name: Asma Mekhnache
 image: images/logo.jpg
 role: alum
 group: alumni
-affiliation: Max Planck Institute for Neurobiology of Behavior, University of Bonn
+affiliation: MSc Neuroscience (University of Bonn)
 start: 2023-05-01
 links:
   github: Asma-ch
