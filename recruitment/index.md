@@ -24,6 +24,10 @@ As of **February 12, 2026**, the IMPRS site reports that the **next application 
 
 We also welcome direct inquiries from postdoctoral candidates with strong interests in systems neuroscience, circuit methods, and computational analysis.
 
+In addition, we are currently advertising a **joint postdoctoral opportunity with the Sinz Lab**.
+
+{% include button.html type="external" text="Joint postdoc posting (FENS)" link="https://www.fens.org/careers/job-market/job/125885/" %}
+
 {% include button.html type="email" text="Contact for postdoc inquiries" link="mailto:tobias.rose@ukbonn.de" %}
 
 {% include section.html %}
