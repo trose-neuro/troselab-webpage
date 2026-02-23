@@ -12,7 +12,7 @@ links:
   bluesky: trose-neuro.bsky.social
 ---
 
-## CV
+# CV
 
 Prof. Dr. Tobias Rose  
 Group leader "Circuit Mechanisms of Behavior"

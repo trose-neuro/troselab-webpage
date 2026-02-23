@@ -96,6 +96,18 @@ for plugin in plugins:
 
 log("Merging sources by id")
 
+# replace preprint ids with published DOIs where available, before merge
+for index, source in enumerate(sources):
+    source_id = get_safe(source, "id", "")
+    canonical_id = canonicalize_source_id(source_id)
+    if canonical_id and canonical_id != source_id:
+        log(
+            f"Canonicalized {source_id} -> {canonical_id}",
+            indent=2,
+            level="INFO",
+        )
+        sources[index]["id"] = canonical_id
+
 # merge sources with matching (non-blank) ids
 for a in range(0, len(sources)):
     a_id = get_safe(sources, f"{a}.id", "")
@@ -162,6 +174,9 @@ for index, source in enumerate(sources):
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
+
+    # normalize publisher naming for display consistency
+    citation["publisher"] = normalize_publisher_name(get_safe(citation, "publisher", ""))
 
     # ensure date in proper format for correct date sorting
     if get_safe(citation, "date", ""):

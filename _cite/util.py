@@ -8,6 +8,8 @@ import yaml
 from yaml.loader import SafeLoader
 from pathlib import Path
 from datetime import date, datetime
+from urllib.parse import quote
+from urllib.request import Request, urlopen
 from rich import print
 from diskcache import Cache
 
@@ -250,3 +252,86 @@ def cite_with_manubot(_id):
 
     # return citation data
     return citation
+
+
+def normalize_doi(doi):
+    """
+    normalize DOI-like text to a lowercase DOI value without leading doi:
+    """
+    value = str(doi or "").strip()
+    if value.lower().startswith("doi:"):
+        value = value.split(":", 1)[1]
+    return value.strip().lower()
+
+
+# fallback mappings for preprints where Crossref relation metadata is incomplete
+PREPRINT_PUBLISHED_FALLBACKS = {
+    "10.1101/2020.10.14.339747": "10.1016/j.neuron.2021.05.036",
+    "10.1101/2020.06.03.127191": "10.1016/j.cub.2022.02.048",
+    "10.1101/097923": "10.1038/s41593-017-0021-0",
+}
+
+
+@log_cache
+@cache.memoize(name="crossref_preprint_to_published_doi", expire=90 * (60 * 60 * 24))
+def crossref_preprint_to_published_doi(doi):
+    """
+    get published DOI for a preprint DOI via Crossref relation metadata
+    """
+    normalized = normalize_doi(doi)
+    if not normalized:
+        return ""
+
+    # explicit fallbacks first
+    if normalized in PREPRINT_PUBLISHED_FALLBACKS:
+        return PREPRINT_PUBLISHED_FALLBACKS[normalized]
+
+    url = f"https://api.crossref.org/works/{quote(normalized, safe='')}"
+    request = Request(
+        url=url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "troselab-webpage-citation-updater/1.0",
+        },
+    )
+    response = json.loads(urlopen(request, timeout=30).read())
+    relations = get_safe(response, "message.relation.is-preprint-of", []) or []
+
+    for relation in relations:
+        if str(get_safe(relation, "id-type", "")).lower() != "doi":
+            continue
+        published = normalize_doi(get_safe(relation, "id", ""))
+        if published:
+            return published
+
+    return ""
+
+
+def canonicalize_source_id(source_id):
+    """
+    replace known preprint DOI ids with published DOI ids when available
+    """
+    value = str(source_id or "").strip()
+    if not value.lower().startswith("doi:"):
+        return value
+
+    doi = normalize_doi(value)
+    if not doi.startswith("10.1101/"):
+        return value
+
+    published = crossref_preprint_to_published_doi(doi)
+    if published:
+        return f"doi:{published}"
+
+    return value
+
+
+def normalize_publisher_name(publisher):
+    """
+    harmonize publisher labels (openRxiv -> bioRxiv)
+    """
+    value = str(publisher or "").strip()
+    lowered = value.lower()
+    if lowered in {"openrxiv", "biorxiv"}:
+        return "bioRxiv"
+    return value

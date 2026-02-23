@@ -56,39 +56,22 @@ Group leader "Circuit Mechanisms of Behavior"
 - 2006: Doctoral thesis, European Neuroscience Institute Goettingen
 - 2002: 1st State examination, Biology / German language, University of Goettingen, Germany
 
-## Getting Here
+{% include section.html %}
+
+# {% include icon.html icon="fa-solid fa-route" %}Getting Here
 
 ### By Plane
 
-There are three airports in the Bonn region:
-
-#### Köln/Bonn Airport
-
-This is the closest airport to Bonn. A taxi from the airport to Venusberg is about 55 EUR.  
-Bus line SB60 reaches Bonn Central Station in about 30 minutes.
-
-#### Düsseldorf Airport
-
-The best way to travel from Düsseldorf Airport to Bonn Central Station is by train (ICE, IC, or EC).  
-Train information: <https://www.bahn.com/en>
-
-#### Frankfurt Airport
-
-The fastest route to Bonn is an ICE train that stops at Siegburg/Bonn.  
-From Siegburg/Bonn, take tram 66 to Bonn Central Station.  
-Train information: <https://www.bahn.com/en>
+- [Köln/Bonn Airport](https://www.koeln-bonn-airport.de/en/) (closest): taxi to Venusberg (~55 EUR) or SB60 to Bonn Central Station (~30 min).
+- [Düsseldorf Airport](https://www.dus.com/en): train (ICE/IC/EC) to Bonn Central Station.
+- [Frankfurt Airport](https://www.frankfurt-airport.com/en.html): ICE to Siegburg/Bonn, then tram 66 to Bonn Central Station.
 
 ### By Train
 
-#### Bonn Central Station
+- From Bonn Central Station: taxi to Venusberg (~15 min, ~15 EUR), or bus 600 ("Venusberg Uniklinikum Nord") / 601 ("Venusberg Uniklinikum Süd").
+- From Siegburg/Bonn: tram 66 to Bonn Central Station, or taxi (~25 min, ~60 EUR).
 
-From Bonn Central Station, a taxi to Venusberg takes about 15 minutes and costs about 15 EUR.  
-You can also take bus 600 (exit at "Venusberg Uniklinikum Nord") or bus 601 (exit at "Venusberg Uniklinikum Süd").
-
-#### Siegburg/Bonn
-
-From Siegburg/Bonn, take tram 66 to Bonn Central Station.  
-A taxi ride takes about 25 minutes and costs about 60 EUR.
+Schedules and connections: [Deutsche Bahn](https://www.bahn.com/en) and [SWB Bus und Bahn](https://www.swb-busundbahn.de/en/).
 
 {% include section.html %}
 
