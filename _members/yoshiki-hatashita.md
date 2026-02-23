@@ -2,7 +2,7 @@
 name: Yoshiki Hatashita
 image: images/members/yoshiki-hatashita_portrait.jpg
 role: postdoc
-affiliation: troselab
+affiliation: Postdoctoral Researcher, University Hospital Bonn (UKB)
 start: 2024-05-01
 links:
   orcid: 0000-0002-5108-5986

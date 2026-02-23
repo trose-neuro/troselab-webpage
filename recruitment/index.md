@@ -15,7 +15,7 @@ redirect_from:
 We recruit PhD students primarily through the **IMPRS for Brain and Behavior** in Bonn.
 Selection is competitive and includes interviews in Bonn.
 
-As of **February 12, 2026**, the IMPRS site reports that the **next application round starts in August 2026**; the latest published completed round had a deadline of **October 31, 2025**.
+For current deadlines and application windows, please check the IMPRS website directly.
 
 {% include button.html type="website" text="IMPRS application process" link="https://imprs-brain-behavior.mpg.de/apply" %}
 {% include button.html type="website" text="IMPRS graduate program" link="https://imprs-brain-behavior.mpg.de/" %}
@@ -64,8 +64,8 @@ ADAMACS (Architectures for Data Management and Computational Support) is our fra
 - [DataJoint documentation](https://docs.datajoint.com/)
 {% include button.html type="github" text="troselab" link="troselab" %}
 {% include button.html type="github" text="trose-neuro" link="trose-neuro" %}
-{% include button.html type="github" text="sfb1089-adamacs-ingest" link="[SFB1089/adamacs-ingest](https://github.com/SFB1089/adamacs_ingest)" %}
-{% include button.html type="github" text="sfb1089-adamacs-analysis" link="[SFB1089/adamacs-analysis](https://github.com/SFB1089/adamacs_analysis)" %}
+{% include button.html type="github" text="sfb1089-adamacs-ingest" link="https://github.com/SFB1089/adamacs_ingest" %}
+{% include button.html type="github" text="sfb1089-adamacs-analysis" link="https://github.com/SFB1089/adamacs_analysis" %}
 
 {% include section.html %}
 

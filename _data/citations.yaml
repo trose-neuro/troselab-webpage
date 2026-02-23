@@ -10,7 +10,7 @@
   - Laura Busse
   publisher: Annual Review of Vision Science
   date: '2025-09-17'
-  link: https://doi.org/hbn7q5
+  link: https://doi.org/10.1146/annurev-vision-101322-012348
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -28,7 +28,7 @@
   - "Mark H\xFCbener"
   publisher: Nature Communications
   date: '2024-10-23'
-  link: https://doi.org/hbn7q6
+  link: https://doi.org/10.1038/s41467-024-53326-x
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -39,7 +39,7 @@
   - Tobias Rose
   publisher: Neuron
   date: '2024-10-01'
-  link: https://doi.org/hbn7q7
+  link: https://doi.org/10.1016/j.neuron.2024.09.016
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -54,7 +54,7 @@
   - Tatjana Tchumatchenko
   publisher: The Journal of Physiology
   date: '2022-09-25'
-  link: https://doi.org/hbn7q9
+  link: https://doi.org/10.1113/JP282755
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -70,7 +70,7 @@
   - Volker Scheuss
   publisher: Cerebral Cortex
   date: '2022-08-26'
-  link: https://doi.org/hbn7rb
+  link: https://doi.org/10.1093/cercor/bhac303
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -89,7 +89,7 @@
   - Edvard I. Moser
   publisher: Proceedings of the National Academy of Sciences
   date: '2022-02-08'
-  link: https://doi.org/gpgvff
+  link: https://doi.org/10.1073/pnas.2121655119
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -107,7 +107,7 @@
   - Tobias Rose
   publisher: Neuron
   date: '2021-08-01'
-  link: https://doi.org/gnf3bz
+  link: https://doi.org/10.1016/j.neuron.2021.05.036
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -123,7 +123,7 @@
   - Volker Scheuss
   publisher: Current Biology
   date: '2022-04-01'
-  link: https://doi.org/hbp98s
+  link: https://doi.org/10.1016/j.cub.2022.02.048
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -139,7 +139,7 @@
   - Volker Scheuss
   publisher: Nature Protocols
   date: '2018-05-10'
-  link: https://doi.org/gdnszc
+  link: https://doi.org/10.1038/nprot.2018.026
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -150,7 +150,7 @@
   - Tobias Bonhoeffer
   publisher: Current Opinion in Neurobiology
   date: '2018-12-01'
-  link: https://doi.org/gfrvwg
+  link: https://doi.org/10.1016/j.conb.2018.04.016
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -164,7 +164,7 @@
   - Tobias Rose
   publisher: Nature Neuroscience
   date: '2017-11-13'
-  link: https://doi.org/gcnkgg
+  link: https://doi.org/10.1038/s41593-017-0021-0
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -175,7 +175,7 @@
   - "Mark H\xFCbener"
   publisher: Nature
   date: '2017-07-01'
-  link: https://doi.org/gcvjzk
+  link: https://doi.org/10.1038/nature23098
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -188,7 +188,7 @@
   - Tobias Rose
   publisher: 'Philosophical Transactions of the Royal Society B: Biological Sciences'
   date: '2017-03-05'
-  link: https://doi.org/gq8g83
+  link: https://doi.org/10.1098/rstb.2016.0161
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -215,7 +215,7 @@
   - Mark C. van Rossum
   publisher: 'Philosophical Transactions of the Royal Society B: Biological Sciences'
   date: '2017-03-05'
-  link: https://doi.org/gf5m8k
+  link: https://doi.org/10.1098/rstb.2016.0158
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -229,7 +229,7 @@
   - Tobias Bonhoeffer
   publisher: Science
   date: '2016-06-10'
-  link: https://doi.org/f8q2m7
+  link: https://doi.org/10.1126/science.aad3358
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -252,7 +252,7 @@
   - Stephan Speier
   publisher: Nature Protocols
   date: '2014-11-13'
-  link: https://doi.org/gddsd2
+  link: https://doi.org/10.1038/nprot.2014.195
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -265,7 +265,7 @@
   - Oliver Griesbeck
   publisher: Frontiers in Molecular Neuroscience
   date: '2014-11-18'
-  link: https://doi.org/ghbdt3
+  link: https://doi.org/10.3389/fnmol.2014.00088
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -278,7 +278,7 @@
   - "Thomas\_G. Oertner"
   publisher: Neuron
   date: '2013-03-01'
-  link: https://doi.org/f4rtt5
+  link: https://doi.org/10.1016/j.neuron.2013.01.021
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -301,7 +301,7 @@
   - Bernhard Bettler
   publisher: Proceedings of the National Academy of Sciences
   date: '2010-07-19'
-  link: https://doi.org/bdj496
+  link: https://doi.org/10.1073/pnas.1000909107
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -314,7 +314,7 @@
   - Thomas G. Oertner
   publisher: Brain Cell Biology
   date: '2008-07-25'
-  link: https://doi.org/bbwbbj
+  link: https://doi.org/10.1007/s11068-008-9025-8
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -326,7 +326,7 @@
   - Marjan Rupnik
   publisher: The Journal of General Physiology
   date: '2007-05-29'
-  link: https://doi.org/cjwk53
+  link: https://doi.org/10.1085/jgp.200609604
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -339,7 +339,7 @@
   - "Michael H\xF6rner"
   publisher: Invertebrate Neuroscience
   date: '2006-10-31'
-  link: https://doi.org/cmjfpm
+  link: https://doi.org/10.1007/s10158-006-0030-2
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -354,7 +354,7 @@
   - M. Rupnik
   publisher: Molecular and Cellular Endocrinology
   date: '2005-01-01'
-  link: https://doi.org/dqtbk4
+  link: https://doi.org/10.1016/j.mce.2004.11.002
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml
@@ -367,7 +367,7 @@
   - Marjan Rupnik
   publisher: The Journal of Physiology
   date: '2005-09-01'
-  link: https://doi.org/d8gfcv
+  link: https://doi.org/10.1113/jphysiol.2005.090381
   orcid: 0000-0002-7156-4714
   plugin: orcid.py
   file: orcid.yaml

@@ -15,6 +15,14 @@
   {% endif %}
 {% endif %}
 {% assign citation_href = citation.link | default: "" | strip %}
+{% assign citation_id = citation.id | default: "" | strip %}
+{% assign citation_doi = "" %}
+{% if citation_id != "" and citation_id contains "doi:" %}
+  {% assign citation_doi = citation_id | remove_first: "doi:" | strip %}
+{% endif %}
+{% if citation_doi != "" %}
+  {% assign citation_href = "https://doi.org/" | append: citation_doi %}
+{% endif %}
 {% assign citation_has_scheme = false %}
 {% assign citation_external = false %}
 {% if citation_href contains "mailto:" or citation_href contains "tel:" or citation_href contains "://" %}

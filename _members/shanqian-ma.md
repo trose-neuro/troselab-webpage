@@ -2,7 +2,7 @@
 name: Shanqian Ma
 image: images/members/shanqian-ma_portrait.jpg
 role: phd
-affiliation: troselab
+affiliation: PhD Student, University Hospital Bonn (UKB)
 start: 2023-11-01
 links:
   github: ShanqMa

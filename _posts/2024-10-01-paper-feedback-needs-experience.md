@@ -7,11 +7,7 @@ tags:
 ---
 
 <!-- excerpt start -->
-Our paper [**Feedback needs experience**](https://doi.org/hbn7q7) was published in **Neuron** on **October 1, 2024**.
+Our paper [**Feedback needs experience**](https://doi.org/10.1016/j.neuron.2024.09.016) was published in **Neuron** on **October 1, 2024**.
 <!-- excerpt end -->
 
-We are happy to share our publication [**Feedback needs experience**](https://doi.org/hbn7q7).
-
-Published in **Neuron** on **October 1, 2024**.
-
-DOI: `doi:10.1016/j.neuron.2024.09.016`
+Published in **Neuron** on **October 1, 2024**. DOI: `doi:10.1016/j.neuron.2024.09.016`
