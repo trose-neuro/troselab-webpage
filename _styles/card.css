@@ -153,5 +153,37 @@
     padding: 0.5rem 0.75rem;
   }
 }
+.research-panels {
+  width: min(100% - 24px, var(--page));
+  margin: clamp(18px, 4vw, 40px) auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.research-panels > .card {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.research-panels > .card[data-style=small] {
+  width: 100%;
+}
+
+@media (max-width: 1040px) {
+  .research-panels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 720px), (hover: none) and (pointer: coarse) {
+  .research-panels {
+    width: 100%;
+    margin: 16px 0;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
 
 /*# sourceMappingURL=card.css.map */
