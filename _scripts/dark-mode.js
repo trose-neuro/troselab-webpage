@@ -45,7 +45,10 @@
     document.documentElement.dataset.dark = isDark ? "true" : "false";
     document.documentElement.style.colorScheme = isDark ? "dark" : "light";
 
-    const themeColor = isDark ? "#0d131b" : "#edf2f7";
+    const computedBackground =
+      window.getComputedStyle(document.documentElement).getPropertyValue("--background").trim() ||
+      (isDark ? "#0d131b" : "#edf2f7");
+    const themeColor = computedBackground;
     ensureMeta("theme-color", { media: "(prefers-color-scheme: dark)" });
     ensureMeta("theme-color", { media: "(prefers-color-scheme: light)" });
     ensureMeta("theme-color");
@@ -67,6 +70,7 @@
     if (document.body) {
       document.body.style.backgroundColor = themeColor;
     }
+    document.documentElement.style.backgroundColor = themeColor;
 
     const toggle = document.querySelector(".dark-toggle");
     if (toggle) {

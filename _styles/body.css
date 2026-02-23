@@ -10,7 +10,7 @@ body {
   background: radial-gradient(1200px 640px at -10% -15%, var(--bg-glow-1), transparent 65%), radial-gradient(1000px 580px at 110% -20%, var(--bg-glow-2), transparent 68%), var(--background);
   color: var(--text);
   font-family: var(--body);
-  font-size: 1rem;
+  font-size: clamp(1rem, 0.12vw + 0.97rem, 1.06rem);
   text-align: left;
   line-height: var(--spacing);
   text-rendering: optimizeLegibility;
@@ -32,7 +32,13 @@ main {
   isolation: isolate;
 }
 
-@media (max-width: 900px), (hover: none) and (pointer: coarse) {
+@media (max-width: 900px) and (hover: hover) and (pointer: fine) {
+  body {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
   body {
     font-size: 1.08rem;
     line-height: 1.72;
@@ -42,15 +48,15 @@ main {
     -webkit-text-size-adjust: 104%;
   }
 }
-@media (max-width: 720px), (hover: none) and (pointer: coarse) {
+@media (max-width: 720px) and (hover: none) and (pointer: coarse) {
   body {
     font-size: 1.14rem;
     line-height: 1.74;
   }
 }
-@media (max-width: 480px), (hover: none) and (pointer: coarse) {
+@media (max-width: 480px) and (hover: none) and (pointer: coarse) {
   body {
-    font-size: 1.2rem;
+    font-size: 1.18rem;
     line-height: 1.76;
   }
 }

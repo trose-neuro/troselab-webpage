@@ -29,4 +29,18 @@
   left: calc(100% - 11px);
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .dark-toggle {
+    width: 52px;
+    height: 30px;
+  }
+  .dark-toggle:after {
+    left: 13px;
+    font-size: 14px;
+  }
+  .dark-toggle:checked:after {
+    left: calc(100% - 13px);
+  }
+}
+
 /*# sourceMappingURL=dark-toggle.css.map */
