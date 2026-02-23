@@ -57,14 +57,15 @@ In addition, we are currently advertising a **joint postdoctoral opportunity wit
 ## Scientific Data and Code Handling
 
 We use structured, reproducible workflows for acquisition, curation, analysis, and long-term reuse.  
-Our setup combines ADAMACS standards with DataJoint-based pipeline management.
+
+ADAMACS (Architectures for Data Management and Computational Support) is our framework for managing and analyzing complex multimodal datasets. Built around DataJoint-based pipeline management, it supports structured data storage, metadata integration, computational workflows, and reproducible processing across experiments.
 
 - [ADAMACS documentation](https://adamacs-documentation.readthedocs.io/)
 - [DataJoint documentation](https://docs.datajoint.com/)
 {% include button.html type="github" text="troselab" link="troselab" %}
 {% include button.html type="github" text="trose-neuro" link="trose-neuro" %}
-{% include button.html type="github" text="sfb1089-adamacs-ingest" link="SFB1089/adamacs-ingest" %}
-{% include button.html type="github" text="sfb1089-adamacs-analysis" link="SFB1089/adamacs-analysis" %}
+{% include button.html type="github" text="sfb1089-adamacs-ingest" link="[SFB1089/adamacs-ingest](https://github.com/SFB1089/adamacs_ingest)" %}
+{% include button.html type="github" text="sfb1089-adamacs-analysis" link="[SFB1089/adamacs-analysis](https://github.com/SFB1089/adamacs_analysis)" %}
 
 {% include section.html %}
 
