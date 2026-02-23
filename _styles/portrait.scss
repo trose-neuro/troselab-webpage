@@ -206,17 +206,39 @@
 }
 
 .alumni-row {
-  display: flex;
-  flex-wrap: nowrap;
+  width: min(calc(100% - 24px), var(--page));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 18px;
   align-items: stretch;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding-bottom: 6px;
-  -webkit-overflow-scrolling: touch;
+  overflow: visible;
+  padding-bottom: 0;
 }
 
-.alumni-row > .portrait {
-  flex: 0 0 auto;
+.alumni-row .portrait[data-style="small"] {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.team-portraits {
+  width: min(calc(100% - 24px), var(--page));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.team-portraits > .portrait-wrapper {
+  display: block;
+}
+
+.team-portraits > .portrait-wrapper > .portrait {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
 }
 
 @media (max-width: 720px), (hover: none) and (pointer: coarse) {
@@ -296,9 +318,25 @@
     }
   }
 
-  .alumni-row > .portrait {
+  .alumni-row {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .alumni-row .portrait[data-style="small"] {
     flex: 0 0 min(72vw, 240px);
     width: min(72vw, 240px);
+    max-width: min(72vw, 240px);
     margin-right: 10px;
+    height: auto;
+    min-height: 0;
   }
 }

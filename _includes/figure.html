@@ -30,6 +30,7 @@
   >
     {% assign figure_sizes = "(max-width: 1200px) 96vw, 1100px" %}
     {% capture figure_style %}width: {{ include.width | default: "auto" }}; max-height: {{ include.height | default: "unset" }};{% endcapture %}
+    {% assign figure_highres = include.data_highres | default: include.image %}
     {%
       include responsive-image.html
       image=include.image
@@ -37,7 +38,7 @@
       sizes=figure_sizes
       loading="lazy"
       style=figure_style
-      data_highres=include.image
+      data_highres=figure_highres
     %}
   </a>
   {% if include.caption %}
