@@ -24,6 +24,7 @@
   subtitle: Current Project
   # image: images/banner/background.jpg
   video: images/projects/videos/natural-vision-orienting.mp4
+  video_highres: images/projects/videos/natural-vision-orienting-highres.mp4
   link: members/natalia-krasilshchikova.html
   description: |
     Circuits for active sensing during visual orienting behavior.
@@ -43,6 +44,7 @@
   subtitle: Current Project
   # image: "images/banner/hippocampus ca1-wide.jpg"
   video: images/projects/videos/memory-stabilization-rsc.mp4
+  video_highres: images/projects/videos/memory-stabilization-rsc-highres.mp4
   link: members/jisoo-jung.html
   description: |
     Contextual processing during spatial learning: Stabilization of spatial and non-spatial representations in retrosplenial cortex (RSC).
@@ -62,6 +64,7 @@
   subtitle: Current Project
   # image: images/banner/multilevel spines.jpg
   video: images/projects/videos/landmark-navigation.mp4
+  video_highres: images/projects/videos/landmark-navigation-highres.mp4
   link: members/shanqian-ma.html
   description: |
     Contextual processing during spatial learning: Encoding of visual landmark affordances in dorsal cortex.
@@ -81,6 +84,7 @@
   subtitle: Current Project
   # image: "images/banner/Chiams LGN-wide.jpg"
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
+  video_highres: images/projects/videos/state-uncertainty-neuromodulation-highres.mp4
   link: members/yoshiki-hatashita.html
   description: |
     State, neuromodulation, and uncertainty-dependent representational dynamics in cortical circuits.
@@ -100,6 +104,7 @@
   subtitle: Current Project
   # image: images/banner/tdtomatoGGsliceEPI-wide.jpg
   video: images/projects/videos/latent-learning-circuits.mp4
+  video_highres: images/projects/videos/latent-learning-circuits-highres.mp4
   link: members/aelton-araujo.html
   description: |
     Latent learning and crossmodal integration in cortical circuits.
@@ -125,7 +130,7 @@
   description: |
     Longitudinal and acute imaging infrastructure for cortical and subcortical circuit studies in freely moving animals.
   video_caption: |
-    Mini2p platform integrating neural imaging with synchronized behavior and camera streams for freely moving experiments.
+    Mini2p platform integrating neural imaging with synchronized behavior and camera streams for freely moving experiments (spedup_5fold, no frame averaging, SUPPORT denoising).
   buttons:
     - type: link
       text: Natalia Krasilshchikova
