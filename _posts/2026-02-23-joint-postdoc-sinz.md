@@ -7,6 +7,8 @@ tags:
   - opportunity
 ---
 
-We are currently recruiting for a **joint postdoctoral position with the Sinz Lab**.
+<!-- excerpt start -->
+We are currently recruiting for a **joint postdoctoral position with the Sinz Lab**; see the [FENS job posting](https://www.fens.org/careers/job-market/job/125885/) (**news posted February 23, 2026**).
+<!-- excerpt end -->
 
-Job posting (FENS): <https://www.fens.org/careers/job-market/job/125885/>
+Job posting (FENS): [Joint Postdoctoral Position](https://www.fens.org/careers/job-market/job/125885/)
