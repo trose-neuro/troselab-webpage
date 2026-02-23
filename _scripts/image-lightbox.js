@@ -2,6 +2,20 @@
   const MODAL_ID = "image-lightbox";
   const DEFAULT_VIDEO_LOOP_SECONDS = 30;
 
+  function hoverControlsEnabled() {
+    return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  }
+
+  function setModalVideoControls(video, visible) {
+    if (!(video instanceof HTMLVideoElement)) return;
+    video.controls = visible;
+    if (visible) {
+      video.setAttribute("controls", "");
+    } else {
+      video.removeAttribute("controls");
+    }
+  }
+
   function parseBestSrc(srcset) {
     if (!srcset) return null;
 
@@ -51,13 +65,24 @@
       <div class="image-lightbox-backdrop"></div>
       <div class="image-lightbox-content">
         <img class="image-lightbox-image" alt="">
-        <video class="image-lightbox-video" controls preload="metadata" playsinline></video>
+        <video class="image-lightbox-video" preload="metadata" playsinline></video>
         <p class="image-lightbox-caption"></p>
       </div>
     `;
     document.body.appendChild(modal);
     const modalVideo = modal.querySelector(".image-lightbox-video");
     if (modalVideo) {
+      if (hoverControlsEnabled()) {
+        setModalVideoControls(modalVideo, false);
+        modalVideo.addEventListener("mouseenter", () => setModalVideoControls(modalVideo, true));
+        modalVideo.addEventListener("mousemove", () => setModalVideoControls(modalVideo, true), {
+          passive: true
+        });
+        modalVideo.addEventListener("mouseleave", () => setModalVideoControls(modalVideo, false));
+      } else {
+        setModalVideoControls(modalVideo, true);
+      }
+
       modalVideo.addEventListener("timeupdate", () => {
         const loopSeconds = Number(modalVideo.dataset.maxSeconds || DEFAULT_VIDEO_LOOP_SECONDS);
         if (!Number.isFinite(loopSeconds) || loopSeconds <= 0) return;
@@ -84,6 +109,7 @@
     }
     if (modalVideo) {
       modalVideo.pause();
+      modalVideo.loop = false;
       modalVideo.removeAttribute("src");
       modalVideo.removeAttribute("poster");
       modalVideo.removeAttribute("data-max-seconds");
@@ -161,6 +187,12 @@
 
     clearModal(modal);
     modalVideo.src = src;
+    modalVideo.loop = true;
+    if (hoverControlsEnabled()) {
+      setModalVideoControls(modalVideo, false);
+    } else {
+      setModalVideoControls(modalVideo, true);
+    }
     if (options.poster) {
       modalVideo.poster = options.poster;
     }
