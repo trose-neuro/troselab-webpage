@@ -50,13 +50,17 @@ We also welcome direct inquiries from postdoctoral candidates with strong intere
 - [TENSS Neuroscience Summer School](https://www.tenss.ro/)
 {% include section.html %}
 
-## Scientific Data Handling
+## Scientific Data and Code Handling
 
-We use a structured and reproducible data workflow for acquisition, curation, analysis, and long-term reuse.  
-Our setup combines ADAMACS for project-level documentation and processing standards with DataJoint-based data management for traceable computational pipelines.
+We use structured, reproducible workflows for acquisition, curation, analysis, and long-term reuse.  
+Our setup combines ADAMACS standards with DataJoint-based pipeline management.
 
 - [ADAMACS documentation](https://adamacs-documentation.readthedocs.io/)
 - [DataJoint documentation](https://docs.datajoint.com/)
+{% include button.html type="github" text="troselab" link="troselab" %}
+{% include button.html type="github" text="trose-neuro" link="trose-neuro" %}
+{% include button.html type="github" text="sfb1089-adamacs-ingest" link="SFB1089/adamacs-ingest" %}
+{% include button.html type="github" text="sfb1089-adamacs-analysis" link="SFB1089/adamacs-analysis" %}
 
 {% include section.html %}
 

@@ -22,8 +22,7 @@ Venusberg-Campus 1
 For collaborations, trainee applications, or project inquiries, please contact the group directly.
 
 {% include button.html type="email" text="tobias.rose@ukbonn.de" link="mailto:tobias.rose@ukbonn.de" %}
-{% include button.html type="phone" text="+49 228 287 62331" link="+49 228 287 62331" %}
-{% include button.html type="website" text="www.troselab.de" link="https://www.troselab.de/" %}
+{% include button.html type="phone" text="+49 228 287 62290" link="+49 228 287 62290" %}
 
 {% include button.html type="github" text="troselab" link="https://github.com/troselab" %}
 {% include button.html type="github" text="SFB1089" link="https://github.com/SFB1089" %}
@@ -56,6 +55,40 @@ Group leader "Circuit Mechanisms of Behavior"
 
 - 2006: Doctoral thesis, European Neuroscience Institute Goettingen
 - 2002: 1st State examination, Biology / German language, University of Goettingen, Germany
+
+## Getting Here
+
+### By Plane
+
+There are three airports in the Bonn region:
+
+#### Köln/Bonn Airport
+
+This is the closest airport to Bonn. A taxi from the airport to Venusberg is about 55 EUR.  
+Bus line SB60 reaches Bonn Central Station in about 30 minutes.
+
+#### Düsseldorf Airport
+
+The best way to travel from Düsseldorf Airport to Bonn Central Station is by train (ICE, IC, or EC).  
+Train information: <https://www.bahn.com/en>
+
+#### Frankfurt Airport
+
+The fastest route to Bonn is an ICE train that stops at Siegburg/Bonn.  
+From Siegburg/Bonn, take tram 66 to Bonn Central Station.  
+Train information: <https://www.bahn.com/en>
+
+### By Train
+
+#### Bonn Central Station
+
+From Bonn Central Station, a taxi to Venusberg takes about 15 minutes and costs about 15 EUR.  
+You can also take bus 600 (exit at "Venusberg Uniklinikum Nord") or bus 601 (exit at "Venusberg Uniklinikum Süd").
+
+#### Siegburg/Bonn
+
+From Siegburg/Bonn, take tram 66 to Bonn Central Station.  
+A taxi ride takes about 25 minutes and costs about 60 EUR.
 
 {% include section.html %}
 

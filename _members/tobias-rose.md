@@ -10,5 +10,4 @@ links:
   github: trose-neuro
   linkedin: tobias-rose-9a028052
   bluesky: trose-neuro.bsky.social
-  website: https://www.troselab.de/
 ---
