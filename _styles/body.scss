@@ -16,7 +16,7 @@ body {
     var(--background);
   color: var(--text);
   font-family: var(--body);
-  font-size: clamp(1.08rem, 0.35vw + 0.98rem, 1.24rem);
+  font-size: 1rem;
   text-align: left;
   line-height: var(--spacing);
   text-rendering: optimizeLegibility;
@@ -29,8 +29,8 @@ html {
   color-scheme: dark;
   background-color: #0d131b;
   background: var(--background);
-  text-size-adjust: 104%;
-  -webkit-text-size-adjust: 104%;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
 
@@ -40,27 +40,27 @@ main {
 
 @media (max-width: 900px), (hover: none) and (pointer: coarse) {
   body {
-    font-size: 1.24rem;
-    line-height: 1.74;
+    font-size: 1.08rem;
+    line-height: 1.72;
   }
 
   html {
-    text-size-adjust: 110%;
-    -webkit-text-size-adjust: 110%;
+    text-size-adjust: 104%;
+    -webkit-text-size-adjust: 104%;
   }
 }
 
 @media (max-width: 720px), (hover: none) and (pointer: coarse) {
   body {
-    font-size: 1.3rem;
-    line-height: 1.76;
+    font-size: 1.14rem;
+    line-height: 1.74;
   }
 }
 
 @media (max-width: 480px), (hover: none) and (pointer: coarse) {
   body {
-    font-size: 1.36rem;
-    line-height: 1.78;
+    font-size: 1.2rem;
+    line-height: 1.76;
   }
 }
 
