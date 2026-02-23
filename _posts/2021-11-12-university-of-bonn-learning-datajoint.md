@@ -1,5 +1,5 @@
 ---
-title: University of Bonn News Feature on Learning and DataJoint
+title: University of Bonn News Feature on Collaboration with DataJoint
 author: Tobias Rose
 tags:
   - media
