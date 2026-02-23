@@ -6,9 +6,9 @@
   video_max_seconds: 60
   link: members/leon-kremers.html
   description: |
-    Stable and flexible coding across cortical and subcortical circuits.
+    Stable and flexible coding across cortical and subcortical visual circuits.
   video_caption: |
-    These are maximally exciting inputs (MEIs) of individual excitatory L2/3 neurons tracked over one month, estimated with deep visual-cortex models in collaboration with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
+    Maximally exciting inputs (MEIs) of individual excitatory L2/3 neurons tracked over one month, estimated with deep visual-cortex models in collaboration with [Fabian H. Sinz](https://www.uni-goettingen.de/en/644835.html).
   buttons:
     - type: link
       text: Leon Kremers
@@ -26,9 +26,9 @@
   video: images/projects/videos/memory-stabilization-rsc.mp4
   link: members/jisoo-jung.html
   description: |
-    Contextual processing during spatial learning.
+    Contextual processing during spatial learning: Stabilization of spatial memory representations in retrosplenial cortex (RSC).
   video_caption: |
-    Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with in-house hardware and frame-level synchronization.
+    Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with custom in-house hardware.
   buttons:
     - type: link
       text: Jisoo Jung
@@ -47,7 +47,7 @@
   description: |
     Active vision during visual orienting behavior.
   video_caption: |
-    Mouse behavior during a closed-loop visual orienting task, showing trial-by-trial orienting responses under controlled visual feedback.
+    Mouse behavior during a closed-loop visual orienting task, showing trial-by-trial orienting responses to cranicocentrically controlled visual stimuli.
   buttons:
     - type: link
       text: Natalia Krasilshchikova
@@ -64,9 +64,9 @@
   video: images/projects/videos/landmark-navigation.mp4
   link: members/shanqian-ma.html
   description: |
-    Contextual processing during spatial learning.
+    Contextual processing during spatial learning: Encoding of visual landmark affordances in dorsal cortex.
   video_caption: |
-    Task data combined with high-resolution 3D marker-based head tracking to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
+    Task data combined with high-resolution 3D marker-based head tracking and precisely synchronized eye-camera recordings to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
   buttons:
     - type: link
       text: Shanqian Ma
@@ -83,9 +83,9 @@
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
   link: members/yoshiki-hatashita.html
   description: |
-    State, neuromodulation, and uncertainty-dependent dynamics in cortical circuits.
+    State, neuromodulation, and uncertainty-dependent representational dynamics in cortical circuits.
   video_caption: |
-    Widefield calcium imaging of dorsal cortex during passive viewing of visual stimuli, showing cortex-wide activity dynamics under controlled viewing.
+    Widefield calcium imaging of dorsal cortex during passive viewing of visual stimuli, showing cortex-wide activity dynamics.
   buttons:
     - type: link
       text: Yoshiki Hatashita
@@ -121,7 +121,7 @@
   video: images/projects/videos/miniature-two-photon-platform.mp4
   link: members/natalia-krasilshchikova.html
   description: |
-    Longitudinal imaging infrastructure for cortical and subcortical circuit studies.
+    Longitudinal and acute imaging infrastructure for cortical and subcortical circuit studies in freely moving animals.
   video_caption: |
     Mini2p platform integrating neural imaging with synchronized behavior and camera streams for freely moving experiments.
   buttons:
