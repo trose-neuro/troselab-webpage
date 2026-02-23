@@ -1,17 +1,21 @@
 .member-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 18px;
   margin-bottom: 20px;
 }
 
 .member-header-image {
-  flex: 0 0 auto;
+  flex: 0 1 340px;
+  max-width: 100%;
 }
 
 .member-links {
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 340px;
+  min-width: min(100%, 260px);
   gap: 8px;
   align-items: center;
   align-content: flex-start;
@@ -33,6 +37,16 @@
   margin-top: 18px;
 }
 
+@media (max-width: 1040px) {
+  .member-header {
+    gap: 14px;
+  }
+  .member-links {
+    flex-basis: 100%;
+    min-width: 0;
+    padding-top: 0;
+  }
+}
 @media (max-width: 720px), (hover: none) and (pointer: coarse) {
   .member-header {
     display: block;
