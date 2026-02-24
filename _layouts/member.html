@@ -14,19 +14,19 @@ layout: default
         {% include button.html type=key link=value %}
       {% endfor %}
     </div>
-    {% assign member_path = page.url | remove_first: "/" %}
+    {% assign member_slug = page.slug | default: page.name | slugify %}
     {% capture member_current_project_buttons %}
       {% for project in site.data.projects %}
         {% if project.subtitle == "Current Project" %}
           {% assign project_matches_member = false %}
-          {% assign project_link = project.link | default: "" | remove_first: "/" %}
-          {% if project_link == member_path %}
+          {% assign project_link_slug = project.link | default: "" | split: "/" | last | split: "." | first | slugify %}
+          {% if project_link_slug == member_slug %}
             {% assign project_matches_member = true %}
           {% endif %}
           {% if project_matches_member == false and project.buttons %}
             {% for project_button in project.buttons %}
-              {% assign button_link = project_button.link | default: "" | remove_first: "/" %}
-              {% if button_link == member_path %}
+              {% assign button_link_slug = project_button.link | default: "" | split: "/" | last | split: "." | first | slugify %}
+              {% if button_link_slug == member_slug %}
                 {% assign project_matches_member = true %}
                 {% break %}
               {% endif %}
@@ -36,7 +36,7 @@ layout: default
             {% assign project_anchor = project.id | default: project.title | slugify %}
             {% assign project_href = "research/#" | append: project_anchor %}
             {% assign project_label = "Current Project: " | append: project.title %}
-            {% include button.html type="link" text=project_label link=project_href style="bare" %}
+            {% include button.html type="link" text=project_label link=project_href %}
           {% endif %}
         {% endif %}
       {% endfor %}
