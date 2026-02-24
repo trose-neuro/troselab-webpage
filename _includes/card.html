@@ -1,16 +1,15 @@
 {{ " " }}
 {% assign card_anchor_id = include.id | default: "" | strip %}
-{% assign card_anchor_video = include.video | default: "" | strip %}
 <div
   class="card"
   data-style="{{ include.style }}"
-  {% if card_anchor_id != "" and card_anchor_video != "" %}
+  {% if card_anchor_id != "" %}
     id="{{ card_anchor_id | xml_escape }}"
   {% endif %}
 >
   {% assign card_sizes = "(max-width: 640px) calc(100vw - 40px), 350px" %}
   {% assign card_video_src = include.video | default: "" | strip %}
-  {% assign card_video_highres = include.video_highres | default: card_video_src %}
+  {% assign card_video_highres = include.video_highres | default: card_video_src | strip %}
   {% assign card_video_caption = include.video_caption | default: include.description | default: include.title %}
   {% assign card_video_max_seconds = include.video_max_seconds | default: 30 %}
   {% if include.style == "small" %}
@@ -31,7 +30,7 @@
     {% assign card_external = true %}
   {% endif %}
   <a
-    {% if card_video_src != "" %}
+    {% if card_video_highres != "" %}
       href="{{ card_video_highres | relative_url | uri_escape }}"
       data-video-lightbox="{{ card_video_highres | relative_url | uri_escape }}"
       data-video-caption="{{ card_video_caption | strip | xml_escape }}"
@@ -53,7 +52,14 @@
     aria-label="{{ include.title | default: "card link" | regex_strip }}"
     class="card-image"
   >
-    {% if card_video_src != "" %}
+    {% if include.image %}
+      {%
+        include responsive-image.html
+        image=include.image
+        alt=include.title
+        sizes=card_sizes
+      %}
+    {% elsif card_video_src != "" %}
       <video
         autoplay
         muted
@@ -69,13 +75,6 @@
       >
         <source src="{{ card_video_src | relative_url | uri_escape }}" type="video/mp4" />
       </video>
-    {% else %}
-      {%
-        include responsive-image.html
-        image=include.image
-        alt=include.title
-        sizes=card_sizes
-      %}
     {% endif %}
   </a>
 

@@ -47,7 +47,7 @@ Platform development runs alongside hypothesis-driven and exploratory biology.
 
 {% endcapture %}
 
-{% include feature.html image="images/banner/tdtomatoGGsliceEPI-wide.jpg" link="research" title="Current Projects" flip=true style="bare" text=text %}
+{% include feature.html image="images/projects/current/landmark-coding-navigation.jpg" link="research" title="Current Projects" flip=true style="bare" text=text %}
 
 {% capture text %}
 

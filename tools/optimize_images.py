@@ -27,6 +27,7 @@ SOURCE_PATTERNS = (
     "images/members/DSC_0177.jpg",
     "images/members/DSC_0185.jpg",
     "images/members/DSC_0189.jpg",
+    "images/projects/current/*.jpg",
     "images/collaborators/*",
     "images/partners/*",
 )
