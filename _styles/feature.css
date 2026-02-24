@@ -44,9 +44,10 @@
 
 .feature-news-item {
   padding: 8px 10px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--feature-news-item-border, var(--border));
   border-radius: var(--rounded-sm);
-  background: var(--surface-alt);
+  background: var(--feature-news-item-bg, var(--surface-alt));
+  box-shadow: inset 0 0 0 1px var(--feature-news-item-glow, transparent);
 }
 
 .feature-news-meta {
