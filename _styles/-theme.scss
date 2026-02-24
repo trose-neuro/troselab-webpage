@@ -40,6 +40,9 @@ html[data-dark="false"] {
   --tooltip-bg: #101828;
   --tooltip-text: #f8fafc;
   --tooltip-border: #1f2937;
+  --feature-news-item-bg: #eaf4fc;
+  --feature-news-item-border: #c6d8eb;
+  --feature-news-item-glow: #0b7a7514;
 }
 
 html[data-dark="true"] {
@@ -81,6 +84,9 @@ html[data-dark="true"] {
   --tooltip-bg: #182331;
   --tooltip-text: #e7edf5;
   --tooltip-border: #2a3a4d;
+  --feature-news-item-bg: #1b2a3b;
+  --feature-news-item-border: #35516c;
+  --feature-news-item-glow: #48d0be1a;
 }
 
 :root {

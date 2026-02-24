@@ -9,7 +9,7 @@ proofer: false
 # site social media and other links
 links:
   email: tobias.rose@ukbonn.de
-  github: trose-neuro
+  github: https://github.com/troselab
   bluesky: trose-neuro.bsky.social
 
 featured_news:
