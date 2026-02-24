@@ -48,15 +48,10 @@
   white-space: nowrap;
 }
 
-.member-projects-title {
-  margin: 6px 0 0;
-  font-weight: var(--semi-bold);
-  color: var(--text-muted, var(--text));
-}
-
 .member-project-links {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 4px;
   gap: 8px;
   align-items: center;
   align-content: flex-start;

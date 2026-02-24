@@ -15,34 +15,36 @@ layout: default
       {% endfor %}
     </div>
     {% assign member_path = page.url | remove_first: "/" %}
-    {% capture member_project_buttons %}
+    {% capture member_current_project_buttons %}
       {% for project in site.data.projects %}
-        {% assign project_matches_member = false %}
-        {% assign project_link = project.link | default: "" | remove_first: "/" %}
-        {% if project_link == member_path %}
-          {% assign project_matches_member = true %}
-        {% endif %}
-        {% if project_matches_member == false and project.buttons %}
-          {% for project_button in project.buttons %}
-            {% assign button_link = project_button.link | default: "" | remove_first: "/" %}
-            {% if button_link == member_path %}
-              {% assign project_matches_member = true %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        {% if project_matches_member %}
-          {% assign project_anchor = project.id | default: project.title | slugify %}
-          {% assign project_href = "research/#" | append: project_anchor %}
-          {% include button.html type="link" text=project.title link=project_href style="bare" %}
+        {% if project.subtitle == "Current Project" %}
+          {% assign project_matches_member = false %}
+          {% assign project_link = project.link | default: "" | remove_first: "/" %}
+          {% if project_link == member_path %}
+            {% assign project_matches_member = true %}
+          {% endif %}
+          {% if project_matches_member == false and project.buttons %}
+            {% for project_button in project.buttons %}
+              {% assign button_link = project_button.link | default: "" | remove_first: "/" %}
+              {% if button_link == member_path %}
+                {% assign project_matches_member = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% if project_matches_member %}
+            {% assign project_anchor = project.id | default: project.title | slugify %}
+            {% assign project_href = "research/#" | append: project_anchor %}
+            {% assign project_label = "Current Project: " | append: project.title %}
+            {% include button.html type="link" text=project_label link=project_href style="bare" %}
+          {% endif %}
         {% endif %}
       {% endfor %}
     {% endcapture %}
-    {% assign member_project_buttons = member_project_buttons | strip %}
-    {% if member_project_buttons != "" %}
-      <p class="member-projects-title">Current Projects</p>
+    {% assign member_current_project_buttons = member_current_project_buttons | strip %}
+    {% if member_current_project_buttons != "" %}
       <div class="member-project-links" aria-label="Related current projects">
-        {{ member_project_buttons }}
+        {{ member_current_project_buttons }}
       </div>
     {% endif %}
     {% if page.start %}
