@@ -2,6 +2,7 @@
 title: Leon Kremers Abstract at CoSyNe 2026
 author: Tobias Rose
 tags:
+  - featured
   - cosyne
   - conference
   - team

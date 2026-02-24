@@ -19,19 +19,33 @@
     {% assign feature_external = true %}
   {% endif %}
   {% if include.news_limit %}
+    {% assign feature_news_tag = include.news_tag | default: "" | strip %}
+    {% assign feature_news_posts = site.posts %}
+    {% if feature_news_tag != "" %}
+      {% assign feature_news_posts = site.posts | where_exp: "post", "post.tags contains feature_news_tag" %}
+    {% endif %}
     <div class="feature-image feature-news" aria-label="Latest news items">
       <div class="feature-news-items">
-        {% for post in site.posts limit: include.news_limit %}
+        {% for post in feature_news_posts limit: include.news_limit %}
           <article class="feature-news-item">
             <a href="{{ post.url | relative_url | uri_escape }}" class="feature-news-link">
               {{ post.title }}
             </a>
-            <time class="feature-news-date" datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: "%d %b %Y" }}
-            </time>
+            <div class="feature-news-meta">
+              {% if feature_news_tag != "" and post.tags contains feature_news_tag %}
+                <span class="feature-news-tag">{{ feature_news_tag }}</span>
+              {% endif %}
+              <time class="feature-news-date" datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%d %b %Y" }}
+              </time>
+            </div>
           </article>
         {% else %}
-          <p class="feature-news-empty">No news items yet.</p>
+          {% if feature_news_tag != "" %}
+            <p class="feature-news-empty">No featured news items yet.</p>
+          {% else %}
+            <p class="feature-news-empty">No news items yet.</p>
+          {% endif %}
         {% endfor %}
       </div>
     </div>

@@ -2,6 +2,7 @@
 title: Joint Postdoctoral Opportunity with the Sinz Lab
 author: Tobias Rose
 tags:
+  - featured
   - recruitment
   - postdoc
   - opportunity
