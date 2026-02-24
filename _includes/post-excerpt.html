@@ -32,7 +32,12 @@
     {% endif %}
 
     <div class="post-excerpt-text">
-      <a href="{{ url }}">{{ title }}</a>
+      <div class="post-excerpt-header">
+        <a href="{{ url }}">{{ title }}</a>
+        {% if post.tags contains "featured" %}
+          <span class="post-featured-tag">featured</span>
+        {% endif %}
+      </div>
 
       {%
         include post-info.html
