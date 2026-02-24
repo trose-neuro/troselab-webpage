@@ -34,25 +34,37 @@ In addition, we are currently advertising a **joint postdoctoral opportunity wit
 
 # {% include icon.html icon="fa-solid fa-link" %}Links
 
-## Institutional Links
+## Institutional
 - [Institute of Experimental Epileptology and Cognition Research](https://ieecr-bonn.de)
-- [University Hospital Bonn (UKB)](https://www.ukbonn.de/en/)
+- [University Hospital Bonn (UKB)](https://www.ukbonn.de/)
 - [University of Bonn](https://www.uni-bonn.de/en)
-- [TRA Life and Health (University of Bonn)](https://www.uni-bonn.de/en/research-and-teaching/research-profile/transdisciplinary-research-areas/tra-3-life-and-health/leben)
 {% include section.html %}
 
-## Consortia and Research Networks
-
-- [BonnBrain Conference](https://bonnbrain.de/)
-- [iBehave](https://ibehave.nrw/)
+## Infrastructural Support
+- [Microscopy Core Facility (BTC)](https://btc.uni-bonn.de/mcf/)
 - [iBOTS](https://ibots-bonn.de/)
 - [CADRE](https://ibehave.nrw/ibots-platform/CADRE/)
-- [SFB 1089](https://bonn-neuroscience.de/consortia-list/dfg-collaborative-research-center-synaptic-micronetworks-in-health-and-disease-sfb-1089/)
-- [Bonn Center of Neuroscience](https://bonn-neuroscience.de/)
-- [BIGS Neuroscience Graduate School](https://www.bigs-neuroscience.de/bigs/)
+{% include section.html %}
+
+## Consortia
+- [iBehave](https://ibehave.nrw/)
+- [SFB 1089](https://sfb1089.de/)
+- [TRA Life and Health (University of Bonn)](https://www.uni-bonn.de/en/research-and-teaching/research-profile/transdisciplinary-research-areas/tra-3-life-and-health)
+- [Bonn Center of Neuroscience (BCN)](https://bonn-neuroscience.de/)
+{% include section.html %}
+
+## Graduate Programs
 - [IMPRS for Brain and Behavior](https://imprs-brain-behavior.mpg.de/)
+- [BIGS Neuroscience Graduate School](https://bigs-neuroscience.de/)
+{% include section.html %}
+
+## Summer Schools
 - [Cajal Advanced Neuroscience Training Programme](https://cajal-training.org/)
 - [TENSS Neuroscience Summer School](https://www.tenss.ro/)
+{% include section.html %}
+
+## Conferences
+- [BonnBrain Conference](https://bonnbrain.de/)
 {% include section.html %}
 
 # {% include icon.html icon="fa-solid fa-database" %}Scientific Data and Code Handling
