@@ -1,7 +1,7 @@
 - title: Feedback and Visual Stability
   id: project-feedback-visual-stability
   subtitle: Current Project
-  image: images/projects/current/feedback-visual-stability.jpg
+  # image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
   video: images/projects/videos/feedback-visual-stability.mp4
   video_highres: images/projects/videos/feedback-visual-stability-highres-60s.mp4
   video_max_seconds: 60
@@ -24,7 +24,7 @@
 - title: Active Sensing in Visual Orienting
   id: project-active-sensing-visual-orienting
   subtitle: Current Project
-  image: images/projects/current/active-sensing-visual-orienting.jpg
+  # image: images/banner/background.jpg
   video: images/projects/videos/natural-vision-orienting.mp4
   video_highres: images/projects/videos/natural-vision-orienting-highres.mp4
   link: members/natalia-krasilshchikova.html
@@ -45,7 +45,7 @@
 - title: Memory Stabilization in RSC
   id: project-memory-stabilization-rsc
   subtitle: Current Project
-  image: images/projects/current/memory-stabilization-rsc.jpg
+  # image: "images/banner/hippocampus ca1-wide.jpg"
   video: images/projects/videos/memory-stabilization-rsc.mp4
   video_highres: images/projects/videos/memory-stabilization-rsc-highres.mp4
   link: members/jisoo-jung.html
@@ -66,7 +66,7 @@
 - title: Landmark Coding in Navigation
   id: project-landmark-coding-navigation
   subtitle: Current Project
-  image: images/projects/current/landmark-coding-navigation.jpg
+  # image: images/banner/multilevel spines.jpg
   video: images/projects/videos/landmark-navigation.mp4
   video_highres: images/projects/videos/landmark-navigation-highres.mp4
   link: members/shanqian-ma.html
@@ -87,7 +87,7 @@
 - title: Uncertainty and Neuromodulation
   id: project-uncertainty-neuromodulation
   subtitle: Current Project
-  image: images/projects/current/uncertainty-neuromodulation.jpg
+  # image: "images/banner/Chiams LGN-wide.jpg"
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
   video_highres: images/projects/videos/state-uncertainty-neuromodulation-highres.mp4
   link: members/yoshiki-hatashita.html
@@ -108,7 +108,7 @@
 - title: Latent Learning Circuits
   id: project-latent-learning-circuits
   subtitle: Current Project
-  image: images/projects/current/latent-learning-circuits.jpg
+  # image: images/banner/tdtomatoGGsliceEPI-wide.jpg
   video: images/projects/videos/latent-learning-circuits.mp4
   video_highres: images/projects/videos/latent-learning-circuits-highres.mp4
   link: members/aelton-araujo.html
@@ -129,7 +129,7 @@
 - title: Miniature Two-Photon Platform
   id: project-miniature-two-photon-platform
   subtitle: Infrastructure
-  image: images/projects/current/miniature-two-photon-platform.jpg
+  # image: images/mini2p.jpg
   video: images/projects/videos/miniature-two-photon-platform.mp4
   video_highres: images/projects/videos/miniature-two-photon-platform-highres.mp4
   video_max_seconds: 30
