@@ -1,29 +1,54 @@
 - title: DFG Collaborative Research Center SFB 1089
   subtitle: Synaptic Micronetworks in Health and Disease
   image: images/partners/sfb1089.png
+  image_fit: contain
+  image_aspect: "16 / 6"
+  image_aspect_mobile: "16 / 6"
+  image_padding: "12px 16px"
+  image_bg: "#f7f8fb"
   link: https://bonn-neuroscience.de/consortia-list/dfg-collaborative-research-center-synaptic-micronetworks-in-health-and-disease-sfb-1089/
   description: Collaborative Research Center funding that supports mechanistic and translational systems-neuroscience work in Bonn.
 
 - title: DFG Priority Programme SPP 2411
   subtitle: Sensing LOOPS
-  image: images/partners/dfg.png
-  link: https://www.dfg.de/en/research-funding/funding-opportunities/programmes/coordinated-programmes/priority-programmes
+  image: images/partners/spp2411_loops.png
+  image_fit: contain
+  image_aspect: "16 / 6"
+  image_aspect_mobile: "16 / 6"
+  image_padding: "12px 16px"
+  image_bg: "#f7f8fb"
+  link: https://www.brainloops.de/spp2411
   description: DFG priority-programme framework supporting loop-level circuit studies relevant to sensory and behavioral control.
 
 - title: Human Frontier Science Program
   subtitle: International frontier research support
-  image: images/partners/hfsp.jpg
+  image: images/partners/hfsp_horizontal.jpg
+  image_fit: contain
+  image_aspect: "16 / 6"
+  image_aspect_mobile: "16 / 6"
+  image_padding: "12px 16px"
+  image_bg: "#f7f8fb"
   link: https://www.hfsp.org/
   description: Competitive international funding for high-risk, interdisciplinary, and collaborative life-science research.
 
 - title: Deutsche Forschungsgemeinschaft (DFG)
   subtitle: Core public research funding in Germany
-  image: images/partners/dfg.png
+  image: images/partners/dfg_international.jpg
+  image_fit: contain
+  image_aspect: "16 / 6"
+  image_aspect_mobile: "16 / 6"
+  image_padding: "12px 16px"
+  image_bg: "#f7f8fb"
   link: https://www.dfg.de/en
   description: National competitive funding basis for projects, infrastructure, and coordinated programmes.
 
 - title: iBehave Network
   subtitle: Interdisciplinary network and platform funding
   image: images/partners/ibehave.png
+  image_fit: contain
+  image_aspect: "16 / 6"
+  image_aspect_mobile: "16 / 6"
+  image_padding: "12px 16px"
+  image_bg: "#f7f8fb"
   link: https://ibehave.nrw/
   description: State-supported neuroscience network connecting methods, data, and collaborative research infrastructures.

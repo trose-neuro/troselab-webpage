@@ -9,5 +9,3 @@ tags:
 <!-- excerpt start -->
 Our preview [**Feedback needs experience**](https://doi.org/10.1016/j.neuron.2024.09.016) was published in **Neuron** on **October 1, 2024**.
 <!-- excerpt end -->
-
-Published in **Neuron** on **October 1, 2024**. DOI: `doi:10.1016/j.neuron.2024.09.016`

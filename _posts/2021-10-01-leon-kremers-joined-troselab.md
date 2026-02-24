@@ -8,7 +8,5 @@ tags:
 ---
 
 <!-- excerpt start -->
-We are very happy to welcome [**Leon Kremers**](/members/leon-kremers) to troselab, with a start date of **October 1, 2021**.
+Leon Kremers joined troselab on **October 1, 2021**.
 <!-- excerpt end -->
-
-Leon joined troselab as a PhD student on **October 1, 2021**.

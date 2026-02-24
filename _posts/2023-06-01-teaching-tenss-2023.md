@@ -11,4 +11,3 @@ tags:
 <!-- excerpt start -->
 I was invited to teach at [**Transylvanian Neuroscience Summer School (TENSS)**](https://www.tenss.ro/2023/index.php) in **Cluj-Napoca region, Romania** (June 2023).
 <!-- excerpt end -->
-

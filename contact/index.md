@@ -28,9 +28,6 @@ For collaborations, trainee applications, or project inquiries, please contact t
 {% include button.html type="email" text="Email Tobias Rose" link=site.links.email %}
 {% include button.html type="phone" text="+49 228 287 62290" link="+49 228 287 62290" %}
 
-{% include button.html type="github" text="troselab" link="https://github.com/troselab" %}
-{% include button.html type="github" text="SFB1089" link="https://github.com/SFB1089" %}
-{% include button.html type="github" text="trose-neuro" link="https://github.com/trose-neuro" %}
 {% include button.html type="orcid" text="ORCID" link="0000-0002-7156-4714" %}
 
 {% include section.html %}

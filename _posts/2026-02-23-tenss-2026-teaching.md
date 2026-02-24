@@ -8,5 +8,5 @@ tags:
 ---
 
 <!-- excerpt start -->
-I am looking forward to teaching again at [**TENSS 2026**](https://www.tenss.ro/): applications close on **March 8, 2026** (**23:59 GMT+2**), and the school runs **June 6–25, 2026**.
+I will teach at [**TENSS 2026**](https://www.tenss.ro/). Applications close **March 8, 2026** (**23:59 GMT+2**); the school runs **June 6-25, 2026**.
 <!-- excerpt end -->

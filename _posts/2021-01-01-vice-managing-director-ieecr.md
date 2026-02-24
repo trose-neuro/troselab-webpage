@@ -10,5 +10,3 @@ tags:
 <!-- excerpt start -->
 In **2021**, I took on the role of **Vice Managing Director** of the Institute of Experimental Epileptology and Cognition Research (IEECR).
 <!-- excerpt end -->
-
-Since **2021**, I have served as **Vice Managing Director** of the Institute of Experimental Epileptology and Cognition Research (IEECR).

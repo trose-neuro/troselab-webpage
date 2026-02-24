@@ -10,5 +10,3 @@ tags:
 <!-- excerpt start -->
 Our work was discussed in [**Neuron**](https://linkinghub.elsevier.com/retrieve/pii/S0896627321004992), highlighting findings on eye-specific input convergence in the retinogeniculate pathway.
 <!-- excerpt end -->
-
-We are glad to see this discussion in Neuron and the broader interest in how visual inputs are integrated in thalamocortical circuits.

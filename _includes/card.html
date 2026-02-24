@@ -42,6 +42,27 @@
   {% if card_href contains "http://" or card_href contains "https://" %}
     {% assign card_external = true %}
   {% endif %}
+  {% capture card_image_style %}
+    {% if include.image_aspect %}
+      --card-image-aspect: {{ include.image_aspect }};
+    {% endif %}
+    {% if include.image_aspect_mobile %}
+      --card-image-aspect-mobile: {{ include.image_aspect_mobile }};
+    {% endif %}
+    {% if include.image_fit %}
+      --card-image-fit: {{ include.image_fit }};
+    {% endif %}
+    {% if include.image_position %}
+      --card-image-position: {{ include.image_position }};
+    {% endif %}
+    {% if include.image_bg %}
+      --card-image-bg: {{ include.image_bg }};
+    {% endif %}
+    {% if include.image_padding %}
+      --card-image-padding: {{ include.image_padding }};
+    {% endif %}
+  {% endcapture %}
+  {% assign card_image_style = card_image_style | strip | strip_newlines %}
   <a
     {% if card_video_src != "" %}
       href="{{ card_video_highres | relative_url | uri_escape }}"
@@ -64,6 +85,9 @@
     {% endif %}
     aria-label="{{ include.title | default: "card link" | regex_strip }}"
     class="card-image"
+    {% if card_image_style != "" %}
+      style="{{ card_image_style }}"
+    {% endif %}
   >
     {% if card_video_src != "" %}
       <video

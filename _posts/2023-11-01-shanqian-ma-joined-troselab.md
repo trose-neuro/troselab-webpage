@@ -8,7 +8,5 @@ tags:
 ---
 
 <!-- excerpt start -->
-We are glad to welcome [**Shanqian Ma**](/members/shanqian-ma) to troselab; Shanqian started on **November 1, 2023**.
+Shanqian Ma joined troselab on **November 1, 2023**.
 <!-- excerpt end -->
-
-Shanqian joined troselab as a PhD student on **November 1, 2023**.

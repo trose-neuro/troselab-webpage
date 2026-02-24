@@ -11,4 +11,3 @@ tags:
 <!-- excerpt start -->
 I was invited to teach at [**Transylvanian Neuroscience Summer School (TENSS)**](https://tenss.ro/2022/program/index.php) in **Cluj-Napoca region, Romania** (June 2022).
 <!-- excerpt end -->
-

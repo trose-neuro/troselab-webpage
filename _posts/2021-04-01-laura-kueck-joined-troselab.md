@@ -8,7 +8,5 @@ tags:
 ---
 
 <!-- excerpt start -->
-We are delighted to welcome [**Laura Kueck**](/members/laura-kueck) to troselab, with a start date of **April 1, 2021**.
+Laura Kueck joined troselab on **April 1, 2021**.
 <!-- excerpt end -->
-
-Laura joined troselab as technician on **April 1, 2021**.

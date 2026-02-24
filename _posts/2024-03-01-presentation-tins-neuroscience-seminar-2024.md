@@ -11,4 +11,3 @@ tags:
 <!-- excerpt start -->
 I was invited to present our work at [**TINS Neuroscience Seminar**](https://researchseminars.org/seminar/TINS) in **an online seminar** (March 2024).
 <!-- excerpt end -->
-
