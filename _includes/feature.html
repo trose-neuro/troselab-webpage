@@ -31,6 +31,16 @@
       {% endif %}
     {% endif %}
     class="feature-image"
+    {% if include.image_fit or include.image_position %}
+      style="
+        {% if include.image_fit %}
+          --feature-image-fit: {{ include.image_fit }};
+        {% endif %}
+        {% if include.image_position %}
+          --feature-image-position: {{ include.image_position }};
+        {% endif %}
+      "
+    {% endif %}
     aria-label="{{ include.title | default: "feature link" | regex_strip }}"
   >
     {% assign feature_sizes = "(max-width: 900px) calc(100vw - 48px), 42vw" %}

@@ -69,4 +69,4 @@ The lab combines experimental and computational neuroscience.
 
 {% endcapture %}
 
-{% include feature.html image="images/banner/hippocampus ca1-wide.jpg" link="team" title="Team" flip=true style="bare" text=text %}
+{% include feature.html image="images/members/DSC_0137.jpg" image_fit="cover" image_position="50% 34%" link="team" title="Team" flip=true style="bare" text=text %}
