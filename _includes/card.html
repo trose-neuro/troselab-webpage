@@ -1,5 +1,13 @@
 {{ " " }}
-<div class="card" data-style="{{ include.style }}">
+{% assign card_anchor_id = include.id | default: "" | strip %}
+{% assign card_anchor_video = include.video | default: "" | strip %}
+<div
+  class="card"
+  data-style="{{ include.style }}"
+  {% if card_anchor_id != "" and card_anchor_video != "" %}
+    id="{{ card_anchor_id | xml_escape }}"
+  {% endif %}
+>
   {% assign card_sizes = "(max-width: 640px) calc(100vw - 40px), 350px" %}
   {% assign card_video_src = include.video | default: "" | strip %}
   {% assign card_video_highres = include.video_highres | default: card_video_src %}

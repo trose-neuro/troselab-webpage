@@ -1,4 +1,5 @@
 - title: Feedback and Visual Stability
+  id: project-feedback-visual-stability
   subtitle: Current Project
   # image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
   video: images/projects/videos/feedback-visual-stability.mp4
@@ -21,6 +22,7 @@
     - stability
 
 - title: Active Sensing in Visual Orienting
+  id: project-active-sensing-visual-orienting
   subtitle: Current Project
   # image: images/banner/background.jpg
   video: images/projects/videos/natural-vision-orienting.mp4
@@ -41,6 +43,7 @@
     - closed-loop behavior
 
 - title: Memory Stabilization in RSC
+  id: project-memory-stabilization-rsc
   subtitle: Current Project
   # image: "images/banner/hippocampus ca1-wide.jpg"
   video: images/projects/videos/memory-stabilization-rsc.mp4
@@ -61,6 +64,7 @@
     - memory
 
 - title: Landmark Coding in Navigation
+  id: project-landmark-coding-navigation
   subtitle: Current Project
   # image: images/banner/multilevel spines.jpg
   video: images/projects/videos/landmark-navigation.mp4
@@ -81,6 +85,7 @@
     - navigation
 
 - title: Uncertainty and Neuromodulation
+  id: project-uncertainty-neuromodulation
   subtitle: Current Project
   # image: "images/banner/Chiams LGN-wide.jpg"
   video: images/projects/videos/state-uncertainty-neuromodulation.mp4
@@ -101,6 +106,7 @@
     - passive viewing
 
 - title: Latent Learning Circuits
+  id: project-latent-learning-circuits
   subtitle: Current Project
   # image: images/banner/tdtomatoGGsliceEPI-wide.jpg
   video: images/projects/videos/latent-learning-circuits.mp4
@@ -121,6 +127,7 @@
     - multisensory
 
 - title: Miniature Two-Photon Platform
+  id: project-miniature-two-photon-platform
   subtitle: Infrastructure
   # image: images/mini2p.jpg
   video: images/projects/videos/miniature-two-photon-platform.mp4
