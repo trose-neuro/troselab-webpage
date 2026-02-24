@@ -12,6 +12,3 @@ tags:
 I was invited to present our work at [**RTG2416 Seminar**](https://www.rtg2416.rwth-aachen.de/category/rtg2416-seminar-series/) in **RWTH Aachen, Germany (online)** (July 2020).
 <!-- excerpt end -->
 
-This invited presentation reflects our ongoing scientific exchange with the international neuroscience community.
-
-Reference: [RTG2416 Seminar](https://www.rtg2416.rwth-aachen.de/category/rtg2416-seminar-series/)

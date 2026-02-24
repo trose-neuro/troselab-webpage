@@ -37,6 +37,4 @@ Our research addresses the stability-plasticity conundrum in the mouse visual sy
 - `tobias-rose_landscape.jpg` (high-resolution landscape image, 1600x1066)
 
 ## Publications
-- BibTeX files included:
-  - `tobias-rose-dossier-selected-publications.bib` (publications listed in dossier section 1.9)
-  - `tobias-rose-bernstein-publications.bib` (extended list, filtered to year >= 2013)
+- `tobias-rose-bernstein-publications.bib` (extended list, filtered to year >= 2013)

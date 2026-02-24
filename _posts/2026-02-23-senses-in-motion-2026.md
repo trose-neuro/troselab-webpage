@@ -10,7 +10,3 @@ tags:
 <!-- excerpt start -->
 I am looking forward to presenting our work at the [**Senses in Motion Symposium 2026**](https://sensesinmotion.org/), which will take place on **May 18–21, 2026**.
 <!-- excerpt end -->
-
-The symposium will take place on **May 18–21, 2026**.
-
-Website: [Senses in Motion Symposium 2026](https://sensesinmotion.org/)

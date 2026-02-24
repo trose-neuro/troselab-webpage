@@ -12,6 +12,3 @@ tags:
 I was invited to present our work at [**Fortbildung für ärztliche und wissenschaftliche Mitarbeiter (Eye-Clinic UKB)**](https://www.ukbonn.de/) in **Bonn, Germany** (November 2020).
 <!-- excerpt end -->
 
-This invited presentation reflects our ongoing scientific exchange with the international neuroscience community.
-
-Reference: [Fortbildung für ärztliche und wissenschaftliche Mitarbeiter (Eye-Clinic UKB)](https://www.ukbonn.de/)

@@ -12,6 +12,3 @@ tags:
 I was invited to present our work at [**Symposium From Neural Circuits to Behaviour**](https://campusmartinsried.de/wp-content/uploads/2022/06/Symposium_Schedule.pdf) in **Munich area, Germany** (July 2022).
 <!-- excerpt end -->
 
-This invited presentation reflects our ongoing scientific exchange with the international neuroscience community.
-
-Reference: [Symposium From Neural Circuits to Behaviour](https://campusmartinsried.de/wp-content/uploads/2022/06/Symposium_Schedule.pdf)

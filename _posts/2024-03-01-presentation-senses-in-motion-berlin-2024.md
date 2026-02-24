@@ -12,6 +12,3 @@ tags:
 I was invited to present our work at [**International Symposium Senses in Motion**](https://sensesinmotion.org/sim2024) in **Berlin, Germany** (March 2024).
 <!-- excerpt end -->
 
-This invited presentation reflects our ongoing scientific exchange with the international neuroscience community.
-
-Reference: [International Symposium Senses in Motion](https://sensesinmotion.org/sim2024)

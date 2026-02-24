@@ -12,6 +12,3 @@ tags:
 I was invited to present our work at [**Nencki Systems Neuroscience Seminar**](https://nencki.edu.pl/nencki-institute-seminar-132/) in **an online seminar hosted by Nencki Institute, Warsaw, Poland** (June 2020).
 <!-- excerpt end -->
 
-This invited presentation reflects our ongoing scientific exchange with the international neuroscience community.
-
-Reference: [Nencki Systems Neuroscience Seminar](https://nencki.edu.pl/nencki-institute-seminar-132/)

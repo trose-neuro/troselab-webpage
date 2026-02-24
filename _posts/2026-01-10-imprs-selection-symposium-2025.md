@@ -14,5 +14,3 @@ We are looking forward to the [IMPRS BB Virtual Selection Symposium 2025](https:
 Preparation for the two-day IMPRS selection symposium is underway. We received the updated schedule, candidate list, guide, and evaluation materials for both days.
 
 The interviews are scheduled for **Tuesday and Wednesday, January 27–28, 2026**, with applicant assessments handled through Open Campus.
-
-Program website: [IMPRS Brain and Behavior](https://imprs-brain-behavior.mpg.de/)
