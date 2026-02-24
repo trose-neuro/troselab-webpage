@@ -29,7 +29,7 @@ Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from mi
 
 {% capture text %}
 
-We study how stable coding emerges in changing circuits in changing environments.
+We study how stable coding emerges in changing circuits in dynamic environments.
 Our work links imaging, behavior, and computational analysis.
 
 {% include button.html link="research" text="Read about our research" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
