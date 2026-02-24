@@ -70,3 +70,13 @@ Our current students, postdocs, technical assistant and alumni.
 {% endcapture %}
 
 {% include feature.html image="images/members/DSC_0137.jpg" image_fit="cover" image_position="50% 34%" link="team" title="Team" flip=true style="bare" text=text %}
+
+{% capture text %}
+
+Recent updates from the lab.
+
+{% include button.html link="blog" text="Browse all news" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
+
+{% endcapture %}
+
+{% include feature.html link="blog" title="News" text=text news_limit=3 %}

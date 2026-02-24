@@ -18,40 +18,59 @@
   {% if feature_href contains "http://" or feature_href contains "https://" %}
     {% assign feature_external = true %}
   {% endif %}
-  <a
-    {% if feature_href != "" %}
-      {% if feature_has_scheme %}
-        href="{{ feature_href }}"
-      {% else %}
-        href="{{ feature_href | relative_url | uri_escape }}"
-      {% endif %}
-      {% if feature_external %}
-        target="_blank"
-        rel="noopener noreferrer"
-      {% endif %}
-    {% endif %}
-    class="feature-image"
-    {% if include.image_fit or include.image_position %}
-      style="
-        {% if include.image_fit %}
-          --feature-image-fit: {{ include.image_fit }};
+  {% if include.news_limit %}
+    <div class="feature-image feature-news" aria-label="Latest news items">
+      <div class="feature-news-items">
+        {% for post in site.posts limit: include.news_limit %}
+          <article class="feature-news-item">
+            <a href="{{ post.url | relative_url | uri_escape }}" class="feature-news-link">
+              {{ post.title }}
+            </a>
+            <time class="feature-news-date" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%d %b %Y" }}
+            </time>
+          </article>
+        {% else %}
+          <p class="feature-news-empty">No news items yet.</p>
+        {% endfor %}
+      </div>
+    </div>
+  {% else %}
+    <a
+      {% if feature_href != "" %}
+        {% if feature_has_scheme %}
+          href="{{ feature_href }}"
+        {% else %}
+          href="{{ feature_href | relative_url | uri_escape }}"
         {% endif %}
-        {% if include.image_position %}
-          --feature-image-position: {{ include.image_position }};
+        {% if feature_external %}
+          target="_blank"
+          rel="noopener noreferrer"
         {% endif %}
-      "
-    {% endif %}
-    aria-label="{{ include.title | default: "feature link" | regex_strip }}"
-  >
-    {% assign feature_sizes = "(max-width: 900px) calc(100vw - 48px), 42vw" %}
-    {%
-      include responsive-image.html
-      image=include.image
-      alt=include.title
-      sizes=feature_sizes
-      loading="lazy"
-    %}
-  </a>
+      {% endif %}
+      class="feature-image"
+      {% if include.image_fit or include.image_position %}
+        style="
+          {% if include.image_fit %}
+            --feature-image-fit: {{ include.image_fit }};
+          {% endif %}
+          {% if include.image_position %}
+            --feature-image-position: {{ include.image_position }};
+          {% endif %}
+        "
+      {% endif %}
+      aria-label="{{ include.title | default: "feature link" | regex_strip }}"
+    >
+      {% assign feature_sizes = "(max-width: 900px) calc(100vw - 48px), 42vw" %}
+      {%
+        include responsive-image.html
+        image=include.image
+        alt=include.title
+        sizes=feature_sizes
+        loading="lazy"
+      %}
+    </a>
+  {% endif %}
   <div class="feature-text">
     {% if include.title %}
       <p class="feature-title">{{ include.title }}</p>
