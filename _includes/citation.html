@@ -25,13 +25,25 @@
 {% endif %}
 {% assign citation_has_scheme = false %}
 {% assign citation_external = false %}
+{% assign citation_looks_like_domain = false %}
 {% if citation_href contains "mailto:" or citation_href contains "tel:" or citation_href contains "://" %}
   {% assign citation_has_scheme = true %}
 {% endif %}
 {% assign citation_prefix = citation_href | slice: 0, 4 %}
-{% if citation_has_scheme == false and citation_prefix == "www." %}
-  {% assign citation_href = "https://" | append: citation_href %}
-  {% assign citation_has_scheme = true %}
+{% assign citation_first_char = citation_href | slice: 0, 1 %}
+{% assign citation_head = citation_href | split: "/" | first | split: "?" | first | split: "#" | first %}
+{% if citation_has_scheme == false and citation_href != "" %}
+  {% if citation_first_char != "/" and citation_first_char != "." and citation_first_char != "#" and citation_first_char != "?" %}
+    {% if citation_head contains "." %}
+      {% assign citation_looks_like_domain = true %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+{% if citation_has_scheme == false %}
+  {% if citation_prefix == "www." or citation_looks_like_domain %}
+    {% assign citation_href = "https://" | append: citation_href %}
+    {% assign citation_has_scheme = true %}
+  {% endif %}
 {% endif %}
 {% if citation_href contains "http://" or citation_href contains "https://" %}
   {% assign citation_external = true %}

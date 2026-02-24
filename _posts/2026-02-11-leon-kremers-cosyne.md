@@ -1,5 +1,5 @@
 ---
-title: Leon Kremers Abstract at CoSyNe 2026
+title: Leon Kremer's Abstract at CoSyNe 2026
 author: Tobias Rose
 tags:
   - featured

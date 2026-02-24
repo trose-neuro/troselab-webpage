@@ -2,13 +2,25 @@
   {% assign figure_href = include.link | default: "" | strip %}
   {% assign figure_has_scheme = false %}
   {% assign figure_external = false %}
+  {% assign figure_looks_like_domain = false %}
   {% if figure_href contains "mailto:" or figure_href contains "tel:" or figure_href contains "://" %}
     {% assign figure_has_scheme = true %}
   {% endif %}
   {% assign figure_prefix = figure_href | slice: 0, 4 %}
-  {% if figure_has_scheme == false and figure_prefix == "www." %}
-    {% assign figure_href = "https://" | append: figure_href %}
-    {% assign figure_has_scheme = true %}
+  {% assign figure_first_char = figure_href | slice: 0, 1 %}
+  {% assign figure_head = figure_href | split: "/" | first | split: "?" | first | split: "#" | first %}
+  {% if figure_has_scheme == false and figure_href != "" %}
+    {% if figure_first_char != "/" and figure_first_char != "." and figure_first_char != "#" and figure_first_char != "?" %}
+      {% if figure_head contains "." %}
+        {% assign figure_looks_like_domain = true %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+  {% if figure_has_scheme == false %}
+    {% if figure_prefix == "www." or figure_looks_like_domain %}
+      {% assign figure_href = "https://" | append: figure_href %}
+      {% assign figure_has_scheme = true %}
+    {% endif %}
   {% endif %}
   {% if figure_href contains "http://" or figure_href contains "https://" %}
     {% assign figure_external = true %}

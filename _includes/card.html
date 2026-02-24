@@ -19,13 +19,25 @@
   {% assign card_href = include.link | default: "" | strip %}
   {% assign card_has_scheme = false %}
   {% assign card_external = false %}
+  {% assign card_looks_like_domain = false %}
   {% if card_href contains "mailto:" or card_href contains "tel:" or card_href contains "://" %}
     {% assign card_has_scheme = true %}
   {% endif %}
   {% assign card_prefix = card_href | slice: 0, 4 %}
-  {% if card_has_scheme == false and card_prefix == "www." %}
-    {% assign card_href = "https://" | append: card_href %}
-    {% assign card_has_scheme = true %}
+  {% assign card_first_char = card_href | slice: 0, 1 %}
+  {% assign card_head = card_href | split: "/" | first | split: "?" | first | split: "#" | first %}
+  {% if card_has_scheme == false and card_href != "" %}
+    {% if card_first_char != "/" and card_first_char != "." and card_first_char != "#" and card_first_char != "?" %}
+      {% if card_head contains "." %}
+        {% assign card_looks_like_domain = true %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+  {% if card_has_scheme == false %}
+    {% if card_prefix == "www." or card_looks_like_domain %}
+      {% assign card_href = "https://" | append: card_href %}
+      {% assign card_has_scheme = true %}
+    {% endif %}
   {% endif %}
   {% if card_href contains "http://" or card_href contains "https://" %}
     {% assign card_external = true %}

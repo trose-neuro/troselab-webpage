@@ -1,5 +1,5 @@
 <div
-  class="feature"
+  class="feature{% if include.image_side == "right" %} feature-image-right{% elsif include.image_side == "left" %} feature-image-left{% endif %}"
   {% if include.flip %}
     data-flip
   {% endif %}
@@ -7,13 +7,25 @@
   {% assign feature_href = include.link | default: "" | strip %}
   {% assign feature_has_scheme = false %}
   {% assign feature_external = false %}
+  {% assign feature_looks_like_domain = false %}
   {% if feature_href contains "mailto:" or feature_href contains "tel:" or feature_href contains "://" %}
     {% assign feature_has_scheme = true %}
   {% endif %}
   {% assign feature_prefix = feature_href | slice: 0, 4 %}
-  {% if feature_has_scheme == false and feature_prefix == "www." %}
-    {% assign feature_href = "https://" | append: feature_href %}
-    {% assign feature_has_scheme = true %}
+  {% assign feature_first_char = feature_href | slice: 0, 1 %}
+  {% assign feature_head = feature_href | split: "/" | first | split: "?" | first | split: "#" | first %}
+  {% if feature_has_scheme == false and feature_href != "" %}
+    {% if feature_first_char != "/" and feature_first_char != "." and feature_first_char != "#" and feature_first_char != "?" %}
+      {% if feature_head contains "." %}
+        {% assign feature_looks_like_domain = true %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+  {% if feature_has_scheme == false %}
+    {% if feature_prefix == "www." or feature_looks_like_domain %}
+      {% assign feature_href = "https://" | append: feature_href %}
+      {% assign feature_has_scheme = true %}
+    {% endif %}
   {% endif %}
   {% if feature_href contains "http://" or feature_href contains "https://" %}
     {% assign feature_external = true %}

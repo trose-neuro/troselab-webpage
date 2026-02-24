@@ -4,6 +4,7 @@
 {% assign is_mailto = false %}
 {% assign has_scheme = false %}
 {% assign is_http_external = false %}
+{% assign href_looks_like_domain = false %}
 {% if href contains "mailto:" or href contains "tel:" or href contains "://" %}
   {% assign has_scheme = true %}
 {% endif %}
@@ -11,9 +12,20 @@
   {% assign is_mailto = true %}
 {% endif %}
 {% assign href_prefix = href | slice: 0, 4 %}
-{% if has_scheme == false and href_prefix == "www." %}
-  {% assign href = "https://" | append: href %}
-  {% assign has_scheme = true %}
+{% assign href_first_char = href | slice: 0, 1 %}
+{% assign href_head = href | split: "/" | first | split: "?" | first | split: "#" | first %}
+{% if has_scheme == false and href != "" %}
+  {% if href_first_char != "/" and href_first_char != "." and href_first_char != "#" and href_first_char != "?" %}
+    {% if href_head contains "." %}
+      {% assign href_looks_like_domain = true %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+{% if has_scheme == false %}
+  {% if href_prefix == "www." or href_looks_like_domain %}
+    {% assign href = "https://" | append: href %}
+    {% assign has_scheme = true %}
+  {% endif %}
 {% endif %}
 {% if href contains "http://" or href contains "https://" %}
   {% assign is_http_external = true %}

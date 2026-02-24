@@ -36,7 +36,7 @@ Our work links imaging, behavior, and computational analysis.
 
 {% endcapture %}
 
-{% include feature.html image="images/banner/background.jpg" link="research" title="Research" text=text %}
+{% include feature.html image="images/banner/background.jpg" image_side="left" link="research" title="Research" text=text %}
 
 {% comment %}
 {% capture text %}
@@ -59,7 +59,7 @@ Browse recent and past publications.
 
 {% endcapture %}
 
-{% include feature.html image="images/banner/Chiams LGN-wide.jpg" link="publications" title="Publications" flip=true text=text %}
+{% include feature.html image="images/banner/Chiams LGN-wide.jpg" image_side="right" link="publications" title="Publications" flip=true text=text %}
 
 {% capture text %}
 
@@ -69,7 +69,7 @@ Our current students, postdocs, technical assistant and alumni.
 
 {% endcapture %}
 
-{% include feature.html image="images/members/DSC_0137.jpg" image_fit="cover" image_position="50% 34%" link="team" title="Team" style="bare" text=text %}
+{% include feature.html image="images/members/DSC_0137.jpg" image_side="left" image_fit="cover" image_position="50% 34%" link="team" title="Team" style="bare" text=text %}
 
 {% capture text %}
 
@@ -79,4 +79,4 @@ Recent updates from the lab.
 
 {% endcapture %}
 
-{% include feature.html link="blog" title="News" flip=true text=text news_limit=4 news_tag="featured" %}
+{% include feature.html image_side="right" link="blog" title="News" flip=true text=text news_limit=4 news_tag="featured" %}
