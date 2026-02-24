@@ -26,7 +26,8 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: var(--feature-image-fit, contain);
+  object-position: var(--feature-image-position, 50% 50%);
   background: var(--surface-alt);
   transition: transform var(--transition);
 }
