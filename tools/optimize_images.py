@@ -62,7 +62,18 @@ def optimize_image(source: Path, force: bool) -> tuple[int, int, int]:
     removed = 0
 
     with Image.open(source) as image:
-        image = ImageOps.exif_transpose(image).convert("RGB")
+        image = ImageOps.exif_transpose(image)
+        # JPG has no alpha channel. Flatten transparent pixels to white so
+        # logos with transparency do not render with black backgrounds.
+        has_alpha = image.mode in ("RGBA", "LA") or (
+            image.mode == "P" and "transparency" in image.info
+        )
+        if has_alpha:
+            rgba = image.convert("RGBA")
+            white_bg = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
+            image = Image.alpha_composite(white_bg, rgba).convert("RGB")
+        else:
+            image = image.convert("RGB")
         src_w, src_h = image.size
         stem = output_stem(source)
         stem.parent.mkdir(parents=True, exist_ok=True)
