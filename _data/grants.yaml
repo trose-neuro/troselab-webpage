@@ -16,7 +16,7 @@
   image_aspect: "16 / 6"
   image_aspect_mobile: "16 / 6"
   image_padding: "12px 16px"
-  image_bg: "#f7f8fb"
+  image_bg: "#ffffff"
   link: https://www.brainloops.de/spp2411
   description: DFG priority-programme framework supporting loop-level circuit studies relevant to sensory and behavioral control.
 
@@ -49,6 +49,6 @@
   image_aspect: "16 / 6"
   image_aspect_mobile: "16 / 6"
   image_padding: "12px 16px"
-  image_bg: "#f7f8fb"
+  image_bg: "#ffffff"
   link: https://ibehave.nrw/
   description: State-supported neuroscience network connecting methods, data, and collaborative research infrastructures.
