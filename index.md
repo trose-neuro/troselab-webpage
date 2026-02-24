@@ -38,21 +38,22 @@ Our work links imaging, behavior, and computational analysis.
 
 {% include feature.html image="images/banner/background.jpg" link="research" title="Research" text=text %}
 
+{% comment %}
 {% capture text %}
 
-Our portfolio spans stability, memory, and natural vision.
-Platform development runs alongside hypothesis-driven and exploratory biology.
+Stability, memory, and natural vision.
+Platform development runs alongside hypothesis-driven and exploratory neuroethology.
 
 {% include button.html link="research" text="Browse current projects" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 
 {% include feature.html image="images/banner/photo.jpg" link="research" title="Current Projects" flip=true style="bare" text=text %}
+{% endcomment %}
 
 {% capture text %}
 
 Browse recent and past publications.
-Entries link directly to journals and archives.
 
 {% include button.html link="publications" text="Browse publications" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
@@ -62,8 +63,7 @@ Entries link directly to journals and archives.
 
 {% capture text %}
 
-Meet current members, alumni, and collaborators.
-The lab combines experimental and computational neuroscience.
+Our current students, postdocs, technical assistant and alumni.
 
 {% include button.html link="team" text="Meet the team" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
