@@ -6,6 +6,7 @@ tags:
   - presentation
   - talk
   - invited
+  - summer-school
 ---
 
 <!-- excerpt start -->

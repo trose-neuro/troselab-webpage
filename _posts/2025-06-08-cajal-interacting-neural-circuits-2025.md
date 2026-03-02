@@ -5,6 +5,7 @@ tags:
   - training
   - cajal
   - neural-circuits
+  - summer-school
 ---
 
 <!-- excerpt start -->
