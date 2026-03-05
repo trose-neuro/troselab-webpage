@@ -1,4 +1,4 @@
-- title: Feedback and Visual Stability
+- title: Feedback and Visual Coding Stability
   id: project-feedback-visual-stability
   subtitle: Current Project
   # image: "images/banner/binocular axons VCElement 1@4x-100-wide.jpg"
@@ -7,9 +7,9 @@
   video_max_seconds: 60
   link: members/leon-kremers.html
   description: |
-    Stable and flexible coding across cortical and subcortical visual circuits.
+    How feedback supports stable and flexible coding across cortical and subcortical visual circuits.
   video_caption: |
-    Maximally exciting inputs (MEIs) of individual excitatory L2/3 neurons tracked over one month, estimated with deep visual-cortex models in collaboration with [Fabian H. Sinz](https://sinzlab.org).
+    Model-derived maximally exciting images (MEIs) for tracked L2/3 excitatory neurons across 1 month, estimated with deep network models of mouse visual cortex (collab with [Fabian H. Sinz](https://sinzlab.org)).
   buttons:
     - type: link
       text: Leon Kremers
@@ -17,9 +17,9 @@
       style: bare
   tags:
     - visual cortex
-    - deep models
-    - feedback
-    - stability
+    - cortical feedback
+    - neural stability
+    - deep network models
 
 - title: Active Sensing in Visual Orienting
   id: project-active-sensing-visual-orienting
@@ -29,9 +29,9 @@
   video_highres: images/projects/videos/natural-vision-orienting-highres.mp4
   link: members/natalia-krasilshchikova.html
   description: |
-    Circuits for active sensing during visual orienting behavior.
+    Circuit basis of active sensing and rapid orienting in natural vision.
   video_caption: |
-    Mouse behavior during a closed-loop visual orienting task, showing trial-by-trial orienting responses to craniocentrically controlled visual stimuli.
+    Closed-loop orienting task: trial-by-trial head turns to craniocentric (skull-centered) visual stimuli.
   buttons:
     - type: link
       text: Natalia Krasilshchikova
@@ -39,10 +39,11 @@
       style: bare
   tags:
     - natural vision
-    - orienting
-    - closed-loop behavior
+    - active sensing
+    - orienting behavior
+    - closed-loop task
 
-- title: Contextual processing during spatial learning
+- title: Contextual Processing in Spatial Learning
   id: project-memory-stabilization-rsc
   subtitle: Current Project
   # image: "images/banner/hippocampus ca1-wide.jpg"
@@ -50,17 +51,18 @@
   video_highres: images/projects/videos/memory-stabilization-rsc-highres.mp4
   link: members/jisoo-jung.html
   description: |
-    Contextual processing during spatial learning: Stabilization of spatial and non-spatial representations in retrosplenial cortex (RSC).
+    How retrosplenial cortex (RSC) stabilizes context, space, and task variables during spatial learning.
   video_caption: |
-    Synchronized arena, eye, and world-camera recordings during a spatial-memory task in a custom automated arena with custom in-house hardware.
+    Spatial-memory task with synchronized arena, eye, and world cameras in an automated arena (in-house hardware).
   buttons:
     - type: link
       text: Jisoo Jung
       link: members/jisoo-jung.html
       style: bare
   tags:
-    - retrosplenial cortex
-    - learning
+    - retrosplenial cortex (RSC)
+    - context
+    - spatial learning
     - memory
 
 - title: Landmark Coding in Navigation
@@ -71,18 +73,19 @@
   video_highres: images/projects/videos/landmark-navigation-highres.mp4
   link: members/shanqian-ma.html
   description: |
-    Contextual processing during spatial learning: Encoding of visual landmark affordances in dorsal cortex.
+    How dorsal cortex encodes visual landmarks and their affordances during navigation.
   video_caption: |
-    Task data combined with high-resolution 3D marker-based head tracking and precisely synchronized eye-camera recordings to reconstruct gaze in 3D. Thick lines show gaze direction; thin lines show head-centered direction without eye movements.
+    3D gaze reconstruction from marker-based head tracking plus synchronized eye cameras; thick line = gaze, thin line = head direction.
   buttons:
     - type: link
       text: Shanqian Ma
       link: members/shanqian-ma.html
       style: bare
   tags:
-    - affordance
-    - landmarks
     - navigation
+    - landmarks
+    - affordances
+    - dorsal cortex
 
 - title: Uncertainty and Neuromodulation
   id: project-uncertainty-neuromodulation
@@ -92,17 +95,19 @@
   video_highres: images/projects/videos/state-uncertainty-neuromodulation-highres.mp4
   link: members/yoshiki-hatashita.html
   description: |
-    State, neuromodulation, and uncertainty-dependent representational dynamics in cortical circuits.
+    How internal state and neuromodulators shape uncertainty-dependent dynamics across dorsal cortex.
   video_caption: |
-    Widefield calcium imaging of dorsal cortex during passive viewing of visual stimuli, showing cortex-wide activity dynamics.
+    Widefield calcium imaging across dorsal cortex during passive viewing.
   buttons:
     - type: link
       text: Yoshiki Hatashita
       link: members/yoshiki-hatashita.html
       style: bare
   tags:
-    - widefield imaging
     - dorsal cortex
+    - widefield calcium imaging
+    - neuromodulation
+    - uncertainty
     - passive viewing
 
 - title: Latent Learning Circuits
@@ -113,9 +118,9 @@
   video_highres: images/projects/videos/latent-learning-circuits-highres.mp4
   link: members/aelton-araujo.html
   description: |
-    Latent learning and crossmodal integration in cortical circuits.
+    Latent learning and cross-modal integration in cortical circuits.
   video_caption: |
-    Mouse navigation in a linear virtual corridor used to quantify latent learning of task structure.
+    Navigation in a linear virtual corridor to measure latent learning of task structure.
   buttons:
     - type: link
       text: Aelton Araujo
@@ -124,9 +129,10 @@
   tags:
     - latent learning
     - preconditioning
-    - multisensory
+    - cross-modal integration
+    - virtual reality
 
-- title: Miniature Two-Photon Platform
+- title: Mini2P Imaging Platform
   id: project-miniature-two-photon-platform
   subtitle: Infrastructure
   # image: images/mini2p.jpg
@@ -135,9 +141,9 @@
   video_max_seconds: 30
   link: members/natalia-krasilshchikova.html
   description: |
-    Longitudinal and acute imaging infrastructure for cortical and subcortical circuit studies in freely moving animals.
+    Mini2P-based imaging infrastructure with synchronized behavior and cameras for freely moving experiments.
   video_caption: |
-    Mini2p platform integrating neural imaging with synchronized behavior and camera streams for freely moving experiments (spedup_5fold, no frame averaging, SUPPORT denoising).
+    Mini2P recording with synchronized behavior and camera streams (5× speed-up, no frame averaging, SUPPORT denoising).
   buttons:
     - type: link
       text: Natalia Krasilshchikova
@@ -152,6 +158,7 @@
       link: members/shanqian-ma.html
       style: bare
   tags:
-    - microscopy
+    - mini2P
+    - two-photon microscopy
     - hardware
     - infrastructure
