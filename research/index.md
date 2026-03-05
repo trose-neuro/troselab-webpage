@@ -33,7 +33,7 @@ We study how reliable perception, memory, and action emerge from dynamic neural 
 
 - Longitudinal optophysiology across synapses, cells, and circuits
 - Miniature ([mini2P](https://www.ntnu.edu/kavli/mini2P)) and bench-top two-photon imaging
-- Custom closed-loop behavioral paradigms with multimodal head–eye–bodyand world tracking (ego- and exo-centric)
+- Custom closed-loop behavioral paradigms with multimodal head–eye–body and world tracking (ego- and exo-centric)
 - Data-driven and hypothesis-driven computational modeling across spatial and temporal scales
 
 {% include section.html %}
