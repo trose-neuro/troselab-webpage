@@ -22,7 +22,7 @@ Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, spannin
 We focus on two main questions:
 
 - **Long-term stabilization and drift**: how circuit computations change or stay reliable across days to months, during both passive sensation and goal-directed perceptual decisions.
-- **Closed-loop sensing and action**: how sensory sampling through movement shapes neural activity, and how that activity guides immediate choices during orienting and navigation under under ethologically relevant task demands.
+- **Closed-loop sensing and action**: how sensory sampling through movement shapes neural activity, and how that activity guides immediate choices during orienting and navigation under ethologically relevant task demands.
 
 
 {% include section.html %}
@@ -62,7 +62,7 @@ Browse recent and past publications.
 
 {% capture text %}
 
-Our current students, postdocs, technical staff and alumni.
+Our current students, postdocs, technical staff, and alumni.
 
 {% include button.html link="team" text="Meet the team" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
