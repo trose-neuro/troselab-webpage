@@ -4,15 +4,15 @@ header: images/banner/twitter1500x500.jpg
 
 {% include cols.html
 problem="
-### We Ask
+### Question
 How does reliable processing arise in dynamic neuronal circuits and changing sensory environments?
 "
 approach="
-### Our Approach
+### Approach
 Closed-loop behavior, longitudinal optophysiology, and computational modeling across synapses, cells, and circuits.
 "
 scope="
-### Our Scope
+### Scope
 Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from milliseconds to months.
 "
 %}
@@ -20,7 +20,7 @@ Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from mi
 ## Current Work
 
 - Stable and flexible coding across cortical and subcortical circuits
-- Active vision during visual orienting behavior
+- Active vision during visual orienting and navigation behavior
 - Latent learning and crossmodal integration in cortical circuits 
 - Contextual processing during spatial learning
 - State, neuromodulation, and uncertainty-dependent dynamics in cortical circuits
