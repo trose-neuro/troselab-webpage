@@ -29,9 +29,7 @@ We focus on two main questions:
 
 {% capture text %}
 
-We study how stable coding emerges in changing circuits in dynamic environments. A central theme is perception-for-action: how neural activity supports the online selection of movements by extracting task-relevant structure from ongoing sensorimotor loops.
-
-Our work links imaging, behavior, and computational analysis.
+We study how reliable neural computations support adaptive behavior in dynamic environments. Our work centers on long-term stabilization across days to months and on closed-loop sensing and action during orienting and navigation.
 
 {% include button.html link="research" text="Read about our research" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
@@ -64,7 +62,7 @@ Browse recent and past publications.
 
 {% capture text %}
 
-Our current students, postdocs, technical assistant and alumni.
+Our current students, postdocs, technical staff and alumni.
 
 {% include button.html link="team" text="Meet the team" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
