@@ -141,9 +141,9 @@
   video_max_seconds: 30
   link: members/natalia-krasilshchikova.html
   description: |
-    Mini2P-based imaging infrastructure with synchronized behavior and cameras for freely moving experiments.
+    [Mini2P](https://www.ntnu.edu/kavli/mini2P)-based imaging infrastructure with synchronized behavior and cameras for freely moving experiments.
   video_caption: |
-    Mini2P recording with synchronized behavior and camera streams (5× speed-up, no frame averaging, SUPPORT denoising).
+    [Mini2P](https://www.ntnu.edu/kavli/mini2P) recording with synchronized behavior and camera streams (5× speed-up, no frame averaging, SUPPORT denoising).
   buttons:
     - type: link
       text: Natalia Krasilshchikova
