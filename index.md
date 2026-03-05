@@ -4,15 +4,15 @@ header: images/banner/twitter1500x500.jpg
 
 {% include cols.html
 problem="
-### Problem
+### We Ask
 How does reliable processing arise in dynamic neuronal circuits and changing sensory environments?
 "
 approach="
-### Approach
+### Our Approach
 Closed-loop behavior, longitudinal optophysiology, and computational modeling across synapses, cells, and circuits.
 "
 scope="
-### Scope
+### Our Scope
 Mouse visual system, dorsal cortex, thalamus, and hippocampal formation, from milliseconds to months.
 "
 %}
