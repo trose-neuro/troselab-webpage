@@ -9,5 +9,5 @@ tags:
 ---
 
 <!-- excerpt start -->
-We will present our work at [**Naturalistic Neuroscience 2026**](https://www.nn2026.uni-bonn.de/de) in Bonn and host a lab visit focused on our closed-loop neuroscience approaches.
+We are at the [**Naturalistic Neuroscience 2026**](https://www.nn2026.uni-bonn.de/de) conference in Bonn: Visit our lab to experience our closed-loop neuroscience approaches.
 <!-- excerpt end -->
