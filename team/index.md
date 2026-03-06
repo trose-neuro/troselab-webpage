@@ -10,7 +10,7 @@ nav:
 
 {% include figure.html image="images/members/DSC_0137.jpg" data_highres="images/members/DSC_0137-highres.jpg" caption="troselab" width="min(calc(100% - 24px), var(--page))" boxed=true class="figure-compact-top figure-group-photo" %}
 
-## Team
+## Current Members
 
 <div class="team-portraits">
 {% include list.html data="members" component="portrait" filter="role != 'alum' and role != 'alumni' and group != 'alumni'" sort="name" %}

@@ -42,5 +42,5 @@ We study how reliable perception, memory, and action emerge from dynamic neural 
 
 - Identify circuit mechanisms that keep neural codes stable yet flexible across days to months, and test their causal role in behavior.
 - Develop closed-loop readout and model-based perturbation from synapses to circuits, coupling high-throughput recording to targeted manipulation with a fast, reproducible pipeline for training, inference, and direct model-based intervention
-- Link behavior and neural dynamics with predicitve data-driven models trained on large multimodal datasets
+- Link behavior and neural dynamics with predictive data-driven models trained on large multimodal datasets
 - Pair large-scale recordings with spatial transcriptomics to resolve cell-type dependence and task-/activity-linked gene expression changes

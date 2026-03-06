@@ -29,9 +29,9 @@ We focus on two main questions:
 
 {% capture text %}
 
-We study how reliable neural computations support adaptive behavior in dynamic environments. Our work centers on long-term stabilization across days to months and on closed-loop sensing and action during orienting and navigation.
+Our research themes and current directions.
 
-{% include button.html link="research" text="Read about our research" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
+{% include button.html link="research" text="Browse research" icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 
 {% endcapture %}
 

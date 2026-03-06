@@ -19,7 +19,7 @@ Venusberg-Campus 1
 
 {% include button.html type="address" text="" tooltip="Open in Google Maps" link="https://maps.app.goo.gl/y4vyJcywVR7hSVwf9" style="bare" %}
 
-{% include button.html type="link" text="CV Tobias Rose" link="members/tobias-rose.html" %}
+{% include button.html type="link" text="Tobias Rose CV" link="members/tobias-rose.html" %}
 
 {% include section.html %}
 
@@ -32,7 +32,7 @@ For collaborations, trainee applications, or project inquiries, please contact t
 
 {% include section.html %}
 
-# {% include icon.html icon="fa-solid fa-route" %}Getting Here
+## {% include icon.html icon="fa-solid fa-route" %}Getting Here
 
 ### By Plane
 
