@@ -78,4 +78,4 @@ Recent updates from the lab.
 
 {% endcapture %}
 
-{% include feature.html image_side="right" link="blog" title="News" flip=true text=text news_limit=4 news_tag="featured" %}
+{% include feature.html image_side="right" link="blog" title="News" flip=true text=text news_tag="featured" %}
