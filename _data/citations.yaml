@@ -283,9 +283,9 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1073/pnas.1000909107
-  title: "NMDA receptor-dependent GABA\n            <sub>B</sub>\n            receptor\
-    \ internalization via CaMKII phosphorylation of serine 867 in GABA\n         \
-    \   <sub>B1</sub>"
+  title: "NMDA receptor-dependent GABA\n                    <sub>B</sub>\n       \
+    \             receptor internalization via CaMKII phosphorylation of serine 867\
+    \ in GABA\n                    <sub>B1</sub>"
   authors:
   - Nicole Guetg
   - Said Abdel Aziz
